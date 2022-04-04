@@ -1,0 +1,60 @@
+Project name :MathCalc
+
+Parts:
+file structure - done
+repository 
+sections
+
+Git:
+	clone 
+	branching
+	git ignore
+	undo commits
+
+explaining the codes
+validation and verification
+testing
+
+limitations: 
+1. Can't check data type input/do research
+
+Add readme.txt file:
+
+Matrix(Mrishana):
+
+Quadratics(Oomar):
+ 
+Area and Volume(Sadiyah): 
+integration if possible
+
+
+
+Text file trace:
+input: 'cube' attached to string, \n\nstring write to txt\n
+dimension: length = 5 ; append to the string\n
+area = 150 ; append to the string\n
+volume = 125; append to the string\n
+
+
+Text file:
+shape:cube
+dimension:length=5
+area=150
+volume=125
+
+
+validation and verification:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
