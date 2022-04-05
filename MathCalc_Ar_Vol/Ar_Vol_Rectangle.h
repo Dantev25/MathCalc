@@ -11,6 +11,14 @@ float rectangle()
     printf("Breadth = ");
     scanf("%f",&b);
 
+    while((l <= 0)||(b <= 0)){
+        printf("\nCan only input positive integers!\nInput again!\n");
+        printf("Length = ");
+        scanf("%f",&l);
+        printf("Breadth = ");
+        scanf("%f",&b);
+    }
+
     area = l * b;
     perimeter = (l + b) * 2;
 

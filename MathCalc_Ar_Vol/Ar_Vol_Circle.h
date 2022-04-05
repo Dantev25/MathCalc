@@ -9,6 +9,11 @@ float circle()
     printf("Enter the radius of the circle: ");
     scanf("%f",&r);
 
+    while(r <= 0){
+        printf("\nCan only input positive integer for radius!\nInput again: ");
+        scanf("%f",&r);
+    }
+
     area = M_PI * r *r;
     perimeter = 2 * M_PI * r;
 

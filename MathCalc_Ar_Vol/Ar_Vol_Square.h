@@ -8,6 +8,11 @@ float square()
     printf("Enter the length of the side of the square: ");
     scanf("%f",&x);
 
+    while(x <= 0){
+        printf("\nCan only input positive integer for length of the side!\nInput again: ");
+        scanf("%f",&x);
+    }
+
     area = x*x;
     perimeter = x*4;
 
