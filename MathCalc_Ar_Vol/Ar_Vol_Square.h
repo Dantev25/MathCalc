@@ -1,9 +1,12 @@
 #ifndef AR_VOL_SQUARE_H_INCLUDED
 #define AR_VOL_SQUARE_H_INCLUDED
+#include<time.h>
 
 float square()
 {
     float x, area, perimeter;
+    time_t t;   // not a primitive datatype
+    time(&t);
 
     FILE *fptr;
 
@@ -28,6 +31,7 @@ float square()
         exit(1);
     }
 
+    fprintf(fptr,"executed on: %s",ctime(&t));
     fprintf(fptr,"Shape = square\n");
     fprintf(fptr,"length of side = %.2f\n",x);
     fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
