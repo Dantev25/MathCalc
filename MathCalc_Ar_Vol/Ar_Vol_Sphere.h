@@ -1,17 +1,17 @@
-#ifndef AR_VOL_CIRCLE_H_INCLUDED
-#define AR_VOL_CIRCLE_H_INCLUDED
+#ifndef AR_VOL_SPHERE_H_INCLUDED
+#define AR_VOL_SPHERE_H_INCLUDED
 #include<math.h>
-#include <time.h>
+#include<time.h>
 
-float circle()
+float sphere()
 {
-    float r, area, perimeter;
+    float r, sa, vol;
     time_t t;   // not a primitive datatype
     time(&t);
 
     FILE *fptr;
 
-    printf("Enter the radius of the circle: ");
+    printf("Enter the value of the radius: ");
     scanf("%f",&r);
 
     while(r <= 0){
@@ -19,11 +19,11 @@ float circle()
         scanf("%f",&r);
     }
 
-    area = M_PI * r *r;
-    perimeter = 2 * M_PI * r;
+    sa = 4* M_PI * r * r;
+    vol = (4.0/3) * M_PI * r * r * r;
 
-    printf("\nArea of circle = %.2f\n",area);
-    printf("perimeter of circle = %.2f\n",perimeter);
+    printf("\nSurface area of sphere = %.2f\n",sa);
+    printf("Volume of sphere = %.2f\n",vol);
 
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
@@ -33,9 +33,9 @@ float circle()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = circle\n");
+    fprintf(fptr,"Shape = sphere\n");
     fprintf(fptr,"radius = %.2f\n",r);
-    fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+    fprintf(fptr,"Surface area = %.2f\nvolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 
