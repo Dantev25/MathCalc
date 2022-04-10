@@ -13,7 +13,7 @@ int PolySub()
         printf("Please input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n1);
     }
-    n1=n1+1;
+    n1++;
     printf("Please input the the first expression (starting from constant and ascending in power):\n");
     for (int i=0;i<n1;i++){
         if (i==0){
@@ -35,7 +35,7 @@ int PolySub()
         printf("Please input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n2);
     }
-    n2=n2+1;
+    n2++;
     if(n2>m){
         m = n2;
     }
