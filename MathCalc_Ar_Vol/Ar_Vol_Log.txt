@@ -22,3 +22,15 @@ radius of circular base = 4.00, height = 7.00
 Surface area = 276.46
 Volume = 351.86
 
+executed on: Sun Apr 10 22:20:07 2022
+Shape = cylinder
+radius of circular base = 5.00, height = 7.00
+Surface area = 376.99
+Volume = 549.78
+
+executed on: Sun Apr 10 22:47:19 2022
+Shape = pyramid
+length of base = 6.00, breadth of base = 4.00, height = 9.00
+Surface area = 117.26
+Volume = 72.00
+
