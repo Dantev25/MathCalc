@@ -1,5 +1,5 @@
-#ifndef AR_VOL_CYLINDER_H_INCLUDED
-#define AR_VOL_CYLINDER_H_INCLUDED
+#ifndef AR_VOL_PYRAMID_H_INCLUDED
+#define AR_VOL_PYRAMID_H_INCLUDED
 #include<time.h>
 #include<math.h>
 
