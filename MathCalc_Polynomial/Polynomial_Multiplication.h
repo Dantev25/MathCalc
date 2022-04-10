@@ -1,9 +1,9 @@
-#ifndef POLYNOMIAL_ADDITION_H_INCLUDED
-#define POLYNOMIAL_ADDITION_H_INCLUDED
+#ifndef POLYNOMIAL_MULTIPLICATION_H_INCLUDED
+#define POLYNOMIAL_MULTIPLICATION_H_INCLUDED
 
 #define MAX 99
 
-int PolyAdd()
+int PolyMult()
 {
     int a[MAX] = {0}, b[MAX],prod[300], n1,n2,i,j;
     for (i=0; i<MAX; i++){
