@@ -23,7 +23,7 @@ void matrixAddSub(int arrayone[10][10], int arraytwo[10][10], int rows, int colu
         printf("\n");
     }
 
-    fptr = (fopen("SE_MATRIX/matrix_Log.txt","w"));
+    fptr = (fopen("SE_MATRIX/matrixLog.txt","w"));
     
     if(fptr==NULL){
         printf("Error!");

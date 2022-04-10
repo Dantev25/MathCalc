@@ -7,7 +7,7 @@ void matrixScalarMultiply(int array[10][10], int scalar, int rows, int colums){
     int i, j;
     int scaM[10][10];
     FILE *fptr;
-    fptr = (fopen("SE_MATRIX/matrix_Log.txt","w"));
+    fptr = (fopen("SE_MATRIX/matrixLog.txt","w"));
     
     if(fptr==NULL){
         printf("Error!");
