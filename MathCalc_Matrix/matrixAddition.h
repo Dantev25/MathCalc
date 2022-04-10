@@ -2,7 +2,7 @@
 #define MATRIX_ADDITION_H_INCLUDED
 #include<math.h>
 
-void matrixAddSub(int arrayone[10][10], int arraytwo[10][10], int rows, int colums, int mul){
+void matrixAdd(int arrayone[10][10], int arraytwo[10][10], int rows, int colums, int mul){
     int i, j;
     int sumM[10][10];
     int scaM[10][10];

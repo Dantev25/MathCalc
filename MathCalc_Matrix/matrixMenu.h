@@ -27,11 +27,11 @@ void matrixMenu()
 
         //this is the operation menu just type A, B, C or D to calculate
         printf("\nOperation Menu\n");
-        printf("\t1. to Add\n");
-        printf("\t2. to Subtract\n");
-        printf("\t3. to Scalar Multiply\n");
-        printf("\t4. to Multiply two matrices\n");
-        printf("Enter yout choice: ");
+        printf("\t1. Addition\n");
+        printf("\t2. Subtraction\n");
+        printf("\t3. Scalar Multiplication\n");
+        printf("\t4. Multiplication of two matrices\n");
+        printf("Enter your choice: ");
         scanf(" %d", &operation);
 
 
@@ -68,7 +68,7 @@ void matrixMenu()
 
 
             printf("\nThe Sum of matrixA + matrixB is : \n");
-            matrixAddSub(matrixA, matrixB, rowA, colA, add);
+            matrixAdd(matrixA, matrixB, rowA, colA, add);
 
             break;
 
@@ -100,7 +100,7 @@ void matrixMenu()
             printMatrix(matrixB, rowB, colB);
 
             printf("\nThe difference between matrixA - matrixB is : \n");
-            matrixAddSub(matrixA, matrixB, rowA, colA, sub);
+            matrixSub(matrixA, matrixB, rowA, colA, sub);
             break;
 
         case 3:
