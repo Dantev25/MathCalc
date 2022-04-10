@@ -17,11 +17,17 @@ float rectangle()
     scanf("%f",&b);
 
     while((l <= 0)||(b <= 0)){
-        printf("\nCan only input positive integers!\nInput again!\n");
-        printf("Length = ");
-        scanf("%f",&l);
-        printf("Breadth = ");
-        scanf("%f",&b);
+        if(l <= 0){
+            printf("\nCan only input positive integer for length!\nInput again!\n");
+            printf("Length = ");
+            scanf("%f",&l);
+        }
+
+        else if(b <= 0){
+           printf("\nCan only input positive integer for breadth!\nInput again!\n"); 
+           printf("Breadth = ");
+           scanf("%f",&b);
+        }
     }
 
     area = l * b;
