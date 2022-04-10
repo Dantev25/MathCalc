@@ -34,3 +34,9 @@ length of base = 6.00, breadth of base = 4.00, height = 9.00
 Surface area = 117.26
 Volume = 72.00
 
+executed on: Sun Apr 10 23:13:53 2022
+Shape = cone
+radius of circular base = 2.50, height = 7.00
+Surface area = 78.01
+Volume = 45.81
+
