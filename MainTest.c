@@ -1,36 +1,39 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"MathCalc_Matrix\matrixScalarMultiplication.h"
+#include<conio.h>
 
+#include"MathCalc_Matrix\matrixTranspose.h"
 
-int main(){
+    int main()
+{
+    int i,j,a,b,m[10][10];
+    
+    printf("Enter the rows and columns of matrix: ");
+    scanf("%d%d",&a,&b);
+    printf("Enter the elements\n");
+    
+    for(i=1;i<=a;i++)
+    {
+        for(j=1;j<=b;j++)
+        {
+            printf("Enter m[%d][%d] : ",i,j);
+            scanf("%d",&m[i][j]);
+        }
+    }
 
-    int i, j, k; //used in for loops
+    printf("\n Before transpose\n");
 
-    int matrixA[10][10]; // initialized at 10 just to have it initialized
-    int matrixB[10][10];
-    int rowA, colA;
-    int rowB, colB;
-    int scalar = 0;
+    for(i=1;i<=a;i++)
+    {
+        for(j=1;j<=b;j++)
+        {
+        printf("\t%d",m[i][j]);
+        }
 
+        printf("\n");
 
+    }
 
-            printf("\nEnter the scalar: ");
-            scanf("%d", &scalar);
-            printf("\nThe scalar is: %d ", scalar);
-
-
-            printf("\nEnter the #rows and #cols for matrix A: ");
-            scanf("%d%d", &rowA, &colA);
-
-            printf("\n\tEnter elements of Matrix A a %d x %d matrix.\n", rowA, colA); // with the %d we remember the user the dimentions of the array
-            readMatrix(matrixA, rowA, colA);
-            printf("\n\t\tMatrix A\n\n");
-            printMatrix(matrixA, rowA, colA);
-
-            printf("\nThe scalar multiplication between matrixA * %d is: \n", scalar);
-            matrixScalarMultiply(matrixA, scalar, rowA, colA);
-
-
-    return 0;
+    trans(a,b,m);
+    getch();
 }
