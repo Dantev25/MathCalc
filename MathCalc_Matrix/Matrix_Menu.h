@@ -1,11 +1,11 @@
 #ifndef MATRIX_MENU_H_INCLUDED
 #define MATRIX_MENU_H_INCLUDED
 
-#include"MathCalc_Matrix\matrixAddition.h"
-#include"MathCalc_Matrix\matrixMultiplication.h"
-#include"MathCalc_Matrix\matrixScalarMultiplication.h"
-#include"MathCalc_Matrix\matrixSubtraction.h"
-#include"MathCalc_Matrix\matrixTranspose.h"
+#include"MathCalc_Matrix\Matrix_Addition.h"
+#include"MathCalc_Matrix\Matrix_Multiplication.h"
+#include"MathCalc_Matrix\Matrix_ScalarMultiplication.h"
+#include"MathCalc_Matrix\Matrix_Subtraction.h"
+#include"MathCalc_Matrix\Matrix_Transpose.h"
 
 
 void matrixMenu()
