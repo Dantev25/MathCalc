@@ -33,7 +33,7 @@
         printf("\n");
 
     }
-
     trans(a,b,m);
     getch();
+
 }

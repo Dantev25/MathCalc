@@ -2,14 +2,14 @@ Project name :MathCalc
 
 Parts:
 file structure - done
-repository 
-sections
+repository - done
+sections - done
 
 Git:
-	clone 
+	clone done
 	branching
-	git ignore
-	undo commits
+	git ignore ok
+	undo commits 
 
 explaining the codes
 validation and verification
@@ -21,9 +21,14 @@ limitations:
 Add readme.txt file:
 
 Matrix(Mrishana):
+matrix add - done
+det
+inv
+transpose
 
-Quadratics(Oomar):
- 
+Polynomials(Oomar):
+
+
 Area and Volume(Sadiyah): 
 integration if possible
 
