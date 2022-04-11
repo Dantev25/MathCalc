@@ -2,12 +2,35 @@
 #define MATRIX_SUBTRACTION_INCLUDED
 #include<math.h>
 
+//User Defined Function Definition
+void readMatrix(int array[10][10], int rows, int colums){
+    int i, j;
+    for (i = 0; i < rows; i++){
+        printf("\t%d entries for row %d: ", colums, i + 1);
+        for (j = 0; j < colums; j++){
+            scanf("%d", &array[i][j]);
+        }
+    }
+
+    return;
+}
+
+void printMatrix(int array[10][10], int rows, int colums){
+    int i, j;
+
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < colums; j++){
+            printf("\t%d", array[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 
 void matrixSub(int arrayone[10][10], int arraytwo[10][10], int rows, int colums, int mul){
     int i, j;
     int sumM[10][10];
     int scaM[10][10];
-    FILE *fptr;
     for (i = 0; i < rows; i++){
         for (j = 0; j < colums; j++){
             scaM[i][j] = mul * arraytwo[i][j];
@@ -22,30 +45,6 @@ void matrixSub(int arrayone[10][10], int arraytwo[10][10], int rows, int colums,
         }
         printf("\n");
     }
-
-    fptr = (fopen("SE_MATRIX/matrixLog.txt","w"));
-    
-    if(fptr==NULL){
-        printf("Error!");
-        exit(1);
-    }
-
-    fprintf(fptr,"Matrix Operation = Subtraction\n");
-    fprintf("\nOutput Matrix:\n\n");
-
-      for (i = 0; i < rows; i++){
-        for (j = 0; j < colums; j++){
-            scaM[i][j] = mul * arraytwo[i][j];
-            }
-        }
-
-
-    for (i = 0; i < rows; i++){
-        for (j = 0; j < colums; j++){
-            sumM[i][j] = arrayone[i][j] + scaM[i][j];
-            fprintf("\t%d", sumM[i][j]);
-        }
-        fprintf("\n");
-    }
 }
+
 #endif
