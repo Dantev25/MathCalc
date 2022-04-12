@@ -1,58 +1,45 @@
 #ifndef MATRIX_ADDITION_H_INCLUDED
 #define MATRIX_ADDITION_H_INCLUDED
-#include<math.h>
-#include<stdio.h>
-#include<stdlib.h>
 
-//User Defined Function Declaration
-void readMatrix(int array[10][10], int rows, int colums);
-void printMatrix(int array[10][10], int rows, int colums);
-void matrixAdd(int arrayone[10][10], int arraytwo[10][10], int rows, int colums, int mul);
 
-//User Defined Function Definition
-void readMatrix(int array[10][10], int rows, int colums){
-    int i, j;
-    for (i = 0; i < rows; i++){
-        printf("\t%d entries for row %d: ", colums, i + 1);
-        for (j = 0; j < colums; j++){
-            scanf("%d", &array[i][j]);
-        }
+int addition() {
+  int r, c, a[100][100], b[100][100], sum[100][100], i, j;
+  printf("Enter the number of rows (between 1 and 100): ");
+  scanf("%d", &r);
+  printf("Enter the number of columns (between 1 and 100): ");
+  scanf("%d", &c);
+
+  printf("\nEnter elements of 1st matrix:\n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("Enter element a%d%d: ", i + 1, j + 1);
+      scanf("%d", &a[i][j]);
     }
 
-    return;
-}
-
-void printMatrix(int array[10][10], int rows, int colums){
-    int i, j;
-
-    for (i = 0; i < rows; i++) {
-        for (j = 0; j < colums; j++){
-            printf("\t%d", array[i][j]);
-        }
-        printf("\n");
+  printf("Enter elements of 2nd matrix:\n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("Enter element b%d%d: ", i + 1, j + 1);
+      scanf("%d", &b[i][j]);
     }
-}
 
-
-void matrixAdd(int arrayone[10][10], int arraytwo[10][10], int rows, int colums, int mul){
-    int i, j;
-    int sumM[10][10];
-    int scaM[10][10];
-    for (i = 0; i < rows; i++){
-        for (j = 0; j < colums; j++){
-            scaM[i][j] = mul * arraytwo[i][j];
-            }
-        }
-
-
-    for (i = 0; i < rows; i++){
-        for (j = 0; j < colums; j++){
-            sumM[i][j] = arrayone[i][j] + scaM[i][j];
-            printf("\t%d", sumM[i][j]);
-        }
-        printf("\n");
+  // adding two matrices
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      sum[i][j] = a[i][j] + b[i][j];
     }
+
+  // printing the result
+  printf("\nSum of two matrices: \n");
+  for (i = 0; i < r; ++i)
+    for (j = 0; j < c; ++j) {
+      printf("%d   ", sum[i][j]);
+      if (j == c - 1) {
+        printf("\n\n");
+      }
+    }
+
+  return 0;
 }
 
 #endif
-

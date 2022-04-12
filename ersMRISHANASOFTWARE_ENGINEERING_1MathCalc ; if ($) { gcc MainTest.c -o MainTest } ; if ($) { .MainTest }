@@ -1,0 +1,264 @@
+[33mcommit b412e4b3e6513b6fe2d035b5f56803e877c3b05d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:59:39 2022 +0400
+
+    Updated Matrix_Menu after renaming Matrix Folder.
+
+[33mcommit 7d2b00e86bd477b986fc062e11059b8622d71406[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:57:55 2022 +0400
+
+    Renamed Matrix Folder
+
+[33mcommit ef2231edd8e18498380d8fcc40383fa38f1e32b2[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:54:18 2022 +0400
+
+    Updated Matrix Menu
+
+[33mcommit 7cdf8cad6aacaca56328940e2120b699c857976f[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:46:59 2022 +0400
+
+    Cleared MainTest.
+
+[33mcommit 629de3cc092ecb942efa004ee0cfca1137391844[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:46:40 2022 +0400
+
+    Cleared MainTest.
+
+[33mcommit f31eafa9fc95e033e61b400826771eb0ddd95607[m
+Merge: dd61dba 48be0dc
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:45:42 2022 +0400
+
+    Added Matrix Tranpose code and tested in MainTest.
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit dd61dbaa64be9b052121c693c36681ea4a029c3a[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 15:39:20 2022 +0400
+
+    Added codes for Matrix Transpose and tested in MainTest.
+
+[33mcommit 48be0dc6775442a110bf8c3e27810972f842d788[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 11 15:02:00 2022 +0400
+
+    updated gitignore
+
+[33mcommit 871f8f2bc7f9647aa88dc15a4962b3f7587d37aa[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 11 15:00:46 2022 +0400
+
+    updated gitignore
+    removed file_view.h
+
+[33mcommit 58b5abdee53ae7235043f163eb69847fb8dac6d5[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 11 14:59:38 2022 +0400
+
+    cleared MainTest
+
+[33mcommit 8f598d075d85f28eb3e0c4e96d8dd35989aadf61[m
+Merge: 77bcf19 542996d
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 11 14:55:00 2022 +0400
+
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit 77bcf19f93a2396c33052dfc278a3ef75e9ee1b1[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 11 14:54:34 2022 +0400
+
+    Updated Checklist
+
+[33mcommit 542996dd66a0f0e78e13c26add1e258aa36a89b1[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 11:42:17 2022 +0400
+
+    Modifies Matrix Scalar Multiplication Code and tested in MainTest.
+
+[33mcommit 430530249ec15f8c972bc16e5b56b59aa84e1ae1[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 11:35:14 2022 +0400
+
+    Modified Matrix Addition Code and tested in MainTest.
+
+[33mcommit b89950ee6def566923effa95d726a59ba8a71b01[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 11:31:10 2022 +0400
+
+    Modified Matrix Subtraction Code and tested in MainTest.
+
+[33mcommit 00b79002fd59af7ed14bd3fa72a90dd087fe9ddc[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 11:16:10 2022 +0400
+
+    MainTest.exe
+
+[33mcommit 8f7e6e9502ef58c69a21df4fd3468a294c921ba0[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Mon Apr 11 11:15:31 2022 +0400
+
+    Modified Matrix multiplication code and tested in MainTest.
+
+[33mcommit 93d8df91a2c0b43ee8d8d8e5b5777df43722d608[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 23:17:14 2022 +0400
+
+    updated Ar_Vol_Log.txt.
+
+[33mcommit 55608246c23f6412015a885f09c0e2df2d610b8b[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 23:16:43 2022 +0400
+
+    Added calculations for cone and tested in main.
+
+[33mcommit 3d119e1d51587f81df290e0e1610b0747df58d88[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 23:00:02 2022 +0400
+
+    corrected code for pyramid.
+
+[33mcommit fead074793bbe28b024b2df54a6a7de4ae8e4a62[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 22:50:47 2022 +0400
+
+    updated Ar_Vol_Log.txt
+
+[33mcommit 55b75e89a3e5f1ae309b8ef7d26e9c8a2d0ce0c5[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 22:50:08 2022 +0400
+
+    Added calculation for pyramid
+
+[33mcommit 4913efee872a05eeb7c1d16eabba8d28f26029a2[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 22:06:08 2022 +0400
+
+    ...
+
+[33mcommit 526b082f4ed08a0c3cdd4825d034918b6c5a8cd2[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 22:03:36 2022 +0400
+
+    added files to gitignore
+
+[33mcommit be2b1d47a10073d86962264630af169b698a6416[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 21:53:38 2022 +0400
+
+    created .gitignore file
+
+[33mcommit 1f5e090005c99d83d441596be48a59aee1361f95[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 19:27:57 2022 +0400
+
+    corrected variable and function names
+
+[33mcommit be527f0e74726d89720eaff32e7dc5d4e9711d6c[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 19:26:20 2022 +0400
+
+    Implemented base equation
+    for polynomial multiplication
+
+[33mcommit 179f66eb58023efca1815d7ba1cd5d81e6c326e5[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 19:25:00 2022 +0400
+
+    Implemented base logic for finding
+     quadratic roots
+
+[33mcommit 99dd4157129e2fb6fad5e3d3d546042d17035f39[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 19:24:30 2022 +0400
+
+    corrected initialisation phase and grammar
+
+[33mcommit f57c431541a6cc16c232ae01f8d97bd3cf823fcc[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 16:30:10 2022 +0400
+
+    details added in Ar_Vol_Log.txt
+
+[33mcommit 78bacef1a03c21c8b3c235a38c7e3189489383cd[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 16:29:10 2022 +0400
+
+    tested for cylinder in MainTest.c
+
+[33mcommit 63b5775a686aa12bb090ca05991633e8f4d9a40c[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 16:28:34 2022 +0400
+
+    Added calculations for cylinder.
+
+[33mcommit 2756471d17dbd2cbddd41df1fa4d1a05438be254[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 16:27:54 2022 +0400
+
+    Cleared mainmodule.c
+
+[33mcommit 0c00075cfe329cc151fab608c670da57e3d33e7a[m
+Merge: c16f6d7 8b6189c
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 16:10:28 2022 +0400
+
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit c16f6d7514b2f27d7e73ee028b61ae9f36e22128[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 16:09:25 2022 +0400
+
+    Updated codes for matrix Menu.
+
+[33mcommit e6b87ac1b05fa19587f4bf64b764fca0a2eee228[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:59:45 2022 +0400
+
+    Updated file path following renaming of matrix log
+
+[33mcommit 8b6189c4ff976e35cfe2426a832e7d0d45fdf783[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 15:55:34 2022 +0400
+
+    updated codes for cube and cuboid
+
+[33mcommit 6c829a04f07171a4bfd61ccaad3cb05411a63655[m
+Merge: e66a244 a10e799
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 15:45:23 2022 +0400
+
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit a10e79980b4d364306ee805615e45125f512e84f[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 15:44:29 2022 +0400
+
+    Introduced a dummy main for testing
+
+[33mcommit 2e96a31aafc4d40a6fd5a7f16b45b030d1995abc[m
+Merge: c9ee76a 5c85670
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:38:10 2022 +0400
+
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit c9ee76a48d17e877cd6d7fa2de747e04b2484059[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:38:02 2022 +0400
+
+    Renamed log and menu.
+
+[33mcommit 1ccf6a7bde754eb80d69ff8649f145afd4197e74[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:36:43 2022 +0400
+
+    Added library to Matrix Scalar Multiplication.
+
+[33mcommit e66a244ee6b455c040026070895ad304dbc541b1[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 1
