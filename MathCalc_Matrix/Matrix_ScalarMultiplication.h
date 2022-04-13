@@ -40,3 +40,5 @@ int scalarmultiplication()
   	}
  	return 0;
 }
+
+#endif

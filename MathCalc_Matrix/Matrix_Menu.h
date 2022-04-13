@@ -1,18 +1,16 @@
 #ifndef MATRIX_MENU_H_INCLUDED
 #define MATRIX_MENU_H_INCLUDED
 
-#include"MathCalc_Matrix\Matrix_Addition.h"
-#include"MathCalc_Matrix\Matrix_Determinant.h"
-#include"MathCalc_Matrix\Matrix_Inverse.h"
-#include"MathCalc_Matrix\Matrix_Multiplication.h"
-#include"MathCalc_Matrix\Matrix_ScalarMultiplication.h"
-#include"MathCalc_Matrix\Matrix_Subtraction.h"
-#include"MathCalc_Matrix\Matrix_Transpose.h"
+#include"Matrix_Addition.h"
+#include"Matrix_Determinant.h"
+#include"Matrix_Inverse.h"
+#include"Matrix_Multiplication.h"
+#include"Matrix_ScalarMultiplication.h"
+#include"Matrix_Subtraction.h"
+#include"Matrix_Transpose.h"
 
-#include<stdio.h>
-#include<ctype.h>
-#include<math.h>
-#include<stdlib.h>
+
+
 
 int matrixMenu()
 {
