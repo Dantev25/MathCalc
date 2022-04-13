@@ -5,10 +5,12 @@ int viewFile()
 {
     int c,choice;
     FILE * ptr;
+    FILE * ptr1;
+    FILE * ptr2;
 
     printf("Which section's log file would you like to view:\n");
     printf("1. Matrix operations\n2. Polynomial operations\n3. 2d and 3d shapes operations\n");
-    printf("4. Exit");
+    printf("4. Exit\n\n");
     printf("Input your choice: ");
     scanf("%d",&choice);
 
@@ -26,8 +28,6 @@ int viewFile()
             while((c=fgetc(ptr))!=EOF){
                 printf("%c",c);
             }
-
-            fclose(fptr);
             break;
         
         case 2:
@@ -40,9 +40,7 @@ int viewFile()
             } 
             while((c=fgetc(ptr))!=EOF){
                 printf("%c",c);
-            }
-
-            fclose(fptr);
+            } 
             break;
 
         case 3:
@@ -56,8 +54,6 @@ int viewFile()
             while((c=fgetc(ptr))!=EOF){
                 printf("%c",c);
             }
-
-            fclose(fptr);
             break;
         
         default:
@@ -66,5 +62,6 @@ int viewFile()
             break;
         }
     }
-
+    return 0;
+}
 #endif
