@@ -7,6 +7,11 @@ float rhombus()
 {
     float side, x, d1, d2, area, perimeter, a;
     int choice;
+    time_t t;   // not a primitive datatype
+    time(&t);
+
+    FILE *fptr;
+    fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
     printf("By which method would you like to carry the operations for rhombus:\n");
     printf("1. By using angle\n2. By using diagonal");
@@ -44,6 +49,14 @@ float rhombus()
 
         printf("\nArea of rhombus = %.2f\n",area);
         printf("perimeter of rhombus = %.2f\n",perimeter);
+
+        fprintf(fptr,"executed on: %s",ctime(&t));
+        fprintf(fptr,"Shape = rhombus\n");
+        fprintf(fptr,"length of side = %.2f, angle (in radians) = %.3f\n",side,x);
+        fprintf(fptr,"Calculated diagonal 1 = %.2f, calculated diagonal 2 = %.2f\n",d1,d2);
+        fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+
+        fclose(fptr);
         break;
 
     case 2:
@@ -71,6 +84,14 @@ float rhombus()
 
         printf("\nArea of rhombus = %.2f\n",area);
         printf("perimeter of rhombus = %.2f\n",perimeter);
+
+        fprintf(fptr,"executed on: %s",ctime(&t));
+        fprintf(fptr,"Shape = rhombus\n");
+        fprintf(fptr,"length of side = %.2f, diagonal 1 = %.2f\n",side,d1);
+        fprintf(fptr,"calculated diagonal 2 = %.2f\n",d2);
+        fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+
+        fclose(fptr);
         break;
     
     default:
