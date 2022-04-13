@@ -12,7 +12,7 @@
 
 
 
-int matrixMenu()
+int MatrixMenu()
 {
     int operation;
     char again = 'Y';
