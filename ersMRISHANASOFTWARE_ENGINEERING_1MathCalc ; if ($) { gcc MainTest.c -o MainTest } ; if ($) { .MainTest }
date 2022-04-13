@@ -261,4 +261,209 @@ Date:   Sun Apr 10 15:36:43 2022 +0400
 
 [33mcommit e66a244ee6b455c040026070895ad304dbc541b1[m
 Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
-Date:   Sun Apr 10 1
+Date:   Sun Apr 10 15:35:28 2022 +0400
+
+    Added codes for parallellogram to write in .txt file and include time.
+
+[33mcommit 21df8cb01c0036a60ae1ba548eb49c447deb3fa9[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:32:10 2022 +0400
+
+    Added calculations to Matrix Subtraction.
+
+[33mcommit 56e9859fe8ecfecd544495391634c45a1f380d97[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:30:59 2022 +0400
+
+    Added calculations to Matrix Scalar Multiplication
+
+[33mcommit 728d983614f4b7f0d400646ea0f5d83aa87deb8d[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:28:55 2022 +0400
+
+    Added Calculations to Matrix Menu.
+
+[33mcommit 03f485ad5b972532097b3a9a02c6cf0ec76f7360[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:27:25 2022 +0400
+
+    Added matrix log.
+
+[33mcommit f0d61a9596fbc05330108b225f55ce62ce9c114f[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:26:16 2022 +0400
+
+    Added calculations for Matrix Multiplication.
+
+[33mcommit f21445bcb6c932d22f8823a5a15be7e2d05491e7[m
+Author: Mrishana Rajanah <mrishanar2712@gmail.com>
+Date:   Sun Apr 10 15:25:44 2022 +0400
+
+    Added calculations for Matrix Addition.
+
+[33mcommit 5c85670f07a1c0763d2dd90a88f5255333bdaf96[m
+Merge: c8da95b ec7978b
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 15:19:37 2022 +0400
+
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit c8da95bf1031f9c4b6f6a3fa282889285862d934[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 15:19:17 2022 +0400
+
+    updated validation for rectangle
+
+[33mcommit 4b82686a705c06a98f81670a35ca706035b1e26e[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 15:08:45 2022 +0400
+
+    Added codes for circle to write details in .txt file and include time.
+
+[33mcommit ec7978bbc365141c116dd449611c63f13560eefd[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sun Apr 10 15:02:44 2022 +0400
+
+    corrected logic for polynomial addition and subs
+
+[33mcommit d71cbe8fc12b3e447a4bacbe7285912d4094bf1e[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sun Apr 10 14:49:59 2022 +0400
+
+    Added codes for rectangle to write in .txt file and to include time.
+
+[33mcommit 462566767a6f11e45668806bf27ea1db873e228a[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sat Apr 9 21:58:16 2022 +0400
+
+    renamed quadratic folder and modules
+    to polynomial to
+    better match functionality
+
+[33mcommit b08006d264ccd4ad76c51c90e25524495e995ed6[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sat Apr 9 21:54:20 2022 +0400
+
+    Added base logic for quadratic add
+     and subtraction
+
+[33mcommit c93af6832b21cdbf0bcb063c525c1f0a503c755a[m
+Merge: 6c331cb 3ca849a
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sat Apr 9 21:51:22 2022 +0400
+
+    Merge branch 'master' of https://github.com/Dantev25/MathCalc
+
+[33mcommit 6c331cbfd380ec31130b73552c112f2955312f41[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Sat Apr 9 21:50:40 2022 +0400
+
+    testing quad()
+
+[33mcommit 3ca849a9c99b998e4126ffb9fbcf94c6045d6d98[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sat Apr 9 15:49:52 2022 +0400
+
+    Added view file for Ar_Vol_Log.txt and tested in main.
+
+[33mcommit 9a42d42fc7d78eb260effab9cf1c20176bba2fee[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sat Apr 9 15:28:20 2022 +0400
+
+    sphere details added in .txt file.
+
+[33mcommit 184208fe152a5c575fb60b699d72d00ee90ad590[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sat Apr 9 15:27:01 2022 +0400
+
+    Tested for sphere in main
+
+[33mcommit 34e6df482ddee28abad03c5abc739c743cdfc051[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Sat Apr 9 15:25:08 2022 +0400
+
+    Added calculations for sphere, including date and time, and details in .txt file.
+
+[33mcommit 0da4d2585f8f85f5e3bd39e52c00aa8e49b58919[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Fri Apr 8 14:56:08 2022 +0400
+
+    Added date and time in .txt file for square.
+
+[33mcommit 5622fb9d456709e8fd673942f50bfe3588c66568[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Thu Apr 7 12:14:48 2022 +0400
+
+    Tested for triangle and square in the main and .txt file.
+
+[33mcommit d46ceca04c321df15b3cc22c4ec8fd6a8a8076c6[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Thu Apr 7 12:11:46 2022 +0400
+
+    Added square details to .txt file.
+
+[33mcommit 7e0ff9a7f93bd6b89acc0046f565a424d6c959b7[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Thu Apr 7 12:08:50 2022 +0400
+
+    Added calculation for area and perimeter of triangle. Added details for triangle in .txt file.
+
+[33mcommit b85d3ce012f367918fc95d9472d4b79881c2fe82[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Thu Apr 7 05:33:34 2022 +0400
+
+    Added calculations for surface area and volume of cube and cuboid.
+
+[33mcommit 97b4a5b8d845c06da09be93639f4d678895966b5[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Wed Apr 6 05:56:31 2022 +0400
+
+    Added area and perimeter calculation for rhombus
+
+[33mcommit e4b0bfbc5aad9b0f7acd29cfb8eb7fdd55b19915[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Wed Apr 6 05:32:23 2022 +0400
+
+    Added area and perimeter calculations for parallellogram
+
+[33mcommit f3419efdab54aa345d35d2d22d1e18e307478e21[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Tue Apr 5 21:33:49 2022 +0400
+
+    Added validation for square, rectangle and circle
+
+[33mcommit 774bb843f2361486ab7a5a3b185da35cde596bb4[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Tue Apr 5 16:19:28 2022 +0400
+
+    Added area and perimeter calculations for circle
+
+[33mcommit cade7d435c20606c493830a34e8485290f006499[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Tue Apr 5 14:54:48 2022 +0400
+
+    Added area and perimeter calculations for rectangle
+
+[33mcommit ad5c7a0279d0e321d85176b07409974ab07fd81b[m
+Author: Sadiyahk25 <sadiyahkholeepa@gmail.com>
+Date:   Tue Apr 5 14:29:00 2022 +0400
+
+    Added area and perimeter calculations for square
+
+[33mcommit 143c7723314a6cc0259f244d2233a1f2c671612c[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 4 16:17:50 2022 +0400
+
+    Created TEMP file to store checklists
+
+[33mcommit e92d1ce8f2fe3ea293b6bfdb6c8e57506a80111a[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 4 16:10:23 2022 +0400
+
+    Created main, header and text files and general file structure
+
+[33mcommit d7572af09eff6fc21ed6211608a94eec0e9f4832[m
+Author: Dantev25 <oomargingo@gmail.com>
+Date:   Mon Apr 4 15:54:24 2022 +0400
+
+    Created repository
