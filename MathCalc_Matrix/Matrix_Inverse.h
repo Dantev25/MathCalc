@@ -13,7 +13,7 @@ int inverse()
 
   printf("Enter the order of the Matrix: ");
   scanf("%f", &n);
-  printf("Enter the elements of a matrix: \n");
+  printf("\nEnter the elements of a matrix: \n");
   for (i = 0;i < n; i++)
     {
      for (j = 0;j < n; j++)
@@ -131,14 +131,14 @@ void itranspose(float num[25][25], float fac[25][25], float r)
         }
     }
 
-   printf("\nThe inverse of matrix: \n");
+   printf("\nThe inverse of matrix: \n\n");
    for (i = 0;i < r; i++)
     {
      for (j = 0;j < r; j++)
        {
-         printf(" %.2f ", inverse[i][j]);
+         printf("\t%.2f  ", inverse[i][j]);
         }
-    printf("\n");
+    printf("\n\n");
      }
 }
 

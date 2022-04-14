@@ -58,7 +58,7 @@ int multiplication()
       }
     }
   
-    printf("Product of the matrices:\n\n");
+    printf("Product of the matrices :\n\n");
  
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++)

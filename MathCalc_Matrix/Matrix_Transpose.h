@@ -16,12 +16,12 @@ int transpose() {
   }
 
   // printing the matrix a[][]
-  printf("\nEntered matrix: \n");
+  printf("\nThe Matrix is \n\n");
   for (int i = 0; i < r; ++i)
   for (int j = 0; j < c; ++j) {
-    printf("%d  ", a[i][j]);
+    printf("\t%d  ", a[i][j]);
     if (j == c - 1)
-    printf("\n");
+    printf("\n\n");
   }
 
   // computing the transpose
@@ -31,12 +31,12 @@ int transpose() {
   }
 
   // printing the transpose
-  printf("\nTranspose of the matrix:\n");
+  printf("\nTranspose of the matrix is \n\n");
   for (int i = 0; i < c; ++i)
   for (int j = 0; j < r; ++j) {
-    printf("%d  ", transpose[i][j]);
+    printf("\t%d  ", transpose[i][j]);
     if (j == r - 1)
-    printf("\n");
+    printf("\n\n");
   }
   return 0;
 }
