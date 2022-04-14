@@ -60,7 +60,7 @@ int viewFile()
         }
 
         else{
-            printf("\nIncorrect option! Please choose a number between 1-3.\n");
+            printf("Incorrect Input!\nPlease choose a number between 1-3!");
         }
 
         printf("\n\nDo you want to view a Log File again? Y/N\n");
