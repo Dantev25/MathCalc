@@ -72,3 +72,28 @@ Output:
 
 	4  	16  
 
+Executed on: Thu Apr 14 15:07:43 2022
+
+Matrix Operation : Multiplication
+
+Input:
+First Matrix:
+
+	3	7
+
+	4	2
+
+
+Second Matrix:
+
+	4	5	1
+
+	6	2	7
+
+
+Output: 
+
+	54 	29 	52 
+
+	28 	24 	18 
+
