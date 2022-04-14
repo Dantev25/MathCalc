@@ -116,3 +116,17 @@ Output:
 
 	2  	3  
 
+Executed on: Thu Apr 14 15:33:23 2022
+
+Matrix Operation : Determinant
+
+Input:
+
+	3	6
+
+	4	7
+
+
+Output: 
+
+Determinant of the Matrix is 21. 
