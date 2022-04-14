@@ -67,7 +67,7 @@ int addition() {
       printf("Enter element b%d%d: ", i + 1, j + 1);
       scanf("%d", &b[i][j]);
     }
-  fprintf(fptr, "\nInput:\nSecond Matrix:\n\n");
+  fprintf(fptr, "\nSecond Matrix:\n\n");
   printf("\nThe Second Matrix is \n\n");
   printMatrix(b,r,c);
 
