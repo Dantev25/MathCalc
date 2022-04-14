@@ -1,15 +1,29 @@
 #ifndef MATRIX_INVERSE_H_INCLUDED
 #define MATRIX_INVERSE_H_INCLUDED
+FILE *fptr;
 
 //function prototype that are being created
 void icofactor(float [][25], float);
 float ideterminant(float [][25], float);
 void itranspose(float [][25], float [][25], float);
+void printIMatrix(float a[25][25], int r, int c);
 
 int inverse()
 {
   float a[25][25], n, d;
   int i, j;
+  time_t t;   
+  time(&t);
+
+  fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
+
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
+    }
+
+    fprintf(fptr,"\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"\nMatrix Operation : Inverse\n");
 
   printf("Enter the order of the Matrix: ");
   scanf("%f", &n);
@@ -22,12 +36,20 @@ int inverse()
         scanf("%f", &a[i][j]);
         }
     }
-
+  fprintf(fptr, "\nInput:\n\n");
+  printf("\nThe Matrix is \n\n");
+  printIMatrix(a, i, j);
   d = ideterminant(a, n);
-  if (d == 0)
+  if (d == 0){
+  fprintf(fptr, "\nOutput: \n");
+  printf("\nOutput: \n\n");
+   fprintf(fptr, "\nSince the determinant is zero (0), therefore inverse is not possible.\n");
    printf("\nSince the determinant is zero (0), therefore inverse is not possible.\n");
-  else
+  }
+  else{
    icofactor(a, n);
+  }
+   fclose(fptr);
 }
 
 // function for the calculation of determinant
@@ -130,16 +152,31 @@ void itranspose(float num[25][25], float fac[25][25], float r)
         inverse[i][j] = b[i][j] / d;
         }
     }
-
+   fprintf(fptr, "\nOutput: \n\n");
    printf("\nThe inverse of matrix: \n\n");
    for (i = 0;i < r; i++)
     {
      for (j = 0;j < r; j++)
        {
+         fprintf(fptr, "\t%.2f  ", inverse[i][j]);
          printf("\t%.2f  ", inverse[i][j]);
         }
+    fprintf(fptr, "\n\n");   
     printf("\n\n");
      }
+    
+}
+void printIMatrix(float a[25][25], int r, int c){
+    int i, j;
+
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < c; j++){
+            fprintf(fptr,"\t%d", a[i][j]);
+            printf("\t%.2f", a[i][j]);
+        }
+        fprintf(fptr, "\n\n");
+        printf("\n\n");
+    }
 }
 
 
