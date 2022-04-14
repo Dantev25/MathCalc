@@ -1,6 +1,16 @@
 #ifndef MATRIX_MULTIPLICATION_H_INCLUDED
 #define MATRIX_MULTIPLICATION_H_INCLUDED
 
+void printMmatrix(int a[10][10], int r, int c){
+    int i, j;
+
+    for (i = 0; i < r; i++) {
+        for (j = 0; j < c; j++){
+            printf("\t%d", a[i][j]);
+        }
+        printf("\n\n");
+    }
+} 
  
 int multiplication()
 {
@@ -12,22 +22,31 @@ int multiplication()
   printf("Enter elements of first matrix\n");
  
   for (c = 0; c < m; c++)
+  {
     for (d = 0; d < n; d++)
+    {
+      printf("Enter element a%d%d: ", c + 1, d + 1);
       scanf("%d", &first[c][d]);
- 
-  printf("Enter number of rows and columns of second matrix\n");
+    }
+  }  
+  printf("\nThe First Matrix is \n\n");
+  printMmatrix(first, c, d);
+  printf("\n\nEnter number of rows and columns of second matrix\n");
   scanf("%d%d", &p, &q);
  
   if (n != p)
-    printf("The multiplication isn't possible.\n");
+    printf("\nThe multiplication isn't possible.\n");
   else
   {
-    printf("Enter elements of second matrix\n");
+    printf("\nEnter elements of second matrix\n");
  
     for (c = 0; c < p; c++)
       for (d = 0; d < q; d++)
+      {
         scanf("%d", &second[c][d]);
- 
+      }
+  printf("\nThe Second Matrix is \n\n");
+  printMmatrix(second, c, d);
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++) {
         for (k = 0; k < p; k++) {
@@ -38,14 +57,14 @@ int multiplication()
         sum = 0;
       }
     }
- 
-    printf("Product of the matrices:\n");
+  
+    printf("Product of the matrices:\n\n");
  
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++)
-        printf("%d\t", multiply[c][d]);
+        printf("\t%d ", multiply[c][d]);
  
-      printf("\n");
+      printf("\n\n");
     }
   }
  
