@@ -28,7 +28,7 @@ int subtraction() {
    while(r <= 0)
    {
         printf("\nYou cannot have 0 or negative number of rows.\n Please input a positive integer not exceeding 10 : ");
-        scanf("%f",&r);
+        scanf("%d",&r);
     }
 
 
@@ -40,7 +40,7 @@ int subtraction() {
    while(c <= 0)
    {
         printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 10 : ");
-        scanf("%f",&c);
+        scanf("%d",&c);
     }
 
     fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
