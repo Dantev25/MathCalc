@@ -51,7 +51,7 @@ int subtraction() {
     }
 
     fprintf(fptr,"Executed on: %s",ctime(&t));
-    fprintf(fptr,"Matrix Operation : Subtraction\n");
+    fprintf(fptr,"\nMatrix Operation : Subtraction\n");
 
   printf("\nEnter elements of 1st matrix:\n");
   for (i = 0; i < r; ++i)

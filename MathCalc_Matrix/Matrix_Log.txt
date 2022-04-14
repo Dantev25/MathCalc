@@ -53,3 +53,22 @@ Output:
 
 	1   	1   
 
+Executed on: Thu Apr 14 14:55:35 2022
+Matrix Operation : Scalar Multiplication
+
+Input:
+
+	2	5
+
+	1	4
+
+
+Multiplication Value: 4
+
+
+Output: 
+
+	8  	20  
+
+	4  	16  
+
