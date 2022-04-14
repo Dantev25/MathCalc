@@ -7,13 +7,7 @@
 #include"MathCalc_Matrix\Matrix_Menu.h"
 #include"MathCalc_Files\File_View.h"
 
-
-
 int main()
 {
-<<<<<<< Updated upstream
-     MatrixMenu();
-=======
-     viewFile();
->>>>>>> Stashed changes
+
 }
