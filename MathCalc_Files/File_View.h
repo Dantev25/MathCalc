@@ -17,10 +17,10 @@ int viewFile()
         if(choice == 1){
             fptr = fopen("MathCalc_Matrix/Matrix_Log.txt","r");
             if(fptr == NULL){
-                printf("File not found\n");
+                printf("\nFile not found\n");
             }
             else{
-                printf("File opened in read mode\n\n");
+                printf("\nFile opened in read mode\n\n");
             } 
             while((c = fgetc(fptr)) != EOF){
                 printf("%c",c);
@@ -32,10 +32,10 @@ int viewFile()
         else if(choice == 2){
             fptr = fopen("MathCalc_Polynomial/Polynomial_Log.txt","r");
             if(fptr == NULL){
-                printf("File not found\n");
+                printf("\nFile not found\n");
             }
             else{
-                printf("File opened in read mode\n\n");
+                printf("\nFile opened in read mode\n\n");
             } 
             while((c = fgetc(fptr)) != EOF){
                 printf("%c",c);
@@ -47,10 +47,10 @@ int viewFile()
         else if(choice == 3){
             fptr = fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","r");
             if(fptr == NULL){
-                printf("File not found\n");
+                printf("\nFile not found\n");
             }
             else{
-                printf("File opened in read mode\n\n");
+                printf("\nFile opened in read mode\n\n");
             } 
             while((c = fgetc(fptr)) != EOF){
                 printf("%c",c);
@@ -60,7 +60,7 @@ int viewFile()
         }
 
         else{
-            printf("Incorrect Input!\nPlease choose a number between 1-3!");
+            printf("\nIncorrect Input!\nPlease choose a number between 1-3!");
         }
 
         printf("\n\nDo you want to view a Log File again? Y/N\n");
