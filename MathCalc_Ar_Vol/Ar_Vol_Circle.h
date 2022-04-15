@@ -33,7 +33,7 @@ float circle()
     fprintf(fptr,"executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Circle\n");
     fprintf(fptr,"INPUT:\n\tradius = %.2f\n",r);
-    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
+    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
 
     fclose(fptr);
 
