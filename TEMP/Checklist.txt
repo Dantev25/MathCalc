@@ -21,10 +21,13 @@ limitations:
 Add readme.txt file:
 
 Matrix(Mrishana):
-matrix add - done
-det
-inv
-transpose
+Matrix Addition               done
+Matrix Determinant            done
+Matrix Inverse                done
+Matrix Multiplication         done
+Matrix Scalar Multiplication  done
+Matrix Subtraction            done
+Matrix Transpose              done
 
 Polynomials(Oomar):
 
