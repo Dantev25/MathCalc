@@ -1,7 +1,5 @@
 #ifndef AR_VOL_CIRCLE_H_INCLUDED
 #define AR_VOL_CIRCLE_H_INCLUDED
-#include<math.h>
-#include <time.h>
 
 float circle()
 {
@@ -33,9 +31,9 @@ float circle()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = circle\n");
-    fprintf(fptr,"radius = %.2f\n",r);
-    fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+    fprintf(fptr,"Shape : Circle\n");
+    fprintf(fptr,"INPUT:\n\tradius = %.2f\n",r);
+    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
 
     fclose(fptr);
 
