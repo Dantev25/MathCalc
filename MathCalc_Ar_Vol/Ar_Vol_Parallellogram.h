@@ -1,6 +1,5 @@
 #ifndef AR_VOL_PARALLELLOGRAM_H_INCLUDED
 #define AR_VOL_PARALLELLOGRAM_H_INCLUDED
-#include<time.h>
 
 float parallellogram()
 {
@@ -10,15 +9,13 @@ float parallellogram()
 
     FILE *fptr;
 
-    printf("Enter the length of the side and base, and height of the parrallellogram:\n");
+    printf("Enter the length of the side and base of the parrallellogram:\n");
     printf("side = ");
     scanf("%f",&side);
     printf("base = ");
     scanf("%f",&base);
-    printf("height = ");
-    scanf("%f",&height);
 
-    while((side <= 0)||(base <= 0)||(height <= 0)){
+    while((side <= 0)||(base <= 0)){
         if(side <=0){
            printf("\nCan only input positive integer for side!\nInput again!\n");
            printf("side = ");
@@ -29,11 +26,15 @@ float parallellogram()
             printf("base = ");
             scanf("%f",&base);
         }
-        else if(height <= 0){
-            printf("\nCan only input positive integer for height!\nInput again!\n");
-            printf("height = ");
-            scanf("%f",&height);
-        }
+    }
+
+    printf("\nEnter the height of the parallellogram: ");
+    scanf("%f",&height);
+
+    while(height <= 0){
+        printf("\nCan only input positive integer for height!\nInput again!\n");
+        printf("height = ");
+        scanf("%f",&height);
     }
 
     area = base * height;
@@ -50,9 +51,9 @@ float parallellogram()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = parallellogram\n");
-    fprintf(fptr,"side = %.2f, base = %.2f, height = %.2f\n",side,base,height);
-    fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+    fprintf(fptr,"Shape : Parallellogram\n");
+    fprintf(fptr,"INPUT:\n\tside = %.2f, base = %.2f, height = %.2f\n",side,base,height);
+    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
 
     fclose(fptr);
 
