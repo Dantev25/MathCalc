@@ -1,101 +1,111 @@
 #ifndef AR_VOL_RHOMBUS_H_INCLUDED
 #define AR_VOL_RHOMBUS_H_INCLUDED
-#include<math.h>
-#include<time.h>
 
 float rhombus()
 {
     float side, x, d1, d2, area, perimeter, a;
     int choice;
+    char again = 'Y';
     time_t t;   // not a primitive datatype
     time(&t);
 
     FILE *fptr;
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
-    printf("By which method would you like to carry the operations for rhombus:\n");
-    printf("1. By using angle\n2. By using diagonal");
-    printf("\n\nInput your choice: ");
-    scanf("%d",&choice);
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
+    }
 
-    switch (choice)
-    {
-    case 1:
-        printf("Input the length of the side of the rhombus: ");
-        scanf("%f",&side);
+    while(again == 'Y'){
+        printf("By which method would you like to carry the operations for rhombus:\n");
+        printf("1. By using angle\n2. By using diagonal");
+        printf("\n\nInput your choice: ");
+        scanf("%d",&choice);
 
-        while(side <= 0){
-        printf("\nCan only input positive integer for length of the side!\nInput again: ");
-        scanf("%f",&side);
-        }
+        switch (choice)
+        {
+        case 1:
+            printf("Input the length of the side of the rhombus: ");
+            scanf("%f",&side);
 
-        printf("Input value of the angle (in radians): ");
-        scanf("%f",&x);
+            while(side <= 0){
+                printf("\nCan only input positive integer for length of the side!\nInput again: ");
+                scanf("%f",&side);
+            }
 
-        while((x <= 0)||(x >= M_PI)){
-            printf("Angle should have a value between 0 and pi!\nInput again: ");
+            printf("\nInput value of the angle (in radians): ");
             scanf("%f",&x);
-        }
 
-        a = pow(side,2);
-        d1 = sqrt(a + a - (2 * side * side * cos(x)));
-        d2 = sqrt((4 * a) - (pow(d1,2)));
+            while((x <= 0)||(x >= M_PI)){
+                printf("\nAngle should have a value between 0 and pi!\nInput again: ");
+                scanf("%f",&x);
+            }
 
-        printf("\nCalculated diagonal 1 = %.2f\n",d1);
-        printf("Calculated diagonal 2 = %.2f\n",d2);
+            a = pow(side,2);
+            d1 = sqrt(a + a - (2 * side * side * cos(x)));
+            d2 = sqrt((4 * a) - (pow(d1,2)));
 
-        area = (d1 * d2)/2;
-        perimeter = side * 4;
+            printf("\nCalculated diagonal 1 = %.2f\n",d1);
+            printf("Calculated diagonal 2 = %.2f\n",d2);
 
-        printf("\nArea of rhombus = %.2f\n",area);
-        printf("perimeter of rhombus = %.2f\n",perimeter);
+            area = (d1 * d2)/2;
+            perimeter = side * 4;
 
-        fprintf(fptr,"executed on: %s",ctime(&t));
-        fprintf(fptr,"Shape = rhombus\n");
-        fprintf(fptr,"length of side = %.2f, angle (in radians) = %.3f\n",side,x);
-        fprintf(fptr,"Calculated diagonal 1 = %.2f, calculated diagonal 2 = %.2f\n",d1,d2);
-        fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+            printf("\nArea of rhombus = %.2f\n",area);
+            printf("Perimeter of rhombus = %.2f\n",perimeter);
 
-        fclose(fptr);
-        break;
+            fprintf(fptr,"executed on: %s",ctime(&t));
+            fprintf(fptr,"Shape : Rhombus\n");
+            fprintf(fptr,"INPUT:\n\tlength of side = %.2f, angle (in radians) = %.3f\n",side,x);
+            fprintf(fptr,"OUTPUT:\n\tCalculated diagonal 1 = %.2f, calculated diagonal 2 = %.2f\n",d1,d2);
+            fprintf(fptr,"\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
 
-    case 2:
-        printf("Input the length of the side of the rhombus: ");
-        scanf("%f",&side);
+            fclose(fptr);
+            break;
 
-        while(side <= 0){
-        printf("\nCan only input positive integer for length of the side!\nInput again: ");
-        scanf("%f",&side);
-        }
+        case 2:
+            printf("Input the length of the side of the rhombus: ");
+            scanf("%f",&side);
 
-        printf("Input length of diagonal 1 of the rhombus: ");
-        scanf("%f",&d1);
+            while(side <= 0){
+                printf("\nCan only input positive integer for length of the side!\nInput again: ");
+                scanf("%f",&side);
+            }
 
-        while(d1 <= 0){
-        printf("\nCan only input positive integer for length of diagonal!\nInput again: ");
-        scanf("%f",&d1);
-        }
+            printf("\nInput length of diagonal 1 of the rhombus: ");
+            scanf("%f",&d1);
 
-        d2 = sqrt((4 * pow(side,2)) - (pow(d1,2)));
-        printf("\nCalculated diagonal 2 = %.2f\n",d2);
+            while(d1 <= 0){
+                printf("\nCan only input positive integer for length of diagonal!\nInput again: ");
+                scanf("%f",&d1);
+            }
 
-        area = (d1 * d2)/2;
-        perimeter = side * 4;
+            d2 = sqrt((4 * pow(side,2)) - (pow(d1,2)));
+            printf("\nCalculated diagonal 2 = %.2f\n",d2);
 
-        printf("\nArea of rhombus = %.2f\n",area);
-        printf("perimeter of rhombus = %.2f\n",perimeter);
+            area = (d1 * d2)/2;
+            perimeter = side * 4;
 
-        fprintf(fptr,"executed on: %s",ctime(&t));
-        fprintf(fptr,"Shape = rhombus\n");
-        fprintf(fptr,"length of side = %.2f, diagonal 1 = %.2f\n",side,d1);
-        fprintf(fptr,"calculated diagonal 2 = %.2f\n",d2);
-        fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+            printf("\nArea of rhombus = %.2f\n",area);
+            printf("Perimeter of rhombus = %.2f\n",perimeter);
 
-        fclose(fptr);
-        break;
+            fprintf(fptr,"executed on: %s",ctime(&t));
+            fprintf(fptr,"Shape : Rhombus\n");
+            fprintf(fptr,"INPUT:\n\tlength of side = %.2f, diagonal 1 = %.2f\n",side,d1);
+            fprintf(fptr,"OUTPUT:\n\tcalculated diagonal 2 = %.2f\n",d2);
+            fprintf(fptr,"\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
+
+            fclose(fptr);
+            break;
     
-    default:
-        break;
+        default:
+            printf("\nIncorrect option! Please choose a number between 1-2.\n");
+            break;
+        }
+        printf("\n\nDo you want to work with rhombus again? Y/N\n");
+        scanf(" %c", &again);
+        again = toupper(again);
     }
 
     return 0;
