@@ -2,7 +2,7 @@
 #define MATRIX_DETERMINANT_H_INCLUDED
 FILE *fptr;
 
-void printDmatrix(int a[10][10], int r, int c){
+void printDmatrix(int a[100][100], int r, int c){
     int i, j;
 
     for (i = 0; i < r; i++) {
@@ -16,7 +16,7 @@ void printDmatrix(int a[10][10], int r, int c){
 }  
 int determinant()
 {
-	 int a[10][10], x[10], ratio, det=1;
+	 int a[100][100], x[100], ratio, det=1;
 	 int i,j,k,n;
 	 time_t t;   
      time(&t);
@@ -29,18 +29,23 @@ int determinant()
     }
 
     fprintf(fptr,"Executed on: %s",ctime(&t));
-    fprintf(fptr,"\nMatrix Operation : Determinant\n");
+    fprintf(fptr,"\n\tMatrix Operation : Determinant\n");
 
-	 printf("\nEnter Order of Matrix: ");
+	 printf("\nEnter the Order of the Matrix : ");
 	 scanf("%d", &n);
-
+	//verifying if n is valid
+   while((n <= 0)||(n >= 100))
+   {
+        printf("\nYou cannot have 0 or negative order of matrix.\nPlease input a positive integer not exceeding 99 : ");
+        scanf("%d",&n);
+    }
 	 //Reading Matrix 
 	 printf("\nEnter Coefficients of Matrix: \n\n");
 	 for(i=0;i< n;i++)
 	 {
 		  for(j=0;j< n;j++)
 		  {
-			   printf("Enter element a[%d][%d]= ",i+1,j+1);
+			   printf("Enter Element a[%d][%d]= ",i+1,j+1);
 			   scanf("%d", &a[i][j]);
 		  }
 	 }
