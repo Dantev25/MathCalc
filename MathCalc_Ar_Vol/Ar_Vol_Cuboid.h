@@ -1,6 +1,5 @@
 #ifndef AR_VOL_CUBOID_H_INCLUDED
 #define AR_VOL_CUBOID_H_INCLUDED
-#include<time.h>
 
 float cuboid()
 {
@@ -50,9 +49,9 @@ float cuboid()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = cuboid\n");
-    fprintf(fptr,"length = %.2f, breadth = %.2f, height = %.2f\n",l,b,h);
-    fprintf(fptr,"Surface area = %.2f\nVolume = %.2f\n\n",sa,vol);
+    fprintf(fptr,"Shape : Cuboid\n");
+    fprintf(fptr,"INPUT\n\tlength = %.2f, breadth = %.2f, height = %.2f\n",l,b,h);
+    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
 
     fclose(fptr);
 

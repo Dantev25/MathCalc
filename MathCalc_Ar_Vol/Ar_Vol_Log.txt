@@ -1,12 +1,1 @@
-executed on: Thu Apr 14 22:47:46 2022
-Shape = cuboid
-length = 6.00, breadth = 3.00, height = 7.00
-Surface area = 162.00
-Volume = 126.00
-
-executed on: Thu Apr 14 22:48:59 2022
-Shape = cuboid
-length = 7.00, breadth = 4.60, height = 9.00
-Surface area = 273.20
-Volume = 289.80
 

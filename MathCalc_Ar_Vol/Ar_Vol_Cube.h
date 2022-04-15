@@ -1,6 +1,5 @@
 #ifndef AR_VOL_CUBE_H_INCLUDED
 #define AR_VOL_CUBE_H_INCLUDED
-#include<time.h>
 
 float cube()
 {
@@ -32,9 +31,9 @@ float cube()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = cube\n");
-    fprintf(fptr,"length of side = %.2f\n",x);
-    fprintf(fptr,"Surface area = %.2f\nVolume = %.2f\n\n",sa,vol);
+    fprintf(fptr,"Shape : Cube\n");
+    fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",x);
+    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
 
     fclose(fptr);
 

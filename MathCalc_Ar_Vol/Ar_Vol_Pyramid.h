@@ -1,7 +1,5 @@
 #ifndef AR_VOL_PYRAMID_H_INCLUDED
 #define AR_VOL_PYRAMID_H_INCLUDED
-#include<time.h>
-#include<math.h>
 
 float pyramid()
 {
@@ -31,7 +29,7 @@ float pyramid()
         }
     }
 
-    printf("Enter the height of the pyramid: ");
+    printf("\nEnter the height of the pyramid: ");
     scanf("%f",&h);
 
     while( h <= 0){
@@ -57,9 +55,9 @@ float pyramid()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = pyramid\n");
-    fprintf(fptr,"length of base = %.2f, breadth of base = %.2f, height = %.2f\n",l,b,h);
-    fprintf(fptr,"Surface area = %.2f\nVolume = %.2f\n\n",sa,vol);
+    fprintf(fptr,"Shape : Pyramid\n");
+    fprintf(fptr,"INPUT:\n\tlength of base = %.2f, breadth of base = %.2f, height = %.2f\n",l,b,h);
+    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 

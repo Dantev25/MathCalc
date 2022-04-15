@@ -23,16 +23,22 @@ int inverse()
     }
 
     fprintf(fptr,"\nExecuted on: %s",ctime(&t));
-    fprintf(fptr,"\nMatrix Operation : Inverse\n");
+    fprintf(fptr,"\n\tMatrix Operation : Inverse\n");
 
-  printf("Enter the order of the Matrix: ");
+  printf("Enter the Order of the Matrix : ");
   scanf("%f", &n);
-  printf("\nEnter the elements of a matrix: \n");
+  //verifying if n is valid
+   while((n <= 0)||(n >= 25))
+   {
+        printf("\nYou cannot have 0 or negative order of matrix.\nPlease input a positive integer not exceeding 24 : ");
+        scanf("%f",&n);
+    }
+  printf("\nEnter the Elements of the Matrix: \n");
   for (i = 0;i < n; i++)
     {
      for (j = 0;j < n; j++)
        {
-        printf("a[%d][%d]= ",i+1,j+1);
+        printf("Enter Element a[%d][%d]= ",i+1,j+1);
         scanf("%f", &a[i][j]);
         }
     }
@@ -171,7 +177,7 @@ void printIMatrix(float a[25][25], int r, int c){
 
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++){
-            fprintf(fptr,"\t%d", a[i][j]);
+            fprintf(fptr,"\t%.2f", a[i][j]);
             printf("\t%.2f", a[i][j]);
         }
         fprintf(fptr, "\n\n");
