@@ -2,7 +2,7 @@
 #define MATRIX_MULTIPLICATION_H_INCLUDED
 FILE *fptr;
 
-void printMmatrix(int a[10][10], int r, int c){
+void printMmatrix(int a[100][100], int r, int c){
     int i, j;
 
     for (i = 0; i < r; i++) {
@@ -18,7 +18,7 @@ void printMmatrix(int a[10][10], int r, int c){
 int multiplication()
 {
   int m, n, p, q, c, d, k, sum = 0;
-  int first[10][10], second[10][10], multiply[10][10];
+  int first[100][100], second[100][100], multiply[100][100];
   time_t t;   
   time(&t); 
 
@@ -30,14 +30,15 @@ int multiplication()
     }
 
     fprintf(fptr,"Executed on: %s",ctime(&t));
-    fprintf(fptr,"\nMatrix Operation : Multiplication\n");
+    fprintf(fptr,"\n\tMatrix Operation : Multiplication\n");
 
-      printf("Enter the Number of Rows : ");
+    printf("For the First Matrix\n");
+    printf("Enter the Number of Rows : ");
     scanf("%d", &m);
 	//verifying if m is valid
    while((m <= 0)||(m >= 100))
    {
-        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 100 : ");
+        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
         scanf("%d",&m);
     }
 
@@ -46,40 +47,60 @@ int multiplication()
 	 //verifying if n is valid
    while((n <= 0)||(n >= 100))
    {
-        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 100 : ");
+        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
         scanf("%d",&n);
     }
-  printf("Enter elements of first matrix\n");
+  printf("Enter Elements of first matrix\n");
  
   for (c = 0; c < m; c++)
   {
     for (d = 0; d < n; d++)
     {
-      printf("Enter element a%d%d: ", c + 1, d + 1);
+      printf("Enter Element a[%d][%d]: ", c + 1, d + 1);
       scanf("%d", &first[c][d]);
     }
   } 
   fprintf(fptr, "\nInput:\nFirst Matrix:\n\n"); 
   printf("\nThe First Matrix is \n\n");
   printMmatrix(first, c, d);
-  printf("\n\nEnter number of rows and columns of second matrix\n");
-  scanf("%d%d", &p, &q);
+
+  printf("For the Second Matrix\n");
+  printf("Enter the Number of Rows : ");
+  scanf("%d", &p);
+	//verifying if p is valid
+   while((p <= 0)||(p >= 100))
+   {
+        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
+        scanf("%d",&p);
+    }
+
+ 	printf("\nEnter the Number of Columns :");
+ 	scanf("%d", &q);
+	 //verifying if q is valid
+   while((q <= 0)||(q >= 100))
+   {
+        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
+        scanf("%d",&q);
+    }
  
-  if (n != p)
+  if (n != p){
     printf("\nThe multiplication isn't possible.\n");
+    fprintf(fptr, "\nThe multiplication isn't possible.\n");
+  }
   else
   {
-    printf("\nEnter elements of second matrix\n");
+    printf("\nEnter Elements of second matrix\n");
  
-    for (c = 0; c < p; c++)
+    for (c = 0; c < p; c++){
       for (d = 0; d < q; d++)
       {
-        printf("Enter element a%d%d: ", c + 1, d + 1);
+        printf("Enter Element a[%d][%d]: ", c + 1, d + 1);
         scanf("%d", &second[c][d]);
       }
-  fprintf(fptr, "\nSecond Matrix:\n\n");
-  printf("\nThe Second Matrix is \n\n");
-  printMmatrix(second, c, d);
+    }
+   fprintf(fptr, "\nSecond Matrix:\n\n");
+   printf("\nThe Second Matrix is \n\n");
+   printMmatrix(second, c, d);
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++) {
         for (k = 0; k < p; k++) {
@@ -103,9 +124,9 @@ int multiplication()
     printf("\n\n");
     }
   }
-fclose(fptr);
+ fclose(fptr);
 
-  return 0;
+ return 0;
 }
 
 #endif

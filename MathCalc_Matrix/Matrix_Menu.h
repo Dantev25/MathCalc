@@ -85,7 +85,7 @@ int MatrixMenu()
 
          case 8:
 
-           //viewFile();
+           viewFile();
 
             break;
 

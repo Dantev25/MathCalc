@@ -2,7 +2,7 @@
 #define MATRIX_SUBTRACTION_H_INCLUDED
 FILE *fptr;
 
-void printmatrix(int a[10][10], int r, int c){
+void printmatrix(int a[100][100], int r, int c){
     int i, j;
 
     for (i = 0; i < r; i++) {
@@ -17,7 +17,7 @@ void printmatrix(int a[10][10], int r, int c){
 
 
 int subtraction() {
-  int r, c, a[10][10], b[10][10], dif[10][10], i, j;
+  int r, c, a[100][100], b[100][100], dif[100][100], i, j;
   time_t t;   // not a primitive datatype
   time(&t);
   
@@ -27,7 +27,7 @@ int subtraction() {
  //verifying if r is valid
    while((r <= 0)||(r >= 100))
    {
-        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 100 : ");
+        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
         scanf("%d",&r);
     }
    
@@ -39,7 +39,7 @@ int subtraction() {
   //verifying if c is valid
    while((c <= 0)||(c>=100))
    {
-        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 100 : ");
+        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
         scanf("%d",&c);
     }
 
@@ -51,12 +51,12 @@ int subtraction() {
     }
 
     fprintf(fptr,"Executed on: %s",ctime(&t));
-    fprintf(fptr,"\nMatrix Operation : Subtraction\n");
+    fprintf(fptr,"\n\tMatrix Operation : Subtraction\n");
 
-  printf("\nEnter elements of 1st matrix:\n");
+  printf("\nEnter Elements of 1st matrix:\n");
   for (i = 0; i < r; ++i)
     for (j = 0; j < c; ++j) {
-      printf("Enter element a%d%d: ", i + 1, j + 1);
+      printf("Enter Element a[%d][%d]: ", i + 1, j + 1);
       scanf("%d", &a[i][j]);
     }
   
@@ -64,10 +64,10 @@ int subtraction() {
   printf("\nThe First Matrix is \n\n");
   printmatrix(a,r,c);
 
-  printf("Enter elements of 2nd matrix:\n");
+  printf("Enter Elements of 2nd matrix:\n");
   for (i = 0; i < r; ++i)
     for (j = 0; j < c; ++j) {
-      printf("Enter element b%d%d: ", i + 1, j + 1);
+      printf("Enter Element b[%d][%d]: ", i + 1, j + 1);
       scanf("%d", &b[i][j]);
     }
   fprintf(fptr, "\nSecond Matrix:\n\n");
