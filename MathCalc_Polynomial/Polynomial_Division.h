@@ -2,6 +2,7 @@
 #define POLYNOMIAL_DIVISION_H_INCLUDED
 
 #define MAX 99
+
 struct Node {
     float coeff;
     int pow;
@@ -214,12 +215,12 @@ void show(struct Node* node)
  
         // Otherwise
         else
-            printf("%.2f",abs(node->coeff));
+            printf("%.2f",fabs(node->coeff));
         count++;
  
         // Print polynomial power
         if (node->pow != 0)
-            printf("%dx^", node->pow);
+            printf("x^%d", node->pow);
         node = node->next;
  
         if (node->next != NULL)
@@ -307,63 +308,74 @@ int PolyDiv()
 {
     struct Node* poly1 = NULL;
     struct Node *poly2 = NULL, *poly = NULL;
-    int i,n1,n2;
-    float a, b;
-    
-    printf("Please input the degree (highest power) of the dividend:");
-    scanf("%d",&n1);
-    while (n1<0){
-        printf("Please input the degree (highest power) again, it cannot be negative:");
-        scanf("%d",&n1);
-    }
-    n1++;
-    printf("Please input the dividend (starting from highest power descending):\n");
-    for (i=0;i<n1;i++){
+ 
+    // Create 1st Polynomial (Dividend):
+    // 5x^2 + 4x^1 + 2
+    float a,b,c,d,e,f;
+    int i=2;
+    for (i=2;i>=0;i--){
         if (i==0){
             printf("Constant = ");
-            scanf("%f",&a);
-            create_node(a,i,&poly1);
+            scanf("%f",&c);
         }
         else if (i==1){
             printf("X = ");
-            scanf("%f",&a);
-            create_node(a,i,&poly1);
+            scanf("%f",&b);
         }
         else{
             printf("X^%d = ",i);
             scanf("%f",&a);      
-            create_node(a,i,&poly1);
         }
     }
-    printf("Please input the degree (highest power) of the divisor:");
-    scanf("%d",&n2);
-    while (n2<0){
-        printf("Please input the degree (highest power) again, it cannot be negative:");
-        scanf("%d",&n2);
-    }
-    n2++;
-    printf("Please input the divisor (starting from highest power descending):\n");
-    for (i=0;i<n2;i++){
+    for (i=2;i>=0;i--){
         if (i==0){
             printf("Constant = ");
-            scanf("%f",&b);
-            create_node(b,i,&poly2);
+            scanf("%f",&f);
         }
         else if (i==1){
             printf("X = ");
-            scanf("%f",&b);
-            create_node(b,i,&poly2);
+            scanf("%f",&e);
         }
         else{
             printf("X^%d = ",i);
-            scanf("%f",&b);     
-            create_node(b,i,&poly2); 
+            scanf("%f",&d);      
         }
     }
 
+    if(a!=0){
+        i=2;
+        create_node(a, i, &poly1);
+    }
+    if(b!=0){
+        i=1;
+        create_node(b, i, &poly1);
+    }
+    if(c!=0){
+        i=0;
+        create_node(c, i, &poly1);
+    }
+    
+    // Create 2nd Polynomial (Divisor):
+    // 5x^1 + 5
+    if(d!=0){
+        i=2;
+        create_node(d, i, &poly2);
+    }
+    if(e!=0){
+        i=1;
+        create_node(e, i, &poly2);
+    }
+    if(f!=0){
+        i=0;
+        create_node(f, i, &poly2);
+    }
+    show(poly1);
+    show(poly2);
+    // Function Call
     divide_poly(poly1, poly2);
  
     return 0;
+
 }
 
 #endif
