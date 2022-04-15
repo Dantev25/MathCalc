@@ -1,7 +1,5 @@
 #ifndef AR_VOL_CYLINDER_H_INCLUDED
 #define AR_VOL_CYLINDER_H_INCLUDED
-#include<time.h>
-#include<math.h>
 
 float cylinder()
 {
@@ -19,7 +17,7 @@ float cylinder()
         scanf("%f",&r);
     }
 
-    printf("Enter the height of the cylinder: ");
+    printf("\nEnter the height of the cylinder: ");
     scanf("%f",&h);
 
     while(h <= 0){
@@ -41,9 +39,9 @@ float cylinder()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = cylinder\n");
-    fprintf(fptr,"radius of circular base = %.2f, height = %.2f\n",r,h);
-    fprintf(fptr,"Surface area = %.2f\nVolume = %.2f\n\n",sa,vol);
+    fprintf(fptr,"Shape : Cylinder\n");
+    fprintf(fptr,"INPUT:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);
+    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
 
     fclose(fptr);
 
