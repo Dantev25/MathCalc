@@ -2,6 +2,7 @@
 #define POLYNOMIAL_DIVISION_H_INCLUDED
 
 #define MAX 99
+
 struct Node {
     float coeff;
     int pow;
@@ -214,12 +215,12 @@ void show(struct Node* node)
  
         // Otherwise
         else
-            printf("%.2f",abs(node->coeff));
+            printf("%.2f",fabs(node->coeff));
         count++;
  
         // Print polynomial power
         if (node->pow != 0)
-            printf("%dx^", node->pow);
+            printf("x^%d", node->pow);
         node = node->next;
  
         if (node->next != NULL)
@@ -235,10 +236,45 @@ void show(struct Node* node)
  
     printf("\n");
 }
+
+void PolySaveLinkList(struct Node* node, FILE *fptr)
+{
+    int count = 0;
+    while (node->next != NULL
+           && node->coeff != 0) {
+ 
+        // If count is non-zero, then
+        // print the positive value
+        if (count == 0)
+            fprintf(fptr,"%.2f",node->coeff);
+ 
+        // Otherwise
+        else
+            fprintf(fptr,"%.2f",fabs(node->coeff));
+        count++;
+ 
+        // Print polynomial power
+        if (node->pow != 0)
+            fprintf(fptr,"X^%d", node->pow);
+        node = node->next;
+ 
+        if (node->next != NULL)
+ 
+            // If coeff of next term
+            // > 0 then next sign will
+            // be positive else negative
+            if (node->coeff > 0)
+                fprintf(fptr," + ");
+            else
+                fprintf(fptr," - ");
+    }
+    fprintf(fptr,"\n");
+}
+
  
 // Function to divide two polynomials
 void divide_poly(struct Node* poly1,
-                 struct Node* poly2)
+                 struct Node* poly2, FILE *fptr)
 {
     // Initialize Remainder and Quotient
     struct Node *rem = NULL, *quo = NULL;
@@ -301,69 +337,168 @@ void divide_poly(struct Node* poly1,
     printf("Remainder: ");
     rem = q;
     show(rem);
+
+    fprintf(fptr,"Output: \n\tQuotient: ");
+    PolySaveLinkList(quo,fptr);
+    fprintf(fptr,"\tRemainder: ");
+    PolySaveLinkList(rem,fptr);
 }
 
 int PolyDiv()
 {
     struct Node* poly1 = NULL;
     struct Node *poly2 = NULL, *poly = NULL;
+    time_t t;   // not a primitive datatype
+    time(&t);
+
+    FILE *fptr;
+    // Create 1st Polynomial (Dividend):
+    // 5x^2 + 4x^1 + 2
+    float a0,a1,a2,a3,a4,a5,b0,b1,b2,b3,b4,b5;
     int i,n1,n2;
-    float a, b;
-    
-    printf("Please input the degree (highest power) of the dividend:");
+    printf("\nPlease input the degree (highest power) of the first expression:");
     scanf("%d",&n1);
     while (n1<0){
-        printf("Please input the degree (highest power) again, it cannot be negative:");
+        printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n1);
     }
     n1++;
-    printf("Please input the dividend (starting from highest power descending):\n");
-    for (i=0;i<n1;i++){
+    for (i=5;i>=0;i--){
         if (i==0){
             printf("Constant = ");
-            scanf("%f",&a);
-            create_node(a,i,&poly1);
+            scanf("%f",&a5);
         }
-        else if (i==1){
+        else if (i==1&&i<n1){
             printf("X = ");
-            scanf("%f",&a);
-            create_node(a,i,&poly1);
+            scanf("%f",&a4);
         }
-        else{
+        else if(i==2&&i<n1){
             printf("X^%d = ",i);
-            scanf("%f",&a);      
-            create_node(a,i,&poly1);
+            scanf("%f",&a3);      
+        }
+        else if(i==3&&i<n1){
+            printf("X^%d = ",i);
+            scanf("%f",&a2);      
+        }
+        else if(i==4&&i<n1){
+            printf("X^%d = ",i);
+            scanf("%f",&a1);      
+        }
+        else if(i==5&&i<n1){
+            printf("X^%d = ",i);
+            scanf("%f",&a0);      
         }
     }
-    printf("Please input the degree (highest power) of the divisor:");
+    printf("\nPlease input the degree (highest power) of the second expression:");
     scanf("%d",&n2);
     while (n2<0){
-        printf("Please input the degree (highest power) again, it cannot be negative:");
+        printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n2);
     }
     n2++;
-    printf("Please input the divisor (starting from highest power descending):\n");
-    for (i=0;i<n2;i++){
+    for (i=5;i>=0;i--){
         if (i==0){
             printf("Constant = ");
-            scanf("%f",&b);
-            create_node(b,i,&poly2);
+            scanf("%f",&b5);
         }
-        else if (i==1){
+        else if (i==1&&i<n2){
             printf("X = ");
-            scanf("%f",&b);
-            create_node(b,i,&poly2);
+            scanf("%f",&b4);
         }
-        else{
+        else if(i==2&&i<n2){
             printf("X^%d = ",i);
-            scanf("%f",&b);     
-            create_node(b,i,&poly2); 
+            scanf("%f",&b3);      
+        }
+        else if(i==3&&i<n2){
+            printf("X^%d = ",i);
+            scanf("%f",&b2);      
+        }
+        else if(i==4&&i<n2){
+            printf("X^%d = ",i);
+            scanf("%f",&b1);      
+        }
+        else if(i==5&&i<n2){
+            printf("X^%d = ",i);
+            scanf("%f",&b0);      
         }
     }
 
-    divide_poly(poly1, poly2);
- 
+    if(a0>0.0001){
+        i=5;
+        create_node(a0, i, &poly1);
+    }
+    if(a1>0.0001){
+        i=4;
+        create_node(a1, i, &poly1);
+    }
+    if(a2>0.0001){
+        i=3;
+        create_node(a2, i, &poly1);
+    }
+    if(a3>0.0001){
+        i=2;
+        create_node(a3, i, &poly1);
+    }
+    if(a4>0.0001){
+        i=1;
+        create_node(a4, i, &poly1);
+    }
+    if(a5>0.0001){
+        i=0;
+        create_node(a5, i, &poly1);
+    }
+    
+    if(b0>0.0001){
+        i=5;
+        create_node(b0, i, &poly2);
+    }
+    if(b1>0.0001){
+        i=4;
+        create_node(b1, i, &poly2);
+    }
+    if(b2>0.0001){
+        i=3;
+        create_node(b2, i, &poly2);
+    }
+    if(b3>0.0001){
+        i=2;
+        create_node(b3, i, &poly2);
+    }
+    if(b4>0.0001){
+        i=1;
+        create_node(b4, i, &poly2);
+    }
+    if(b5>0.0001){
+        i=0;
+        create_node(b5, i, &poly2);
+    }
+    printf("First expression input: ");
+    show(poly1);
+    printf("Second expression input: ");
+    show(poly2);
+    printf("\n");
+    // Function Call
+    fptr = (fopen("MathCalc_Polynomial/Polynomial_Log.txt","a"));
+    
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
+    }
+
+    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"Operation Done: Polynomial Addition\n");
+    fprintf(fptr,"Inputs: \n");
+    fprintf(fptr,"\tFirst expression : ");
+    PolySaveLinkList(poly1,fptr);
+    fprintf(fptr,"\tSecond expression : ");
+    PolySaveLinkList(poly2,fptr);
+
+    divide_poly(poly1, poly2,fptr);
+
+    fclose(fptr);
+
     return 0;
+
 }
 
 #endif
