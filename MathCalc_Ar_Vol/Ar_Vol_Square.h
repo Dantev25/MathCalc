@@ -1,6 +1,5 @@
 #ifndef AR_VOL_SQUARE_H_INCLUDED
 #define AR_VOL_SQUARE_H_INCLUDED
-#include<time.h>
 
 float square()
 {
@@ -32,9 +31,9 @@ float square()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = square\n");
-    fprintf(fptr,"length of side = %.2f\n",x);
-    fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+    fprintf(fptr,"Shape : Square\n");
+    fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",x);
+    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
 
     fclose(fptr);
 

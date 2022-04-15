@@ -1,7 +1,5 @@
 #ifndef AR_VOL_SPHERE_H_INCLUDED
 #define AR_VOL_SPHERE_H_INCLUDED
-#include<math.h>
-#include<time.h>
 
 float sphere()
 {
@@ -33,9 +31,9 @@ float sphere()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = sphere\n");
-    fprintf(fptr,"radius = %.2f\n",r);
-    fprintf(fptr,"Surface area = %.2f\nvolume = %.2f\n\n",sa,vol);
+    fprintf(fptr,"Shape : Sphere\n");
+    fprintf(fptr,"INPUT:\n\tradius = %.2f\n",r);
+    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tvolume = %.2f\n\n\n",sa,vol);
 
     fclose(fptr);
 
