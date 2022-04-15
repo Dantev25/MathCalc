@@ -171,7 +171,7 @@ void printIMatrix(float a[25][25], int r, int c){
 
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++){
-            fprintf(fptr,"\t%d", a[i][j]);
+            fprintf(fptr,"\t%.2f", a[i][j]);
             printf("\t%.2f", a[i][j]);
         }
         fprintf(fptr, "\n\n");
