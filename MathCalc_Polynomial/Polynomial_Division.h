@@ -236,10 +236,45 @@ void show(struct Node* node)
  
     printf("\n");
 }
+
+void PolySaveLinkList(struct Node* node, FILE *fptr)
+{
+    int count = 0;
+    while (node->next != NULL
+           && node->coeff != 0) {
+ 
+        // If count is non-zero, then
+        // print the positive value
+        if (count == 0)
+            fprintf(fptr,"%.2f",node->coeff);
+ 
+        // Otherwise
+        else
+            fprintf(fptr,"%.2f",fabs(node->coeff));
+        count++;
+ 
+        // Print polynomial power
+        if (node->pow != 0)
+            fprintf(fptr,"X^%d", node->pow);
+        node = node->next;
+ 
+        if (node->next != NULL)
+ 
+            // If coeff of next term
+            // > 0 then next sign will
+            // be positive else negative
+            if (node->coeff > 0)
+                fprintf(fptr," + ");
+            else
+                fprintf(fptr," - ");
+    }
+    fprintf(fptr,"\n");
+}
+
  
 // Function to divide two polynomials
 void divide_poly(struct Node* poly1,
-                 struct Node* poly2)
+                 struct Node* poly2, FILE *fptr)
 {
     // Initialize Remainder and Quotient
     struct Node *rem = NULL, *quo = NULL;
@@ -302,13 +337,21 @@ void divide_poly(struct Node* poly1,
     printf("Remainder: ");
     rem = q;
     show(rem);
+
+    fprintf(fptr,"Output: \n\tQuotient: ");
+    PolySaveLinkList(quo,fptr);
+    fprintf(fptr,"\tRemainder: ");
+    PolySaveLinkList(rem,fptr);
 }
 
 int PolyDiv()
 {
     struct Node* poly1 = NULL;
     struct Node *poly2 = NULL, *poly = NULL;
- 
+    time_t t;   // not a primitive datatype
+    time(&t);
+
+    FILE *fptr;
     // Create 1st Polynomial (Dividend):
     // 5x^2 + 4x^1 + 2
     float a,b,c,d,e,f;
@@ -369,11 +412,35 @@ int PolyDiv()
         i=0;
         create_node(f, i, &poly2);
     }
+    printf("First expression input: ");
     show(poly1);
+    printf("Second expression input: ");
     show(poly2);
+    printf("\n");
     // Function Call
-    divide_poly(poly1, poly2);
- 
+    fptr = (fopen("MathCalc_Polynomial/Polynomial_Log.txt","a"));
+    
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
+    }
+    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"Operation Done: Polynomial Addition\n");
+    fprintf(fptr,"Inputs: \n");
+    fprintf(fptr,"\tFirst expression : ");
+    PolySaveLinkList(poly1,fptr);
+    fprintf(fptr,"\tSecond expression : ");
+    PolySaveLinkList(poly2,fptr);
+
+
+    divide_poly(poly1, poly2,fptr);
+
+
+    
+    
+    
+    fclose(fptr);
+
     return 0;
 
 }

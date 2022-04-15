@@ -67,18 +67,17 @@ int QuadRoots()
     fprintf(fptr,"Operation Done: Quadratic Roots\n");
     fprintf(fptr,"Expression input: ");
     PolySave(3,a,fptr);
-    fprintf(fptr,"b^2 - 4ac = %d",beqn);
+    fprintf("Output:\n");
+    fprintf(fptr,"\tb^2 - 4ac = %d",beqn);
     if (beqn == 0){
-        fprintf(fptr,"\nEquation has only one root as b^2 - 4ac = 0\nRoot is at: X= %.2f",root1);
+        fprintf(fptr,"\n\tEquation has only one root as b^2 - 4ac = 0\n\tRoot is at: X= %.2f",root1);
     }
     else if(beqn>0){
-        fprintf(fptr,"\nEquation has two roots as b^2 - 4ac > 0\nRoots are at: \nRoot 1: X = %.2f\nRoot 2: X = %.2f",root1,root2);
+        fprintf(fptr,"\n\tEquation has two roots as b^2 - 4ac > 0\nRoots are at: \n\t\tRoot 1: X = %.2f\n\t\tRoot 2: X = %.2f",root1,root2);
     }
     else{
-        fprintf(fptr,"\nRoots are imaginary as b^2 - 4ac <0.");
+        fprintf(fptr,"\n\tRoots are imaginary as b^2 - 4ac <0.");
     }
-    
-
 }
 
 #endif

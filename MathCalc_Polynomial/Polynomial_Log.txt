@@ -1,29 +1,51 @@
 Executed on: Fri Apr 15 21:04:02 2022
 Operation Done: Quadratic Roots
 Expression input: 1.00X^2 + 5.00X + 2.00
-b^2 - 4ac = 0
-Equation has two roots as b^2 - 4ac > 0
-Roots are at: 
-Root 1: X = -0.88
-Root 2: X = -9.12
+Output:
+    b^2 - 4ac = 0
+    Equation has two roots as b^2 - 4ac > 0
+    Roots are at: 
+        Root 1: X = -0.88
+        Root 2: X = -9.12
 
 Executed on: Fri Apr 15 21:05:04 2022
 Operation Done: Polynomial Addition
 Inputs: 
-First expression : 5.00X^2 + 4.00X + 3.00
-Second expression : 6.00X^2 + 5.00X + 1.00
+    First expression : 5.00X^2 + 4.00X + 3.00
+    Second expression : 6.00X^2 + 5.00X + 1.00
 Output: 11.00X^2 + 9.00X + 4.00
 
 Executed on: Fri Apr 15 21:12:12 2022
 Operation Done: Polynomial Multiplication
 Inputs: 
-First expression : 6.00X^3 + 10.00X^2 + 5.00
-Second expression : 4.00X^2 + 2.00X + 1.00
+    First expression : 6.00X^3 + 10.00X^2 + 5.00
+    Second expression : 4.00X^2 + 2.00X + 1.00
 Output: 24.00X^5 + 52.00X^4 + 26.00X^3 + 30.00X^2 + 10.00X + 5.00
 
 Executed on: Fri Apr 15 21:17:30 2022
 Operation Done: Polynomial Subtraction
 Inputs: 
-First expression : 8.00X^2 + 7.00X + 5.00
-Second expression : 6.00X^2 + 4.00X + 1.00
+    First expression : 8.00X^2 + 7.00X + 5.00
+    Second expression : 6.00X^2 + 4.00X + 1.00
 Output: 2.00X^2 + 3.00X + 4.00
+
+
+
+Executed on: Fri Apr 15 21:35:16 2022
+Operation Done: Polynomial Division
+Inputs: 
+    First expression : 2.00X^2 + 4.00X^1 + 5.00
+    Second expression : 3.00X^2 + 2.00X^1 + 1.00
+Output: 
+    Quotient: 0.67
+    Remainder: 2.67X^1 + 4.33
+
+
+Executed on: Fri Apr 15 21:42:16 2022
+Operation Done: Polynomial Addition
+Inputs: 
+	First expression : 3.00X^2 + 4.00X^1 + 5.00
+	Second expression : 2.00X^2 + 1.00X^1 + 6.00
+Output: 
+    Quotient: 1.50
+    Remainder: 2.50X^1 - 4.00

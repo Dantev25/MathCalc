@@ -90,9 +90,9 @@ int PolySub()
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Subtraction\n");
     fprintf(fptr,"Inputs: \n");
-    fprintf(fptr,"First expression : ");
+    fprintf(fptr,"\tFirst expression : ");
     PolySave(n1,a,fptr);
-    fprintf(fptr,"Second expression : ");
+    fprintf(fptr,"\tSecond expression : ");
     PolySave(n2,b,fptr);
     fprintf(fptr,"Output: ");
     PolySave(deg,Result,fptr);

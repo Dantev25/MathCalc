@@ -85,9 +85,9 @@ int PolyMult()
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Multiplication\n");
     fprintf(fptr,"Inputs: \n");
-    fprintf(fptr,"First expression : ");
+    fprintf(fptr,"\tFirst expression : ");
     PolySave(n1,a,fptr);
-    fprintf(fptr,"Second expression : ");
+    fprintf(fptr,"\tSecond expression : ");
     PolySave(n2,b,fptr);
     fprintf(fptr,"Output: ");
     PolySave(n1+n2,prod,fptr);
