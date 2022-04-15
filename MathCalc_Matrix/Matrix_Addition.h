@@ -22,7 +22,7 @@ int addition() {
 
   
 
-  printf("Enter the number of rows : ");
+  printf("Enter the Number of Rows : ");
   scanf("%d", &r);
   //verifying if r is valid
    while((r <= 0)||(r >= 100))
@@ -32,11 +32,11 @@ int addition() {
     }
    
 
-  printf("\nEnter the number of columns : ");
+  printf("\nEnter the Number of Columns : ");
 
   scanf("%d", &c);
   //verifying if c is valid
-   while((c <= 0)||(c>=100))
+   while((c <= 0)||(c >= 100))
    {
         printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 100 : ");
         scanf("%d",&c);

@@ -21,7 +21,7 @@ int subtraction() {
   time_t t;   // not a primitive datatype
   time(&t);
   
-  printf("Enter the number of rows : ");
+  printf("Enter the Number of Rows : ");
   scanf("%d", &r);
 
  //verifying if r is valid
@@ -32,7 +32,7 @@ int subtraction() {
     }
    
 
-  printf("\nEnter the number of columns : ");
+  printf("\nEnter the Number of Columns : ");
 
   scanf("%d", &c);
 

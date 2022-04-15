@@ -20,8 +20,24 @@ int scalarmultiplication()
 	time_t t;   // not a primitive datatype
     time(&t);
 
- 	printf("\nPlease Enter Number of rows and columns\n");
- 	scanf("%d %d", &i, &j);
+    printf("Enter the Number of Rows : ");
+    scanf("%d", &i);
+	//verifying if i is valid
+   while((i <= 0)||(i >= 100))
+   {
+        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 100 : ");
+        scanf("%d",&i);
+    }
+
+ 	printf("\nEnter the Number of columns\n");
+ 	scanf("%d", &j);
+	 //verifying if j is valid
+   while((j <= 0)||(j >= 100))
+   {
+        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 100 : ");
+        scanf("%d",&j);
+    }
+
 
 	fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
 
