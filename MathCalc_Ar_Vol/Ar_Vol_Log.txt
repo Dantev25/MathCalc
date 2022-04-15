@@ -1,1 +1,132 @@
+executed on: Fri Apr 15 15:54:04 2022
+Shape : Circle
+INPUT:
+	radius = 7.43
+OUTPUT:
+	Area = 173.43
+	Perimeter = 46.68
+
+executed on: Fri Apr 15 16:03:46 2022
+Shape : Cone
+INPUT:
+	radius of circular base = 4.56, height = 7.90
+OUTPUT:
+	Surface area = 196.00
+	Volume = 172.02
+
+executed on: Fri Apr 15 18:58:22 2022
+Shape : Cube
+INPUT:
+	length of side = 5.40
+OUTPUT:
+	Surface area = 174.96
+	Volume = 157.46
+
+executed on: Fri Apr 15 19:37:11 2022
+Shape : Cuboid
+INPUT
+	length = 7.80, breadth = 2.50, height = 5.00
+OUTPUT:
+	Surface area = 142.00
+	Volume = 97.50
+
+executed on: Fri Apr 15 19:42:00 2022
+Shape : Cylinder
+INPUT:
+	radius of circular base = 5.00, height = 6.00
+OUTPUT:
+	Surface area = 345.58
+	Volume = 471.24
+
+
+executed on: Fri Apr 15 19:49:35 2022
+Shape : Parallellogram
+INPUT:
+	side = 4.00, base = 6.50, height = 7.00
+OUTPUT:
+	Area = 45.50
+	Perimeter = 21.00
+
+
+executed on: Fri Apr 15 19:53:54 2022
+Shape : Pyramid
+INPUT:
+	length of base = 5.00, breadth of base = 7.50, height = 9.20
+OUTPUT:
+	Surface area = 158.68
+	Volume = 115.00
+
+executed on: Fri Apr 15 21:29:20 2022
+Shape : Rectangle
+INPUT:
+	length = 9.00, breadth = 4.00
+OUTPUT
+	Area = 36.00
+	Perimeter = 26.00
+
+
+executed on: Fri Apr 15 22:06:06 2022
+Shape : Rhombus
+INPUT:
+	length of side = 4.00, angle (in radians) = 2.379
+OUTPUT:
+	Calculated diagonal 1 = 7.43, calculated diagonal 2 = 2.98
+	Area = 11.05
+    Perimeter = 16.00
+
+
+executed on: Fri Apr 15 22:11:21 2022
+Shape : Rhombus
+INPUT:
+	length of side = 6.00, diagonal 1 = 8.93
+OUTPUT:
+	calculated diagonal 2 = 8.02
+	Area = 35.79
+	Perimeter = 24.00
+
+
+executed on: Fri Apr 15 22:16:46 2022
+Shape : Square
+INPUT:
+	length of side = 5.60
+OUTPUT:
+	Area = 31.36
+	Perimeter = 22.40
+
+
+executed on: Fri Apr 15 22:16:59 2022
+Shape : Sphere
+INPUT:
+	radius = 3.00
+OUTPUT:
+	Surface area = 113.10
+	volume = 113.10
+
+
+executed on: Fri Apr 15 22:33:20 2022
+Shape : Equilateral triangle
+INPUT:
+	length of side = 5.00
+OUTPUT:
+	Area = 10.83
+	Perimeter = 15.00
+
+
+executed on: Fri Apr 15 22:36:59 2022
+Shape : Right-angled triangle
+INPUT:
+	base = 3.00, height = 4.00, side = 5.00
+OUTPUT:
+	Area = 6.00
+	Perimeter = 12.00
+
+
+executed on: Fri Apr 15 22:37:36 2022
+Shape : Triangle
+INPUT:
+	side 1 = 6.40, side 2 = 2.30, side 3 = 7.00
+OUTPUT:
+	Area = 7.33
+	Perimeter = 15.70
+
 
