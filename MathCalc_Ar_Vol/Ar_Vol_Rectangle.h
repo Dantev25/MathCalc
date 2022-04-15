@@ -1,6 +1,5 @@
 #ifndef AR_VOL_RECTANGLE_H_INCLUDED
 #define AR_VOL_RECTANGLE_H_INCLUDED
-#include<time.h>
 
 float rectangle()
 {
@@ -44,9 +43,9 @@ float rectangle()
     }
 
     fprintf(fptr,"executed on: %s",ctime(&t));
-    fprintf(fptr,"Shape = rectangle\n");
-    fprintf(fptr,"length = %.2f, breadth = %.2f\n",l,b);
-    fprintf(fptr,"Area = %.2f\nPerimeter = %.2f\n\n",area,perimeter);
+    fprintf(fptr,"Shape : Rectangle\n");
+    fprintf(fptr,"INPUT:\n\tlength = %.2f, breadth = %.2f\n",l,b);
+    fprintf(fptr,"OUTPUT\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
 
     fclose(fptr);
 
