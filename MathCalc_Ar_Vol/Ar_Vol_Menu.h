@@ -22,7 +22,7 @@ int Ar_VolMenu()
         printf("\n\t\tWelcome to the 2D and 3D Shapes Operation Menu\n");
         printf("\n\nPlease type in the number associated to the shape you wish to work on.\n\n");
         printf("2D Shapes:\n");
-        printf("\t1- Square\n\t2- Rectangle\n\t3- Circle\n\t4- Triangle\n\t5- Rhombus\n\t6- Prallellogram\n\n");
+        printf("\t1- Square\n\t2- Rectangle\n\t3- Circle\n\t4- Triangle\n\t5- Rhombus\n\t6- Parallellogram\n\n");
         printf("3D Shapes:\n");
         printf("\t7- Cube\n\t8- Cuboid\n\t9- Pyramid\n\t10- Cylinder\n\t11- Cone\n\t12- Sphere\n\n");
         printf("\t13- View log for 2D and 3D shapes");
