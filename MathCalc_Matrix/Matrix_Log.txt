@@ -198,3 +198,28 @@ Output:
 
 	12   	6   
 
+Executed on: Fri Apr 15 13:22:27 2022
+
+Matrix Operation : Subtraction
+
+Input:
+First Matrix:
+
+	2
+
+	3
+
+
+Second Matrix:
+
+	4
+
+	1
+
+
+Output: 
+
+	-2   
+
+	2   
+

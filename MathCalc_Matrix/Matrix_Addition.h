@@ -32,7 +32,7 @@ int addition() {
     }
    
 
-  printf("Enter the number of columns : ");
+  printf("\nEnter the number of columns : ");
 
   scanf("%d", &c);
   //verifying if c is valid

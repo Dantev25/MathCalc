@@ -24,22 +24,22 @@ int subtraction() {
   printf("Enter the number of rows : ");
   scanf("%d", &r);
 
-  //verifying if r is valid
-   while(r <= 0)
+ //verifying if r is valid
+   while((r <= 0)||(r >= 100))
    {
-        printf("\nYou cannot have 0 or negative number of rows.\n Please input a positive integer not exceeding 10 : ");
+        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 100 : ");
         scanf("%d",&r);
     }
+   
 
-
-  printf("Enter the number of columns : ");
+  printf("\nEnter the number of columns : ");
 
   scanf("%d", &c);
 
   //verifying if c is valid
-   while(c <= 0)
+   while((c <= 0)||(c>=100))
    {
-        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 10 : ");
+        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 100 : ");
         scanf("%d",&c);
     }
 
