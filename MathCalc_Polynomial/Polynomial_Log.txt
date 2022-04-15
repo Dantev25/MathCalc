@@ -49,3 +49,13 @@ Inputs:
 Output: 
     Quotient: 1.50
     Remainder: 2.50X^1 - 4.00
+
+
+Executed on: Fri Apr 15 22:35:24 2022
+Operation Done: Polynomial Addition
+Inputs: 
+	First expression : 2.00X^5 + 4.00X^4 + 4.00X^3 + 6.00X^2 + 7.00X^1 + 5.00
+	Second expression : 3.00X^4 + 2.00X^3 + 6.00X^2 + 7.00X^1 + 2.00
+Output: 
+	Quotient: 0.67X^1 + 0.89
+	Remainder: -1.78X^3 - 4.00X^2 - 0.56X^1 + 3.22
