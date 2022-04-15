@@ -3,53 +3,82 @@
 #include <math.h>
 int QuadRoots()
 {
-    int a[4], root1, root2,i,beqn;
-    printf("Please input the quadratic expression (starting from constant and ascending in power):\n");
+    int i;
+    float a[4],beqn,root1, root2;
+    time_t t;   // not a primitive datatype
+    time(&t);
+
+    FILE *fptr;
+    printf("\nPlease input the quadratic expression (starting from constant and ascending in power):\n");
     for (i=0;i<3;i++){
         if (i==0){
             printf("Constant = ");
-            scanf("%d",&a[i]);
+            scanf("%f",&a[i]);
         }
         else if (i==1){
             printf("X = ");
-            scanf("%d",&a[i]);
+            scanf("%f",&a[i]);
         }
         else{
             printf("X^%d = ",i);
-            scanf("%d",&a[i]);      
+            scanf("%f",&a[i]);      
         }
     }
-    printf("The expressions input is: ");
+    printf("\nThe expressions input is: ");
     for(i=2;i>=0;i--){
         if(a[i]!=0){
             if (i==0){
-                printf("%d",a[i]);
+                printf("%.2f",a[i]);
             }
             else if (i==1){
-                printf("%dX + ",a[i]);
+                printf("%.2fX + ",a[i]);
             }
             else{
-                printf("%dX^%d + ",a[i],i);
+                printf("%.2fX^%d + ",a[i],i);
             }
         }
     }
-    beqn = (a[1]^2)-(4*a[2]*a[0]);
-    printf("\nb^2 - 4ac = %d\n",beqn);
+    beqn = pow(a[1],2)-(4*a[2]*a[0]);
+    printf("\n\nb^2 - 4ac = %.2f\n",beqn);
     if (beqn == 0){
-        printf("Equation has only one root as b^2 - 4ac = 0\nRoot is at: ");
-        root1 = -a[2]+ sqrt((a[1]^2)-(4*a[2]*a[0]));
-        printf("x = %d",root1);
+        printf("\nEquation has only one root as b^2 - 4ac = 0\nRoot is at: ");
+        root1 = -a[1] + sqrt(beqn);
+        printf("x = %.2f",root1);
     }
     else if(beqn>0){
-        printf("Equation has two roots as b^2 - 4ac > 0\nRoots are at\n: ");
-        root1 = -a[2]+ sqrt((a[1]^2)-(4*a[2]*a[0]));
-        root2 = -a[2]- sqrt((a[1]^2)-(4*a[2]*a[0]));
-        printf("Root1: x = %d",root1);
-        printf("\nRoot2: x = %d",root2);
+        printf("\nEquation has two roots as b^2 - 4ac > 0\nRoots are at: \n");
+        root1 = -a[1] + sqrt(beqn);
+        root2 = -a[1] - sqrt(beqn);
+        printf("Root1: x = %.2f",root1);
+        printf("\nRoot2: x = %.2f",root2);
     }
     else{
-        printf("Roots are imaginary as b^2 - 4ac <0.");
+        printf("\nRoots are imaginary as b^2 - 4ac <0.");
     }
+
+    fptr = (fopen("MathCalc_Polynomial/Polynomial_Log.txt","a"));
+    
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
+    }
+
+    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"Operation Done: Quadratic Roots\n");
+    fprintf(fptr,"Expression input: ");
+    PolySave(3,a,fptr);
+    fprintf(fptr,"b^2 - 4ac = %d",beqn);
+    if (beqn == 0){
+        fprintf(fptr,"\nEquation has only one root as b^2 - 4ac = 0\nRoot is at: X= %.2f",root1);
+    }
+    else if(beqn>0){
+        fprintf(fptr,"\nEquation has two roots as b^2 - 4ac > 0\nRoots are at: \nRoot 1: X = %.2f\nRoot 2: X = %.2f",root1,root2);
+    }
+    else{
+        fprintf(fptr,"\nRoots are imaginary as b^2 - 4ac <0.");
+    }
+    
+
 }
 
 #endif

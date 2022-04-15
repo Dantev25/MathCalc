@@ -5,34 +5,39 @@
 
 int PolyMult()
 {
-    int a[MAX] = {0}, b[MAX],prod[300], n1,n2,i,j;
+    float a[MAX], b[MAX],prod[1000];
+    int n1,n2,i,j;
+    time_t t;   // not a primitive datatype
+    time(&t);
+
+    FILE *fptr;
     for (i=0; i<MAX; i++){
         a[i] = 0;
     }
     for (i=0; i<MAX; i++){
         b[i] = 0;
     }
-    printf("Please input the degree (highest power) of the first expression:");
+    printf("\nPlease input the degree (highest power) of the first expression:");
     scanf("%d",&n1);
     
     while (n1<0){
-        printf("Please input the degree (highest power) again, it cannot be negative:");
+        printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n1);
     }
     n1++;
-    printf("Please input the first expression (starting from constant and ascending in power):\n");
+    printf("\nPlease input the first expression (starting from constant and ascending in power):\n");
     for (i=0;i<n1;i++){
         if (i==0){
             printf("Constant = ");
-            scanf("%d",&a[i]);
+            scanf("%f",&a[i]);
         }
         else if (i==1){
             printf("X = ");
-            scanf("%d",&a[i]);
+            scanf("%f",&a[i]);
         }
         else{
             printf("X^%d = ",i);
-            scanf("%d",&a[i]);      
+            scanf("%f",&a[i]);      
         }
     }
     printf("Please input the degree (highest power) of the second expression:");
@@ -42,20 +47,19 @@ int PolyMult()
         scanf("%d",&n2);
     }
     n2++;
-    
     printf("Please input the second expression (starting from constant and ascending in power):\n");
     for (i=0;i<n2;i++){
         if (i==0){
             printf("Constant = ");
-            scanf("%d",&b[i]);
+            scanf("%f",&b[i]);
         }
         else if (i==1){
             printf("X = ");
-            scanf("%d",&b[i]);
+            scanf("%f",&b[i]);
         }
         else{
             printf("X^%d = ",i);
-            scanf("%d",&b[i]);      
+            scanf("%f",&b[i]);      
         }
     }
     
@@ -64,22 +68,30 @@ int PolyMult()
             prod[i+j] += a[i]*b[j];
         }
     }
- 
+    printf("\nFirst expression : ");
+    PolyPrint(n1,a);
+    printf("Second expression : ");
+    PolyPrint(n2,b);
     
-    printf("Product of these two expressions is: \n");
-    for(i=(n1+n2-1);i>=0;i--){
-        if(prod[i]!=0){
-            if (i==0){
-                printf("%d",prod[i]);
-            }
-            else if (i==1){
-                printf("%dX + ",prod[i]);
-            }
-            else{
-                printf("%dX^%d + ",prod[i],i);
-            }
-        }
+    printf("\nProduct of these two expressions is: ");
+    PolyPrint(n1+n2,prod);
+    printf("\n\n");
+    fptr = (fopen("MathCalc_Polynomial/Polynomial_Log.txt","a"));
+    
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
     }
+    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"Operation Done: Polynomial Multiplication\n");
+    fprintf(fptr,"Inputs: \n");
+    fprintf(fptr,"First expression : ");
+    PolySave(n1,a,fptr);
+    fprintf(fptr,"Second expression : ");
+    PolySave(n2,b,fptr);
+    fprintf(fptr,"Output: ");
+    PolySave(n1+n2,prod,fptr);
+    fclose(fptr);
 }
 
 #endif
