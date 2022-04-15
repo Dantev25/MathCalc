@@ -29,7 +29,7 @@ int scalarmultiplication()
         scanf("%d",&i);
     }
 
- 	printf("\nEnter the Number of columns\n");
+ 	printf("\nEnter the Number of Columns\n");
  	scanf("%d", &j);
 	 //verifying if j is valid
    while((j <= 0)||(j >= 100))

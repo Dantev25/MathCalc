@@ -32,8 +32,23 @@ int multiplication()
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"\nMatrix Operation : Multiplication\n");
 
-  printf("Enter number of rows and columns of first matrix\n");
-  scanf("%d%d", &m, &n);
+      printf("Enter the Number of Rows : ");
+    scanf("%d", &m);
+	//verifying if m is valid
+   while((m <= 0)||(m >= 100))
+   {
+        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 100 : ");
+        scanf("%d",&m);
+    }
+
+ 	printf("\nEnter the Number of Columns :");
+ 	scanf("%d", &n);
+	 //verifying if n is valid
+   while((n <= 0)||(n >= 100))
+   {
+        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 100 : ");
+        scanf("%d",&n);
+    }
   printf("Enter elements of first matrix\n");
  
   for (c = 0; c < m; c++)
