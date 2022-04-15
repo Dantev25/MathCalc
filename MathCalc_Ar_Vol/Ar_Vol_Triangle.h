@@ -12,14 +12,16 @@ float triangle()
     time(&t);
 
     FILE *fptr;
-    fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
+    
 
-    if(fptr==NULL){
+    
+
+    while(again == 'Y'){
+        fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
+        if(fptr==NULL){
         printf("Error!");
         exit(1);
     }
-
-    while(again == 'Y'){
         printf("Choose the number associated with the type of triangle you want to work with.\n");
         printf("1. Equilateral triangle\n2. Right-angled triangle\n3. Any other triangle");
         printf("\n\nInput your choice: ");

@@ -130,3 +130,21 @@ OUTPUT:
 	Perimeter = 15.70
 
 
+executed on: Fri Apr 15 22:52:01 2022
+Shape : Equilateral triangle
+INPUT:
+	length of side = 2.00
+OUTPUT:
+	Area = 1.73
+	Perimeter = 6.00
+
+
+executed on: Fri Apr 15 22:52:01 2022
+Shape : Right-angled triangle
+INPUT:
+	base = 3.00, height = 5.00, side = 7.00
+OUTPUT:
+	Area = 7.50
+	Perimeter = 15.00
+
+

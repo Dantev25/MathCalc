@@ -10,14 +10,13 @@ float rhombus()
     time(&t);
 
     FILE *fptr;
-    fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
-
-    if(fptr==NULL){
+    
+    while(again == 'Y'){
+        fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
+        if(fptr==NULL){
         printf("Error!");
         exit(1);
     }
-
-    while(again == 'Y'){
         printf("By which method would you like to carry the operations for rhombus:\n");
         printf("1. By using angle\n2. By using diagonal");
         printf("\n\nInput your choice: ");
