@@ -147,4 +147,13 @@ OUTPUT:
 	Area = 7.50
 	Perimeter = 15.00
 
-
+Executed on: Sat Apr 16 21:28:31 2022
+Operation Done: Area Under Curve
+Inputs: 
+	Expression : 6X^2 + 4X + 2
+	Limits: between 2 and 6
+	Accuracy: 0.01
+Outputs:
+	The integral using Simpson's Rule is: 488 for 4 sub-intervals.
+	The integral using Trapezoidal Rule is: 488.111
+	with 24 intervals

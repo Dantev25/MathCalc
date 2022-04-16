@@ -1,8 +1,24 @@
 #ifndef AR_VOL_AREAUNDERCURVE_H_INCLUDED
 #define AR_VOL_AREAUNDERCURVE_H_INCLUDED
-
 double z[6];
 int n1;
+int PolySaveDouble(int deg, double a[], FILE *fptr)
+{
+    int i;
+    for(i=deg;i>=0;i--){
+        if(a[i]>0.000001){
+            if (i==0){
+                fprintf(fptr,"%g\n",a[i]);
+            }
+            else if (i==1){
+                fprintf(fptr,"%gX + ",a[i]);
+            }
+            else{
+                fprintf(fptr,"%gX^%d + ",a[i],i);
+            }
+        }
+    }
+}
 double f(double x){
     if (n1==2){
         return ((z[2]*pow(x,2))+(z[1]*x)+(z[0]));
@@ -50,6 +66,10 @@ double simpsons(double f(double x), double a,double b,double n){
 int AUC(){
     int n,i=2;
     double a,b,h,x,integral,eps,integral_new;
+    time_t t;   // not a primitive datatype
+    time(&t);
+
+    FILE *fptr;
     for (i=0; i<6; i++){
         z[i] = 0;
     }
@@ -61,7 +81,7 @@ int AUC(){
         scanf("%d",&n1);
     }
     printf("\nPlease input the quadratic expression (starting from constant and ascending in power):\n");
-    for (i=0;i<n1;i++){
+    for (i=0;i<=n1;i++){
         if (i==0){
             printf("Constant = ");
             scanf("%lf",&z[i]);
@@ -84,16 +104,31 @@ int AUC(){
     printf("\nEnter the desired accuracy: ");
     scanf("%lf",&eps);
     integral_new=simpsons(f,a,b,i);
- 
+
+    fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
+
+    if(fptr==NULL){
+        printf("Error!");
+        exit(1);
+    }
+
+    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"Operation Done: Area Under Curve\n");
+    fprintf(fptr,"Inputs: \n");
+    fprintf(fptr,"\tExpression : ");
+    PolySaveDouble(n1,z,fptr);
+    fprintf(fptr,"\tLimits: between %g and %g",a,b);
+    fprintf(fptr,"\n\tAccuracy: %g",eps);
     /* Perform integration by simpson's 1/3rd for different number of sub-intervals until they converge to the given accuracy:*/
     do{
         integral=integral_new;
         i=i+2;
         integral_new=simpsons(f,a,b,i);
     }while(fabs(integral_new-integral)>=eps);
-   
+    fprintf(fptr,"\nOutputs:");
     /*Print the answer */
-    printf("\nThe integral using Simpson's Rule is: %lf for %d sub-intervals.\n",integral_new,i);
+    printf("\nThe integral using Simpson's Rule is: %g for %d sub-intervals.\n",integral_new,i);
+    fprintf(fptr,"\n\tThe integral using Simpson's Rule is: %g for %d sub-intervals.\n",integral_new,i);
      
     i=2;
     /* Perform integration by trapezoidal rule for different number of sub-intervals until they converge to the given accuracy:*/
@@ -104,7 +139,12 @@ int AUC(){
     }while(fabs(integral_new-integral)>=eps);
  
     /*Print the answer */
-    printf("The integral using Trapezoidal Rule is: %lf\n with %d intervals",integral_new,i);
+    printf("The integral using Trapezoidal Rule is: %g\n with %d intervals",integral_new,i);
+    fprintf(fptr,"\tThe integral using Trapezoidal Rule is: %g\n\twith %d intervals",integral_new,i);
+
+    fclose(fptr);
+    
+
 }
 
 #endif
