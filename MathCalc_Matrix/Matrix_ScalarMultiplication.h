@@ -17,11 +17,12 @@ void printSmatrix(int a[100][100], int r, int c){
 int scalarmultiplication()
 {
  	int i, j, rows, columns, Multiplication[100][100], Number;
-	time_t t;   // not a primitive datatype
+	time_t t;   
     time(&t);
 
     printf("Enter the Number of Rows : ");
     scanf("%d", &i);
+
 	//verifying if i is valid
    while((i <= 0)||(i >= 100))
    {
@@ -31,6 +32,7 @@ int scalarmultiplication()
 
  	printf("\nEnter the Number of Columns : ");
  	scanf("%d", &j);
+
 	 //verifying if j is valid
    while((j <= 0)||(j >= 100))
    {
@@ -88,7 +90,8 @@ int scalarmultiplication()
     	printf("\n\n");
   	}
 
-fclose(fptr);
+	fclose(fptr);
+	
  	return 0;
 }
 
