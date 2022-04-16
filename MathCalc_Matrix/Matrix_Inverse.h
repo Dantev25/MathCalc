@@ -27,12 +27,13 @@ int inverse()
 
   printf("Enter the Order of the Matrix : ");
   scanf("%f", &n);
+  
   //verifying if n is valid
-   while((n <= 0)||(n >= 25))
-   {
-        printf("\nYou cannot have 0 or negative order of matrix.\nPlease input a positive integer not exceeding 24 : ");
-        scanf("%f",&n);
-    }
+  while((n <= 0)||(n >= 25))
+  {
+    printf("\nYou cannot have 0 or negative order of matrix.\nPlease input a positive integer not exceeding 24 : ");
+    scanf("%f",&n);
+  }
   printf("\nEnter the Elements of the Matrix: \n");
   for (i = 0;i < n; i++)
     {
@@ -49,13 +50,14 @@ int inverse()
   if (d == 0){
   fprintf(fptr, "\nOutput: \n");
   printf("\nOutput: \n\n");
-   fprintf(fptr, "\nSince the determinant is zero (0), therefore inverse is not possible.\n");
-   printf("\nSince the determinant is zero (0), therefore inverse is not possible.\n");
+  fprintf(fptr, "\nSince the determinant is zero (0), therefore inverse is not possible.\n");
+  printf("\nSince the determinant is zero (0), therefore inverse is not possible.\n");
   }
   else{
    icofactor(a, n);
   }
-   fclose(fptr);
+
+  fclose(fptr);
 }
 
 // function for the calculation of determinant
@@ -158,8 +160,10 @@ void itranspose(float num[25][25], float fac[25][25], float r)
         inverse[i][j] = b[i][j] / d;
         }
     }
+
    fprintf(fptr, "\nOutput: \n\n");
    printf("\nThe inverse of matrix: \n\n");
+
    for (i = 0;i < r; i++)
     {
      for (j = 0;j < r; j++)
@@ -167,8 +171,8 @@ void itranspose(float num[25][25], float fac[25][25], float r)
          fprintf(fptr, "\t%.2f  ", inverse[i][j]);
          printf("\t%.2f  ", inverse[i][j]);
         }
-    fprintf(fptr, "\n\n");   
-    printf("\n\n");
+      fprintf(fptr, "\n\n");   
+      printf("\n\n");
      }
     
 }
@@ -177,8 +181,8 @@ void printIMatrix(float a[25][25], int r, int c){
 
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++){
-            fprintf(fptr,"\t%.2f", a[i][j]);
-            printf("\t%.2f", a[i][j]);
+          fprintf(fptr,"\t%.2f", a[i][j]);
+          printf("\t%.2f", a[i][j]);
         }
         fprintf(fptr, "\n\n");
         printf("\n\n");

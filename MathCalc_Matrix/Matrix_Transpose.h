@@ -9,6 +9,7 @@ int transpose() {
 
   printf("Enter the Number of Rows : ");
   scanf("%d", &r);
+
   //verifying if r is valid
    while((r <= 0)||(r >= 100))
    {
@@ -19,6 +20,7 @@ int transpose() {
 
   printf("\nEnter the Number of Columns : ");
   scanf("%d", &c);
+  
   //verifying if c is valid
    while((c <= 0)||(c >= 100))
    {
