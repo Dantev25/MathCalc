@@ -8,6 +8,7 @@
 #include "MathCalc_Matrix/Matrix_Menu.h"
 #include "MathCalc_Ar_Vol/Ar_Vol_Menu.h"
 #include "MathCalc_Files/File_View.h"
+#include "MathCalc_Complex/Complex_Menu.h"
 
 
 int main()
@@ -23,7 +24,8 @@ int main()
         printf("\t1- Area, Volume and Perimiter of various 2D and 3D shapes\n");
         printf("\t2- Polynomial operations\n");
         printf("\t3- Matrix operation\n");
-        printf("\t4- View Log Files");
+        printf("\t4- Complex Numbers operations\n");
+        printf("\t5- View Log Files");
         printf("\n\nEnter your choice: ");
         scanf("%d", &operation);
 
@@ -51,6 +53,13 @@ int main()
             break;
 
         case 4:
+
+            printf("\n\n\t\tComplex Numbers Operations\n\n");
+            complexMenu();
+
+            break;
+
+        case 5:
 
             printf("\n\n\t\tLog Files\n\n");
             PolyDiv();
