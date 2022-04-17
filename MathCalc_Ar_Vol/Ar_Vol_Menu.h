@@ -12,6 +12,7 @@
 #include"Ar_Vol_Sphere.h"
 #include"Ar_Vol_Square.h"
 #include"Ar_Vol_Triangle.h"
+#include"Ar_Vol_AreaUnderCurve.h"
 
 int Ar_VolMenu()
 {
@@ -25,7 +26,7 @@ int Ar_VolMenu()
         printf("\t1- Square\n\t2- Rectangle\n\t3- Circle\n\t4- Triangle\n\t5- Rhombus\n\t6- Parallellogram\n\n");
         printf("3D Shapes:\n");
         printf("\t7- Cube\n\t8- Cuboid\n\t9- Pyramid\n\t10- Cylinder\n\t11- Cone\n\t12- Sphere\n\n");
-        printf("\t13- View log for 2D and 3D shapes");
+        printf("\t13- Area Under Curve");
         printf("\n\nInput your choice: ");
         scanf("%d",&choice);
 
@@ -91,6 +92,10 @@ int Ar_VolMenu()
             sphere();
             break;
         
+        case 13:
+            printf("\n\t\tArea Under Curve\n\n");
+            sphere();
+            break;
         default:
             printf("\nIncorrect option! Please choose a number between 1-13.\n");
             break;

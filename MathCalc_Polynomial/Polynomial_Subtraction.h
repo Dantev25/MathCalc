@@ -23,7 +23,7 @@ int PolySub()
     printf("\nPlease input the degree (highest power) of the first expression:");
     scanf("%d",&n1);
     deg = n1;
-    while (n1<0){
+    while (n1<=0){
         printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n1);
     }
@@ -45,7 +45,7 @@ int PolySub()
     }
     printf("\nPlease input the degree (highest power) of the second expression:");
     scanf("%d",&n2);
-    while (n2<0){
+    while (n2<=0){
         printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n2);
     }

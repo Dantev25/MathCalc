@@ -358,7 +358,7 @@ int PolyDiv()
     int i,n1,n2;
     printf("\nPlease input the degree (highest power) of the first expression:");
     scanf("%d",&n1);
-    while (n1<0){
+    while (n1<=0){
         printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n1);
     }
@@ -391,7 +391,7 @@ int PolyDiv()
     }
     printf("\nPlease input the degree (highest power) of the second expression:");
     scanf("%d",&n2);
-    while (n2<0){
+    while (n2<=0){
         printf("\nPlease input the degree (highest power) again, it cannot be negative:");
         scanf("%d",&n2);
     }
