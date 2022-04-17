@@ -8,7 +8,7 @@
 #include"MathCalc_Polynomial\Polynomial_Division.h"
 
 
-int main()
+int mtest()
 {
      
 }
