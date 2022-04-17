@@ -4,7 +4,7 @@
 int QuadRoots()
 {
     int i;
-    float a[4],beqn,root1, root2;
+    float a[4],beqn,root1, root2, real, img;
     time_t t;   // not a primitive datatype
     time(&t);
 
@@ -54,6 +54,9 @@ int QuadRoots()
     }
     else{
         printf("\nRoots are imaginary as b^2 - 4ac <0.");
+        real = -a[1] / (2 * a[2]);
+        img = (sqrt(-beqn)) / (2 * a[2]);
+        printf("\n\nComplex root 1 = %.2f + %.2fi\nComplex root 2 = %.2f - %.2fi\n",real,img,real,img);
     }
 
     fptr = (fopen("MathCalc_Polynomial/Polynomial_Log.txt","a"));
@@ -76,8 +79,13 @@ int QuadRoots()
         fprintf(fptr,"\n\tEquation has two roots as b^2 - 4ac > 0\nRoots are at: \n\t\tRoot 1: X = %.2f\n\t\tRoot 2: X = %.2f",root1,root2);
     }
     else{
-        fprintf(fptr,"\n\tRoots are imaginary as b^2 - 4ac <0.");
+        fprintf(fptr,"\n\tRoots are imaginary as b^2 - 4ac <0.\n");
+        fprintf(fptr,"\tComplex root 1 = %.2f + %.2fi\n\tComplex root 2 = %.2f - %.2fi",real,img,real,img);
     }
+
+    fclose(fptr);
+
+    return 0;
 }
 
 #endif
