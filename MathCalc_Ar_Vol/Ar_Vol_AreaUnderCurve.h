@@ -74,7 +74,7 @@ int AUC(){
         z[i] = 0;
     }
 
-    printf("\nPlease input the degree (highest power) of the expression:");
+    printf("\nPlease input the degree (highest power) of the expression, should be between 2-5 inclusive:");
     scanf("%d",&n1);
     while (n1<2||n1>5){
         printf("\nPlease input the degree (highest power) again, it should be between 2 and 5 inclusive:");
