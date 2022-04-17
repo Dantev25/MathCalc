@@ -7,8 +7,8 @@ void printMatrix(int a[100][100], int r, int c){
 
     for (i = 0; i < r; i++) {
         for (j = 0; j < c; j++){
-            fprintf(fptr,"\t%d", a[i][j]);
-            printf("\t%d", a[i][j]);
+          fprintf(fptr,"\t%d", a[i][j]);
+          printf("\t%d", a[i][j]);
         }
         fprintf(fptr, "\n\n");
         printf("\n\n");
@@ -17,7 +17,7 @@ void printMatrix(int a[100][100], int r, int c){
 
 int addition() {
   int r, c, a[100][100], b[100][100], sum[100][100], i, j;
-  time_t t;   // not a primitive datatype
+  time_t t;   
   time(&t);
 
   
@@ -27,19 +27,19 @@ int addition() {
   //verifying if r is valid
    while((r <= 0)||(r >= 100))
    {
-        printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
-        scanf("%d",&r);
+      printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
+      scanf("%d",&r);
     }
    
 
   printf("\nEnter the Number of Columns : ");
-
   scanf("%d", &c);
+
   //verifying if c is valid
    while((c <= 0)||(c >= 100))
    {
-        printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
-        scanf("%d",&c);
+      printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
+      scanf("%d",&c);
     }
 
     fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
@@ -49,8 +49,8 @@ int addition() {
         exit(1);
     }
 
-    fprintf(fptr,"Executed on: %s",ctime(&t));
-    fprintf(fptr,"\n\tMatrix Operation : Addition\n");
+  fprintf(fptr,"Executed on: %s",ctime(&t));
+  fprintf(fptr,"\n\tMatrix Operation : Addition\n");
 
   printf("\nEnter Elements of 1st matrix:\n\n");
   for (i = 0; i < r; ++i)
@@ -90,7 +90,7 @@ int addition() {
         printf("\n\n");
       }
     }
-fclose(fptr);
+  fclose(fptr);
 
   return 0;
 }

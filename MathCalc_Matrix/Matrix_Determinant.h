@@ -16,12 +16,12 @@ void printDmatrix(int a[100][100], int r, int c){
 }  
 int determinant()
 {
-	 int a[100][100], x[100], ratio, det=1;
-	 int i,j,k,n;
-	 time_t t;   
-     time(&t);
+	int a[100][100], x[100], ratio, det=1;
+	int i,j,k,n;
+	time_t t;   
+    time(&t);
 
-	 fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
+	fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
 
     if(fptr==NULL){
         printf("Error!");
@@ -31,14 +31,15 @@ int determinant()
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"\n\tMatrix Operation : Determinant\n");
 
-	 printf("\nEnter the Order of the Matrix : ");
-	 scanf("%d", &n);
+	printf("\nEnter the Order of the Matrix : ");
+	scanf("%d", &n);
+
 	//verifying if n is valid
    while((n <= 0)||(n >= 100))
    {
         printf("\nYou cannot have 0 or negative order of matrix.\nPlease input a positive integer not exceeding 99 : ");
         scanf("%d",&n);
-    }
+    } 
 	 //Reading Matrix 
 	 printf("\nEnter Coefficients of Matrix: \n\n");
 	 for(i=0;i< n;i++)
@@ -64,7 +65,7 @@ int determinant()
 
 	fclose(fptr);
 
-	 return 0;
+	return 0;
 }
 
 

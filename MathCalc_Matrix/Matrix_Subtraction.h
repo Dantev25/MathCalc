@@ -32,9 +32,8 @@ int subtraction() {
     }
    
 
-  printf("\nEnter the Number of Columns : ");
-
-  scanf("%d", &c);
+    printf("\nEnter the Number of Columns : ");
+    scanf("%d", &c);
 
   //verifying if c is valid
    while((c <= 0)||(c>=100))
@@ -93,7 +92,7 @@ int subtraction() {
       }
     }
 
-fclose(fptr);
+  fclose(fptr);
 
 
   return 0;
