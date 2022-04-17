@@ -15,12 +15,12 @@ int main()
 {
     int operation;
     char again = 'Y';
-    printf("Welcome to our Mathematical Calculator!");
+    printf("\n\t\t\tWelcome to MathCalc!\n\t\t Your user-friendly smart calculator\t\t");
     while (again == 'Y')
     {
 
-        printf("\n\t\tMain Menu:\n");
-        printf("\n\nPlease type in the number associated to the operation you wish to perform.\n\n");
+        printf("\n\nMain Menu:\n");
+        printf("\nPlease type in the number associated to the section you wish to work on.\n\n");
         printf("\t1- Area, Volume and Perimiter of various 2D and 3D shapes\n");
         printf("\t2- Polynomial operations\n");
         printf("\t3- Matrix operation\n");
@@ -69,7 +69,7 @@ int main()
             break;
         }
 
-        printf("\n\nDo you want to calculate again? Y/N\n");
+        printf("\n\nDo you want to work on another section? Y/N\n");
         scanf(" %c", &again);
         again = toupper(again);
     }

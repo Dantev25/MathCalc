@@ -16,10 +16,10 @@ int MatrixMenu()
     int operation;
     char again = 'Y';
 
+    printf("\n\t\tWelcome to the Matrix Operation Menu\n");
     while (again == 'Y')
     {
 
-        printf("\n\t\tWelcome to the Matrix Operation Menu\n");
         printf("\n\nPlease type in the number associated to the operation you wish to perform.\n\n");
         printf("\t1- Addition\n");
         printf("\t2- Subtraction\n");
@@ -94,7 +94,6 @@ int MatrixMenu()
         again = toupper(again);
     }
     
-
     return 0;
 }
 

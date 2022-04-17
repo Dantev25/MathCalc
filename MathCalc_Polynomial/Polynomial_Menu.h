@@ -14,10 +14,10 @@ int PolynomialMenu()
     int operation;
     char again = 'Y';
 
+    printf("\n\t\tWelcome to the Polynomial Operation Menu\n");
     while (again == 'Y')
     {
 
-        printf("\n\t\tWelcome to the Polynomial Operation Menu\n");
         printf("\n\nPlease type in the number associated to the operation you wish to perform.\n\n");
         printf("\t1- Addition\n");
         printf("\t2- Subtraction\n");
@@ -62,7 +62,7 @@ int PolynomialMenu()
             break;
         }
 
-        printf("\n\nDo you want to calculate with polynomial again? Y/N\n");
+        printf("\n\nDo you want to perform calculations with polynomial again? Y/N\n");
         scanf(" %c", &again);
         again = toupper(again);
     }
