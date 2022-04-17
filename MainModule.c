@@ -34,27 +34,25 @@ int main()
 
         case 1:
 
-            printf("\n\n\t\tArea, Volume, Perimeter\n\n");
             Ar_VolMenu();
 
             break;
 
         case 2:
 
-            printf("\n\n\t\tPolynomial Operations\n\n");
+
             PolynomialMenu();
             break;
 
         case 3:
 
-            printf("\n\n\t\tMatrix Operations\n\n");
             MatrixMenu();
 
             break;
 
         case 4:
 
-            printf("\n\n\t\tComplex Numbers Operations\n\n");
+
             complexMenu();
 
             break;
@@ -62,12 +60,12 @@ int main()
         case 5:
 
             printf("\n\n\t\tLog Files\n\n");
-            PolyDiv();
+            FileView();
 
             break;
 
         default:
-            printf("\nIncorrect option! Please choose a number 1-4.\n");
+            printf("\nIncorrect option! Please choose a number 1-5.\n");
             break;
         }
 

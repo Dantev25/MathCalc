@@ -83,14 +83,9 @@ int MatrixMenu()
 
             break;
 
-         case 8:
-
-            viewFile();
-
-            break;
 
         default:
-            printf("\nIncorrect option! Please choose a number 1-8.\n");
+            printf("\nIncorrect option! Please choose a number 1-7.\n");
             break;
         }
 
@@ -98,7 +93,7 @@ int MatrixMenu()
         scanf(" %c", &again);
         again = toupper(again);
     }
-    printf("\n\nGoodbye!\n\n");
+    
 
     return 0;
 }

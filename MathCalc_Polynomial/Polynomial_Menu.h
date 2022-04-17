@@ -57,15 +57,8 @@ int PolynomialMenu()
 
             break;
 
-        case 5:
-
-            printf("\n\n\t\tWelcome to Polynomial Log\n\n");
-            //log();
-
-            break;
-
         default:
-            printf("\nIncorrect option! Please choose a number 1-5.\n");
+            printf("\nIncorrect option! Please choose a number 1-4.\n");
             break;
         }
 
@@ -73,7 +66,7 @@ int PolynomialMenu()
         scanf(" %c", &again);
         again = toupper(again);
     }
-    printf("\n\nGoodbye!\n\n");
+    
 
     return 0;
 }

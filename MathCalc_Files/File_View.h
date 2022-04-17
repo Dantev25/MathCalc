@@ -1,7 +1,7 @@
 #ifndef FILE_VIEW_H_INCLUDED
 #define FILE_VIEW_H_INCLUDED
 
-int viewFile()
+int FileView()
 {
     FILE * fptr;
     int c, choice;

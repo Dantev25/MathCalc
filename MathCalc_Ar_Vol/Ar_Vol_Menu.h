@@ -94,7 +94,7 @@ int Ar_VolMenu()
         
         case 13:
             printf("\n\t\tArea Under Curve\n\n");
-            sphere();
+            AUC();
             break;
         default:
             printf("\nIncorrect option! Please choose a number between 1-13.\n");
@@ -104,7 +104,7 @@ int Ar_VolMenu()
         scanf(" %c", &again);
         again = toupper(again);
     }
-    printf("\n\nGoodbye!\n\n");
+    
 
     return 0;
 }

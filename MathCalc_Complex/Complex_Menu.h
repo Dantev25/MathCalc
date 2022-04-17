@@ -50,7 +50,6 @@ int complexMenu()
         scanf(" %c", &again);
         again = toupper(again);
     }
-    printf("\n\nGoodbye!\n\n");
 
     return 0;
 }
