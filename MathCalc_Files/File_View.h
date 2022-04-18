@@ -11,6 +11,7 @@ int FileView()
     while(again == 'Y'){
         printf("\n\nPlease type in the number associated to the log file you wish to view.\n\n");
         printf("\t1- Matrix Operations\n\t2- Polynomial Operations\n\t3- 2D AND 3D Shapes Operations\n\t4- Complex Numbers Operations");
+        printf("\n\t5- Scientific Calculator");
         printf("\n\nInput your choice: ");
         scanf("%d",&choice);
 
@@ -74,8 +75,23 @@ int FileView()
             fclose(fptr);
         }
 
+         else if(choice == 5){
+            fptr = fopen("MathCalc_Scientific_Calculator/Scientific_Calculator_Log.txt","r");
+            if(fptr == NULL){
+                printf("\nFile not found\n");
+            }
+            else{
+                printf("\nFile opened in read mode\n\n");
+            } 
+            while((c = fgetc(fptr)) != EOF){
+                printf("%c",c);
+            }
+            printf("\n\n");
+            fclose(fptr);
+        }
+
         else{
-            printf("\nIncorrect Input!\nPlease choose a number between 1-4!");
+            printf("\nIncorrect Input!\nPlease choose a number between 1-5!");
         }
 
         printf("\nDo you want to view a Log File again? Y/N\n");
