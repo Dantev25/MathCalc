@@ -28,7 +28,6 @@ int MatrixMenu()
         printf("\t5- Transpose\n");
         printf("\t6- Determinant\n");
         printf("\t7- Inverse\n");
-        printf("\t8- View Log");
         printf("\n\nEnter your choice: ");
         scanf(" %d", &operation);
 
