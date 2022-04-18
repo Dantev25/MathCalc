@@ -374,3 +374,27 @@ Input:
 Output:
 
 0.643501
+
+
+Executed on: Mon Apr 18 20:50:21 2022
+
+			Square Root
+Input:
+
+34.000000
+
+Output:
+
+5.830952
+
+
+Executed on: Mon Apr 18 20:50:21 2022
+
+			Cos(x)
+Input:
+
+12.000000
+
+Output:
+
+0.978148
