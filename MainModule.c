@@ -71,7 +71,7 @@ int main()
             break;
 
         default:
-            printf("\nIncorrect option! Please choose a number 1-5.\n");
+            printf("\nIncorrect option! Please choose a number 1-6.\n");
             break;
         }
 
