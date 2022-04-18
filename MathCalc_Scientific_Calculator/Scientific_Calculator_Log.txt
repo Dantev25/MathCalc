@@ -1,12 +1,400 @@
-
-Executed on: Mon Apr 18 18:51:33 2022
+Executed on: Mon Apr 18 20:31:57 2022
 
 			Addition
 Input:
 
-9.000000
-3.000000
+34.212002
+323.129120
 
 Output:
 
+357.341125
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			Subtraction
+Input:
+
+2341.429932
+123211.000000
+
+Output:
+
+-120869.570312
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			Multiplication
+Input:
+
+23.431999
+12.320000
+
+Output:
+
+288.682220
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			Division
+Input:
+
+123.000000
+45.000000
+
+Output:
+
+2.733333
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			Power
+Input:
+
+234.000000
 12.000000
+
+Output:
+
+26951955144132201823659360256.000000
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			Power
+Input:
+
+4523.000000
+123.000000
+
+Output:
+
+inf
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			10^x\nInput:
+
+234.000000
+
+Output:
+
+inf
+
+
+Executed on: Mon Apr 18 20:31:57 2022
+
+			Sin(x)
+Input:
+
+30.000000
+
+Output:
+
+0.500000Executed on: Mon Apr 18 20:33:55 2022
+
+			Addition
+Input:
+
+23.430000
+12.100000
+
+Output:
+
+35.529999Executed on: Mon Apr 18 20:34:52 2022
+
+			Addition
+Input:
+
+123.400002
+45.123001
+
+Output:
+
+168.523010
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Subtraction
+Input:
+
+341.000000
+12.432000
+
+Output:
+
+328.567993
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Multiplication
+Input:
+
+908.400024
+23.500000
+
+Output:
+
+21347.400391
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Division
+Input:
+
+235.699997
+9.000000
+
+Output:
+
+26.188889
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Square Root
+Input:
+
+2347.340088
+
+Output:
+
+48.449356
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Power
+Input:
+
+234.000000
+7.000000
+
+Output:
+
+38415901187375104.000000
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Factorial
+Input:
+
+45.000000
+
+Output:
+
+inf
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Logarithm
+Input:
+
+1032.000000
+
+Output:
+
+3.013680
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Exponential
+Input:
+
+89.000000
+
+Output:
+
+inf
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Exponential
+Input:
+
+13.000000
+
+Output:
+
+442413.406250
+
+
+Executed on: Mon Apr 18 20:34:52 2022
+
+			Sin(x)
+Input:
+
+30.000000
+
+Output:
+
+0.500000
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Cos(x)
+Input:
+
+30.000000
+
+Output:
+
+0.866025
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Tan(x)
+Input:
+
+30.000000
+
+Output:
+
+0.577350
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Cosec(x)
+Input:
+
+50.000000
+
+Output:
+
+1.305407
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Sec(x)
+Input:
+
+50.000000
+
+Output:
+
+1.555724
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Cot(x)
+Input:
+
+45.000000
+
+Output:
+
+1.000000
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Sin Inverse
+Input:
+
+0.600000
+
+Output:
+
+0.643501
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Cos Inverse
+Input:
+
+0.500000
+
+Output:
+
+1.047198
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Tan Inverse
+Input:
+
+0.750000
+
+Output:
+
+0.643501
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Modulus
+Input:
+
+87
+12
+
+Output:
+
+3
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Degree to Radian
+Input:
+
+234.000000234.00 degrees = 4.084071 radians
+
+Output:
+
+0.643501
+
+
+Executed on: Mon Apr 18 20:38:51 2022
+
+			Radian to Degree
+Input:
+
+23.45000123.450001 radians = 1343.59 degrees
+
+Output:
+
+0.643501
+
+
+Executed on: Mon Apr 18 20:50:21 2022
+
+			Square Root
+Input:
+
+34.000000
+
+Output:
+
+5.830952
+
+
+Executed on: Mon Apr 18 20:50:21 2022
+
+			Cos(x)
+Input:
+
+12.000000
+
+Output:
+
+0.978148
