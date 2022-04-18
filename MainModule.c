@@ -9,7 +9,7 @@
 #include "MathCalc_Ar_Vol/Ar_Vol_Menu.h"
 #include "MathCalc_Files/File_View.h"
 #include "MathCalc_Complex/Complex_Menu.h"
-
+#include "MathCalc_Scientific_Calculator\Scientific_Calculator.h"
 
 int main()
 {
@@ -25,7 +25,8 @@ int main()
         printf("\t2- Polynomial operations\n");
         printf("\t3- Matrix operation\n");
         printf("\t4- Complex Numbers operations\n");
-        printf("\t5- View Log Files");
+        printf("\t5- Scientific Calculator\n");
+        printf("\t6- View Log Files");
         printf("\n\nEnter your choice: ");
         scanf("%d", &operation);
 
@@ -58,6 +59,11 @@ int main()
             break;
 
         case 5:
+
+            scalc();
+
+            break;
+        case 6:
 
             printf("\n\n\t\tLog Files\n\n");
             FileView();
