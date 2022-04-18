@@ -21,7 +21,7 @@ int main()
 
         printf("\n\nMain Menu:\n");
         printf("\nPlease type in the number associated to the section you wish to work on.\n\n");
-        printf("\t1- Area, Volume and Perimiter of various 2D and 3D shapes\n");
+        printf("\t1- Area, Volume and Perimeter of various 2D and 3D shapes\n");
         printf("\t2- Polynomial operations\n");
         printf("\t3- Matrix operation\n");
         printf("\t4- Complex Numbers operations\n");
