@@ -423,52 +423,52 @@ int PolyDiv()
         }
     }
 
-    if(a0>0.0001){
+    if(a0>0.0001||a0<0.0001){
         i=5;
         create_node(a0, i, &poly1);
     }
-    if(a1>0.0001){
+    if(a1>0.0001||a1<0.0001){
         i=4;
         create_node(a1, i, &poly1);
     }
-    if(a2>0.0001){
+    if(a2>0.0001||a2<0.0001){
         i=3;
         create_node(a2, i, &poly1);
     }
-    if(a3>0.0001){
+    if(a3>0.0001||a3<0.0001){
         i=2;
         create_node(a3, i, &poly1);
     }
-    if(a4>0.0001){
+    if(a4>0.0001||a4<0.0001){
         i=1;
         create_node(a4, i, &poly1);
     }
-    if(a5>0.0001){
+    if(a5>0.0001||a5<0.0001){
         i=0;
         create_node(a5, i, &poly1);
     }
     
-    if(b0>0.0001){
+    if(b0>0.0001||b0<0.0001){
         i=5;
         create_node(b0, i, &poly2);
     }
-    if(b1>0.0001){
+    if(b1>0.0001||b1<0.0001){
         i=4;
         create_node(b1, i, &poly2);
     }
-    if(b2>0.0001){
+    if(b2>0.0001||b2<0.0001){
         i=3;
         create_node(b2, i, &poly2);
     }
-    if(b3>0.0001){
+    if(b3>0.0001||b3<0.0001){
         i=2;
         create_node(b3, i, &poly2);
     }
-    if(b4>0.0001){
+    if(b4>0.0001||b4<0.0001){
         i=1;
         create_node(b4, i, &poly2);
     }
-    if(b5>0.0001){
+    if(b5>0.0001||b5<0.0001){
         i=0;
         create_node(b5, i, &poly2);
     }
