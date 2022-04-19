@@ -54,6 +54,23 @@ int determinant()
 	printf("\nThe Matrix is \n\n");
 	printDmatrix(a,i,j);
 
+	 //Here we are using Gauss Elimination Technique for transforming 
+	 //matrix to upper triangular matrix. 
+	//Applying Gauss Elimination 
+	 for(i=0;i< n;i++)
+	 {
+		  for(j=i+1;j< n;j++)
+		  {
+			   ratio = a[j][i]/a[i][i];
+
+			   for(k=0;k< n;k++)
+			   {
+			  		a[j][k] = a[j][k] - ratio*a[i][k];
+			   }
+		  }
+	 }
+
+
 	 //Finding determinant by multiplying elements in principal diagonal elements 
 	 for(i=0;i< n;i++)
      {
