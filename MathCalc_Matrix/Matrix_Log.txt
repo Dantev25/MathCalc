@@ -201,3 +201,53 @@ Output:
 
 	2   	7   
 
+Executed on: Tue Apr 19 13:32:15 2022
+
+	Matrix Operation : Scalar Multiplication
+
+Input:
+
+	3	21
+
+
+Multiplication Value: 2
+
+
+Output: 
+
+	6  	42  
+
+
+Executed on: Tue Apr 19 13:32:25 2022
+
+	Matrix Operation : Inverse
+
+Input:
+
+	1.00	2.00	3.00
+
+	4.00	5.00	6.00
+
+	7.00	8.00	9.00
+
+
+Output: 
+
+Since the determinant is zero (0), therefore inverse is not possible.
+
+Executed on: Tue Apr 19 13:35:49 2022
+
+	Matrix Operation : Inverse
+
+Input:
+
+	1.00	2.00	3.00
+
+	4.00	5.00	6.00
+
+	7.00	8.00	9.00
+
+
+Output: 
+
+The determinant is zero (0). Matrix has no inverse.
