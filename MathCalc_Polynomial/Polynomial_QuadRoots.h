@@ -4,7 +4,7 @@
 int QuadRoots()
 {
     int i;
-    float a[4],beqn,root1, root2, real, img;
+    float a[4],det,root1, root2, real, img;
     time_t t;   // not a primitive datatype
     time(&t);
 
@@ -22,6 +22,10 @@ int QuadRoots()
         else{
             printf("X^%d = ",i);
             scanf("%f",&a[i]);      
+            while(a[2]==0){
+                printf("Please input again, expression must be quadratic and X^2 cannot be zero. \nX^%d = ",i)
+            }
+            scanf("%f",&a[i]); 
         }
     }
     printf("\nThe expressions input is: ");
@@ -38,24 +42,24 @@ int QuadRoots()
             }
         }
     }
-    beqn = pow(a[1],2)-(4*a[2]*a[0]);
-    printf("\n\nb^2 - 4ac = %.2f\n",beqn);
-    if (beqn == 0){
+    det = pow(a[1],2)-(4*a[2]*a[0]);
+    printf("\n\nb^2 - 4ac = %.2f\n",det);
+    if (det == 0){
         printf("\nEquation has only one root as b^2 - 4ac = 0\nRoot is at: ");
-        root1 = -a[1] + sqrt(beqn);
+        root1 = -a[1] + sqrt(det);
         printf("x = %.2f",root1);
     }
-    else if(beqn>0){
+    else if(det>0){
         printf("\nEquation has two roots as b^2 - 4ac > 0\nRoots are at: \n");
-        root1 = -a[1] + sqrt(beqn);
-        root2 = -a[1] - sqrt(beqn);
+        root1 = -a[1] + sqrt(det);
+        root2 = -a[1] - sqrt(det);
         printf("Root1: x = %.2f",root1);
         printf("\nRoot2: x = %.2f",root2);
     }
     else{
         printf("\nRoots are imaginary as b^2 - 4ac <0.");
         real = -a[1] / (2 * a[2]);
-        img = (sqrt(-beqn)) / (2 * a[2]);
+        img = (sqrt(-det)) / (2 * a[2]);
         printf("\n\nComplex root 1 = %.2f + %.2fi\nComplex root 2 = %.2f - %.2fi\n",real,img,real,img);
     }
 
@@ -71,11 +75,11 @@ int QuadRoots()
     fprintf(fptr,"Expression input: ");
     PolySave(3,a,fptr);
     fprintf(fptr,"Output:\n");
-    fprintf(fptr,"\tb^2 - 4ac = %d",beqn);
-    if (beqn == 0){
+    fprintf(fptr,"\tb^2 - 4ac = %d",det);
+    if (det == 0){
         fprintf(fptr,"\n\tEquation has only one root as b^2 - 4ac = 0\n\tRoot is at: X= %.2f",root1);
     }
-    else if(beqn>0){
+    else if(det>0){
         fprintf(fptr,"\n\tEquation has two roots as b^2 - 4ac > 0\nRoots are at: \n\t\tRoot 1: X = %.2f\n\t\tRoot 2: X = %.2f",root1,root2);
     }
     else{
