@@ -29,7 +29,7 @@ int multiplication()
       exit(1);
     }
 
-    fprintf(fptr,"Executed on: %s",ctime(&t));
+    fprintf(fptr,"\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"\n\tMatrix Operation : Multiplication\n");
 
     printf("For the First Matrix\n");
@@ -50,7 +50,7 @@ int multiplication()
       printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
       scanf("%d",&n);
     }
-  printf("Enter Elements of first matrix\n");
+  printf("\nEnter Elements of first matrix\n");
  
   for (c = 0; c < m; c++)
   {

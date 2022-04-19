@@ -49,7 +49,7 @@ int addition() {
         exit(1);
     }
 
-  fprintf(fptr,"Executed on: %s",ctime(&t));
+  fprintf(fptr,"\nExecuted on: %s",ctime(&t));
   fprintf(fptr,"\n\tMatrix Operation : Addition\n");
 
   printf("\nEnter Elements of 1st matrix:\n\n");

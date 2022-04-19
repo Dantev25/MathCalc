@@ -50,8 +50,8 @@ int inverse()
   if (d == 0){
   fprintf(fptr, "\nOutput: \n");
   printf("\nOutput: \n\n");
-  fprintf(fptr, "\nSince the determinant is zero (0), therefore inverse is not possible.\n");
-  printf("\nSince the determinant is zero (0), therefore inverse is not possible.\n");
+  fprintf(fptr, "\nThe determinant is zero (0). Matrix has no inverse.\n");
+  printf("\nThe determinant is zero (0). Matrix has no inverse.\n");
   }
   else{
    icofactor(a, n);

@@ -35,7 +35,7 @@ int transpose() {
         exit(1);
     }
 
-    fprintf(fptr,"Executed on: %s",ctime(&t));
+    fprintf(fptr,"\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"\n\tMatrix Operation : Transpose\n");
 
   // asssigning elements to the matrix
