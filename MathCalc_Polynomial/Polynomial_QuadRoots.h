@@ -23,7 +23,7 @@ int QuadRoots()
             printf("X^%d = ",i);
             scanf("%f",&a[i]);      
             while(a[2]==0){
-                printf("Please input again, expression must be quadratic and X^2 cannot be zero. \nX^%d = ",i)
+                printf("Please input again, expression must be quadratic and X^2 cannot be zero. \nX^%d = ",i);
             }
             scanf("%f",&a[i]); 
         }
