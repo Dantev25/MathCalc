@@ -24,8 +24,8 @@ int QuadRoots()
             scanf("%f",&a[i]);      
             while(a[2]==0){
                 printf("Please input again, expression must be quadratic and X^2 cannot be zero. \nX^%d = ",i);
-            }
-            scanf("%f",&a[i]); 
+                scanf("%f",&a[i]); 
+            }    
         }
     }
     printf("\nThe expressions input is: ");
@@ -46,13 +46,13 @@ int QuadRoots()
     printf("\n\nb^2 - 4ac = %.2f\n",det);
     if (det == 0){
         printf("\nEquation has only one root as b^2 - 4ac = 0\nRoot is at: ");
-        root1 = -a[1] + sqrt(det);
+        root1 = (-a[1] + sqrt(det))/(2*a[2]);
         printf("x = %.2f",root1);
     }
     else if(det>0){
         printf("\nEquation has two roots as b^2 - 4ac > 0\nRoots are at: \n");
-        root1 = -a[1] + sqrt(det);
-        root2 = -a[1] - sqrt(det);
+        root1 = (-a[1] + sqrt(det))/(2*a[2]);
+        root2 = (-a[1] - sqrt(det))/(2*a[2]);
         printf("Root1: x = %.2f",root1);
         printf("\nRoot2: x = %.2f",root2);
     }
