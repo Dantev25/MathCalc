@@ -17,8 +17,8 @@ float square()
         scanf("%f",&x);
     }
 
-    area = x*x;
-    perimeter = x*4;
+    area = x * x;
+    perimeter = x * 4;
 
     printf("\nArea of square = %.2f\n",area);
     printf("perimeter of square = %.2f\n",perimeter);
