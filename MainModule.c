@@ -15,6 +15,8 @@ int main()
 {
     int operation;
     char again = 'Y';
+    system("cls");
+    system("color 70");
     printf("\n\t\t\tWelcome to MathCalc!\n\t\t Your user-friendly smart calculator\t\t");
     while (again == 'Y')
     {
