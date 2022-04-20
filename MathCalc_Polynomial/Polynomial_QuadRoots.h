@@ -69,7 +69,7 @@ int QuadRoots()
         printf("Error!");
         exit(1);
     }
-
+    fprintf(fptr,"----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Quadratic Roots\n");
     fprintf(fptr,"Expression input: ");

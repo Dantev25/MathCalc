@@ -119,6 +119,7 @@ int PolyAdd()
         printf("Error!");
         exit(1);
     }
+    fprintf(fptr,"----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Addition\n");
     fprintf(fptr,"Inputs: \n");

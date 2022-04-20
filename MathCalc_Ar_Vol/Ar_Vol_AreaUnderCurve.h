@@ -8,7 +8,7 @@ int PolySaveDouble(int deg, double a[], FILE *fptr)
     for(i=deg;i>=0;i--){
         if(a[i]>0.000001){
             if (i==0){
-                fprintf(fptr,"%g\n",a[i]);
+                fprintf(fptr,"%g\n",a[i]);//
             }
             else if (i==1){
                 fprintf(fptr,"%gX + ",a[i]);

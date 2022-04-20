@@ -273,66 +273,45 @@ void PolySaveLinkList(struct Node* node, FILE *fptr)
 
  
 // Function to divide two polynomials
-void divide_poly(struct Node* poly1,
-                 struct Node* poly2, FILE *fptr)
-{
+void divide_poly(struct Node* poly1,struct Node* poly2, FILE *fptr){
     // Initialize Remainder and Quotient
     struct Node *rem = NULL, *quo = NULL;
- 
     quo = (struct Node*)malloc(
         sizeof(struct Node));
     quo->next = NULL;
- 
     struct Node *q = NULL, *r = NULL;
- 
     // Copy poly1, i.e., dividend to q
     copyList(poly1, &q);
- 
     // Copy poly, i.e., divisor to r
     copyList(poly2, &r);
- 
     // Perform polynomial subtraction till
     // highest power of q > highest power of divisor
-    while (q != NULL
-           && (q->pow >= poly2->pow)) {
- 
+    while (q != NULL&& (q->pow >= poly2->pow)) {
         // difference of power
         int diff = q->pow - poly2->pow;
- 
-        float mul_c = (q->coeff
-                       / poly2->coeff);
- 
+        float mul_c = (q->coeff/ poly2->coeff);
         // Stores the quotient node
-        store_quotient(mul_c, diff,
-                       quo);
- 
+        store_quotient(mul_c, diff,quo);
         struct Node* q2 = NULL;
- 
         // Copy one LL in another LL
         copyList(r, &q2);
- 
         // formNewPoly forms next value
         // of q after performing the
         // polynomial subtraction
         formNewPoly(diff, mul_c, q2);
  
         struct Node* store = NULL;
-        store = (struct Node*)malloc(
-            sizeof(struct Node));
- 
+        store = (struct Node*)malloc(sizeof(struct Node));
         // Perform polynomial subtraction
         sub(q, q2, store);
- 
         // Now change value of q to the
         // subtracted value i.e., store
         q = store;
         free(q2);
     }
- 
     // Print the quotient
     printf("Quotient: ");
     show(quo);
- 
     // Print the remainder
     printf("Remainder: ");
     rem = q;
@@ -484,7 +463,7 @@ int PolyDiv()
         printf("Error!");
         exit(1);
     }
-
+    fprintf(fptr,"----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Addition\n");
     fprintf(fptr,"Inputs: \n");
