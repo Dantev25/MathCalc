@@ -77,7 +77,9 @@ Output:
 	b^2 - 4ac = 0
 	Roots are imaginary as b^2 - 4ac <0.
 	Complex root 1 = 0.33 + 0.75i
-	Complex root 2 = 0.33 - 0.75i----------------------------------------------------------------------
+	Complex root 2 = 0.33 - 0.75i
+
+----------------------------------------------------------------------
 
 
 Executed on: Wed Apr 20 22:57:22 2022
@@ -96,29 +98,46 @@ Inputs:
 	First expression : 3.00X^3 + 7.00X^2 + 6.00X + 4.00
 	Second expression : 8.00X^2 + 4.00X + 1.00
 Output: 3.00X^3 + -1.00X^2 + 2.00X + 3.00
+
+
+
+---------------------------------------------------------------------
+Executed on: Thu Apr 21 03:29:50 2022
+Operation Done: Polynomial Division
+Inputs: 
+	First expression : 2.00X^2 + 3.00X^1 + 4.00
+	Second expression : 1.00X^2 + 4.00X^1 + 5.00
+Output: 
+	Quotient: 2.00
+	Remainder: -5.00X^1 - 6.00
 ----------------------------------------------------------------------
 
-Executed on: Wed Apr 20 23:19:35 2022
+
+Executed on: Thu Apr 21 03:32:51 2022
+Operation Done: Quadratic Roots
+Expression input: 5.00X^2 + 3.00X + 2.00
+Output:
+	b^2 - 4ac = 0
+	Roots are imaginary as b^2 - 4ac <0.
+	Complex root 1 = -0.30 + 0.56i
+	Complex root 2 = -0.30 - 0.56i
+	
+----------------------------------------------------------------------
+
+
+Executed on: Thu Apr 21 03:38:24 2022
 Operation Done: Polynomial Multiplication
 Inputs: 
-	First expression : 9.00X + 3.00
-	Second expression : 2.00X + 7.00
-Output: 0.00X^3 + 18.00X^2 + 69.00X + 21.00
+	First expression : 4.00X + 2.00
+	Second expression : 6.00X + 5.00
+Output:24.00X^2 + 32.00X + 10.00
+
 ----------------------------------------------------------------------
 
 
-Executed on: Wed Apr 20 23:21:35 2022
-Operation Done: Polynomial Multiplication
-Inputs: 
-	First expression : 9.00X + 7.00
-	Second expression : 2.00X + 3.00
-Output: 0.00X^3 + 18.00X^2 + 41.00X + 21.00
-----------------------------------------------------------------------
-
-
-Executed on: Thu Apr 21 03:04:39 2022
+Executed on: Thu Apr 21 03:40:03 2022
 Operation Done: Polynomial Multiplication
 Inputs: 
 	First expression : 5.00X + 3.00
-	Second expression : 6.00X + 4.00
-Output: 0.00X^3 + 30.00X^2 + 38.00X + 12.00
+	Second expression : 3.00X + 36.00
+Output: 15.00X^2 + 189.00X + 108.00

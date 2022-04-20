@@ -42,11 +42,11 @@ int QuadRoots()
             }
         }
     }
-    det = pow(a[1],2)-(4*a[2]*a[0]);
+    det = pow(a[1],2)-(4*a[2]*a[0]);//determinant
     printf("\n\nb^2 - 4ac = %.2f\n",det);
     if (det == 0){
         printf("\nEquation has only one root as b^2 - 4ac = 0\nRoot is at: ");
-        root1 = (-a[1] + sqrt(det))/(2*a[2]);
+        root1 = (-a[1] + sqrt(det))/(2*a[2]);//quadratic equation
         printf("x = %.2f",root1);
     }
     else if(det>0){
