@@ -54,11 +54,7 @@ float rhombus()
             printf("\nArea of rhombus = %.2f\n",area);
             printf("Perimeter of rhombus = %.2f\n",perimeter);
 
-<<<<<<< HEAD
             fprintf(fptr,"------------------------------------------------\n");
-=======
-            fprintf(fptr,"----------------------------------------------------------------------\n");
->>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
             fprintf(fptr,"Executed on: %s",ctime(&t));
             fprintf(fptr,"Shape : Rhombus\n");
             fprintf(fptr,"Input:\n\tlength of side = %.2f, angle (in radians) = %.3f\n",side,x);
@@ -94,11 +90,7 @@ float rhombus()
             printf("\nArea of rhombus = %.2f\n",area);
             printf("Perimeter of rhombus = %.2f\n",perimeter);
 
-<<<<<<< HEAD
             fprintf(fptr,"------------------------------------------------\n");
-=======
-            fprintf(fptr,"----------------------------------------------------------------------\n");
->>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
             fprintf(fptr,"Executed on: %s",ctime(&t));
             fprintf(fptr,"Shape : Rhombus\n");
             fprintf(fptr,"Input:\n\tlength of side = %.2f, diagonal 1 = %.2f\n",side,d1);

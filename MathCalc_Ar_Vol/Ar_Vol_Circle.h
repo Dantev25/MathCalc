@@ -31,12 +31,8 @@ float circle()
         exit(1);
     }
 
-<<<<<<< HEAD
     /*Entry in log file*/
     fprintf(fptr,"------------------------------------------------\n");
-=======
-    fprintf(fptr,"----------------------------------------------------------------------\n");
->>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Circle\n");
     fprintf(fptr,"Input:\n\tradius = %.2f\n",r);
