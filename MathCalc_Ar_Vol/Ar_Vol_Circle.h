@@ -1,6 +1,7 @@
 #ifndef AR_VOL_CIRCLE_H_INCLUDED
 #define AR_VOL_CIRCLE_H_INCLUDED
 
+/*function to find area and perimeter of circle*/
 float circle()
 {
     float r, area, perimeter;
@@ -17,8 +18,8 @@ float circle()
         scanf("%f",&r);
     }
 
-    area = M_PI * r *r;
-    perimeter = 2 * M_PI * r;
+    area = M_PI * r *r;          //formula for area of circle
+    perimeter = 2 * M_PI * r;    //formula for perimeter of circle
 
     printf("\nArea of circle = %.2f\n",area);
     printf("perimeter of circle = %.2f\n",perimeter);
@@ -30,10 +31,12 @@ float circle()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    /*Entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Circle\n");
-    fprintf(fptr,"INPUT:\n\tradius = %.2f\n",r);
-    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
+    fprintf(fptr,"Input:\n\tradius = %.2f\n",r);
+    fprintf(fptr,"Output:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
 
     fclose(fptr);
 

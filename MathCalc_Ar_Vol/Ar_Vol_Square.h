@@ -1,6 +1,7 @@
 #ifndef AR_VOL_SQUARE_H_INCLUDED
 #define AR_VOL_SQUARE_H_INCLUDED
 
+/*function to find area and perimeter of square*/
 float square()
 {
     float x, area, perimeter;
@@ -17,8 +18,8 @@ float square()
         scanf("%f",&x);
     }
 
-    area = x * x;
-    perimeter = x * 4;
+    area = x * x;         //formula for area
+    perimeter = x * 4;    //formula for perimeter
 
     printf("\nArea of square = %.2f\n",area);
     printf("perimeter of square = %.2f\n",perimeter);
@@ -30,10 +31,12 @@ float square()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    /*Entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Square\n");
-    fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",x);
-    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
+    fprintf(fptr,"Input:\n\tlength of side = %.2f\n",x);
+    fprintf(fptr,"Output:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
 
     fclose(fptr);
 

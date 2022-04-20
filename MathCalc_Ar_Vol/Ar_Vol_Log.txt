@@ -1,159 +1,31 @@
-executed on: Fri Apr 15 15:54:04 2022
-Shape : Circle
-INPUT:
-	radius = 7.43
-OUTPUT:
-	Area = 173.43
-	Perimeter = 46.68
+------------------------------------------------
+Executed on: Wed Apr 20 22:33:11 2022
+Shape : Rhombus
+Input:
+	length of side = 4.53, angle (in radians) = 2.350
+Output:
+	Calculated diagonal 1 = 8.36, calculated diagonal 2 = 3.49
+	Area = 14.60
+	Perimeter = 18.12
 
-executed on: Fri Apr 15 16:03:46 2022
+------------------------------------------------
+Executed on: Wed Apr 20 22:39:02 2022
 Shape : Cone
-INPUT:
-	radius of circular base = 4.56, height = 7.90
-OUTPUT:
-	Surface area = 196.00
-	Volume = 172.02
-
-executed on: Fri Apr 15 18:58:22 2022
-Shape : Cube
-INPUT:
-	length of side = 5.40
-OUTPUT:
-	Surface area = 174.96
-	Volume = 157.46
-
-executed on: Fri Apr 15 19:37:11 2022
-Shape : Cuboid
-INPUT
-	length = 7.80, breadth = 2.50, height = 5.00
-OUTPUT:
-	Surface area = 142.00
-	Volume = 97.50
-
-executed on: Fri Apr 15 19:42:00 2022
-Shape : Cylinder
-INPUT:
-	radius of circular base = 5.00, height = 6.00
-OUTPUT:
-	Surface area = 345.58
-	Volume = 471.24
+Input:
+	radius of circular base = 5.78, height = 9.80
+Output:
+	Surface area = 311.55
+	Volume = 342.85
 
 
-executed on: Fri Apr 15 19:49:35 2022
-Shape : Parallellogram
-INPUT:
-	side = 4.00, base = 6.50, height = 7.00
-OUTPUT:
-	Area = 45.50
-	Perimeter = 21.00
-
-
-executed on: Fri Apr 15 19:53:54 2022
-Shape : Pyramid
-INPUT:
-	length of base = 5.00, breadth of base = 7.50, height = 9.20
-OUTPUT:
-	Surface area = 158.68
-	Volume = 115.00
-
-executed on: Fri Apr 15 21:29:20 2022
-Shape : Rectangle
-INPUT:
-	length = 9.00, breadth = 4.00
-OUTPUT
-	Area = 36.00
-	Perimeter = 26.00
-
-
-executed on: Fri Apr 15 22:06:06 2022
-Shape : Rhombus
-INPUT:
-	length of side = 4.00, angle (in radians) = 2.379
-OUTPUT:
-	Calculated diagonal 1 = 7.43, calculated diagonal 2 = 2.98
-	Area = 11.05
-    Perimeter = 16.00
-
-
-executed on: Fri Apr 15 22:11:21 2022
-Shape : Rhombus
-INPUT:
-	length of side = 6.00, diagonal 1 = 8.93
-OUTPUT:
-	calculated diagonal 2 = 8.02
-	Area = 35.79
-	Perimeter = 24.00
-
-
-executed on: Fri Apr 15 22:16:46 2022
-Shape : Square
-INPUT:
-	length of side = 5.60
-OUTPUT:
-	Area = 31.36
-	Perimeter = 22.40
-
-
-executed on: Fri Apr 15 22:16:59 2022
-Shape : Sphere
-INPUT:
-	radius = 3.00
-OUTPUT:
-	Surface area = 113.10
-	volume = 113.10
-
-
-executed on: Fri Apr 15 22:33:20 2022
-Shape : Equilateral triangle
-INPUT:
-	length of side = 5.00
-OUTPUT:
-	Area = 10.83
-	Perimeter = 15.00
-
-
-executed on: Fri Apr 15 22:36:59 2022
-Shape : Right-angled triangle
-INPUT:
-	base = 3.00, height = 4.00, side = 5.00
-OUTPUT:
-	Area = 6.00
-	Perimeter = 12.00
-
-
-executed on: Fri Apr 15 22:37:36 2022
-Shape : Triangle
-INPUT:
-	side 1 = 6.40, side 2 = 2.30, side 3 = 7.00
-OUTPUT:
-	Area = 7.33
-	Perimeter = 15.70
-
-
-executed on: Fri Apr 15 22:52:01 2022
-Shape : Equilateral triangle
-INPUT:
-	length of side = 2.00
-OUTPUT:
-	Area = 1.73
-	Perimeter = 6.00
-
-
-executed on: Fri Apr 15 22:52:01 2022
-Shape : Right-angled triangle
-INPUT:
-	base = 3.00, height = 5.00, side = 7.00
-OUTPUT:
-	Area = 7.50
-	Perimeter = 15.00
-
-Executed on: Sat Apr 16 21:28:31 2022
+------------------------------------------------
+Executed on: Thu Apr 21 00:15:08 2022
 Operation Done: Area Under Curve
-Inputs: 
-	Expression : 6X^2 + 4X + 2
-	Limits: between 2 and 6
+Input: 
+	Expression : 3X^4 + 5X^2 + 4
+	Limits: between -2 and 3
 	Accuracy: 0.01
-Outputs:
-	The integral using Simpson's Rule is: 488 for 4 sub-intervals.
-	The integral using Trapezoidal Rule is: 488.111
-	with 24 intervals
+Output:
+	The integral using Simpson's Rule is: 124.595 for 18 sub-intervals.
+	The integral using Trapezoidal Rule is: 124.844 with 54 intervals
+
