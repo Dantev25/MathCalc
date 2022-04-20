@@ -40,7 +40,8 @@ float cone()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cone\n");
     fprintf(fptr,"INPUT:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);
     fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);

@@ -38,7 +38,8 @@ float complexSub()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Operation : Complex numbers Subtraction\n");
    
     if((a.img < 0)&&(b.img < 0)){

@@ -21,7 +21,7 @@ float square()
     perimeter = x * 4;
 
     printf("\nArea of square = %.2f\n",area);
-    printf("perimeter of square = %.2f\n",perimeter);
+    printf("Perimeter of square = %.2f\n",perimeter);
 
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
@@ -30,7 +30,8 @@ float square()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Square\n");
     fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",x);
     fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
