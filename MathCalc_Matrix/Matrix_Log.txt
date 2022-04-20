@@ -251,3 +251,155 @@ Input:
 Output: 
 
 The determinant is zero (0). Matrix has no inverse.
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:54:20 2022
+
+	Matrix Operation : Addition
+
+Input:
+First Matrix:
+
+	1	2
+
+	3	4
+
+
+Second Matrix:
+
+	2	2
+
+	3	1
+
+
+Output: 
+
+	3   	4   
+
+	6   	5   
+
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:54:38 2022
+
+	Matrix Operation : Subtraction
+
+Input:
+First Matrix:
+
+	23	32
+
+
+Second Matrix:
+
+	1	2
+
+
+Output: 
+
+	22   	30   
+
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:54:49 2022
+
+	Matrix Operation : Scalar Multiplication
+
+Input:
+
+	4	5
+
+	2	1
+
+
+Multiplication Value: 4
+
+
+Output: 
+
+	16  	20  
+
+	8  	4  
+
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:55:00 2022
+
+	Matrix Operation : Multiplication
+
+Input:
+First Matrix:
+
+	3	4
+
+
+Second Matrix:
+
+	2
+
+	3
+
+
+Output: 
+
+	18 
+
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:55:16 2022
+
+	Matrix Operation : Transpose
+
+Input:
+
+	3  	1  
+
+	4  	7  
+
+
+Output: 
+
+	3  	4  
+
+	1  	7  
+
+
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:58:35 2022
+
+	Matrix Operation : Determinant
+
+Input:
+
+	1	4
+
+	7	2
+
+
+Output: 
+
+Determinant of the Matrix is -26. 
+----------------------------------------------------------------------
+
+Executed on: Wed Apr 20 23:58:43 2022
+
+	Matrix Operation : Inverse
+
+Input:
+
+	1.00	2.00	2.00
+
+	1.00	3.00	7.00
+
+	4.00	2.00	3.00
+
+
+Output: 
+
+	-0.20  	-0.08  	0.32  
+
+	1.00  	-0.20  	-0.20  
+
+	-0.40  	0.24  	0.04  
+

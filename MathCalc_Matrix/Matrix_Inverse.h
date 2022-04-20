@@ -17,13 +17,14 @@ int inverse()
 
   fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
 
-    if(fptr==NULL){
-        printf("Error!");
-        exit(1);
-    }
-
-    fprintf(fptr,"\nExecuted on: %s",ctime(&t));
-    fprintf(fptr,"\n\tMatrix Operation : Inverse\n");
+  if(fptr==NULL){
+      printf("Error!");
+      exit(1);
+  }
+  
+  fprintf(fptr,"----------------------------------------------------------------------\n");
+  fprintf(fptr,"\nExecuted on: %s",ctime(&t));
+  fprintf(fptr,"\n\tMatrix Operation : Inverse\n");
 
   printf("Enter the Order of the Matrix : ");
   scanf("%f", &n);
@@ -34,15 +35,17 @@ int inverse()
     printf("\nYou cannot have 0 or negative order of matrix.\nPlease input a positive integer not exceeding 24 : ");
     scanf("%f",&n);
   }
+
   printf("\nEnter the Elements of the Matrix: \n");
   for (i = 0;i < n; i++)
-    {
-     for (j = 0;j < n; j++)
-       {
+  {
+    for (j = 0;j < n; j++)
+      {
         printf("Enter Element a[%d][%d]= ",i+1,j+1);
         scanf("%f", &a[i][j]);
-        }
-    }
+      }
+ }
+
   fprintf(fptr, "\nInput:\n\n");
   printf("\nThe Matrix is \n\n");
   printIMatrix(a, i, j);
@@ -70,36 +73,36 @@ float ideterminant(float a[25][25], float k)
      return (a[0][0]);
     }
   else
+  {
+    det = 0;
+    for (c = 0; c < k; c++)
     {
-     det = 0;
-     for (c = 0; c < k; c++)
-       {
-        m = 0;
-        n = 0;
-        for (i = 0;i < k; i++)
+      m = 0;
+      n = 0;
+      for (i = 0;i < k; i++)
+      {
+        for (j = 0 ;j < k; j++)
+        {
+          b[i][j] = 0;
+          if (i != 0 && j != c)
           {
-            for (j = 0 ;j < k; j++)
-              {
-                b[i][j] = 0;
-                if (i != 0 && j != c)
-                 {
-                   b[m][n] = a[i][j];
-                   if (n < (k - 2))
-                    n++;
-                   else
-                    {
-                     n = 0;
-                     m++;
-                     }
-                   }
-               }
-             }
-          det = det + s * (a[0][c] * ideterminant(b, k - 1));
-          s = -1 * s;
+            b[m][n] = a[i][j];
+            if (n < (k - 2))
+            n++;
+            else
+            {
+              n = 0;
+              m++;
+            }
           }
+        }
+      }
+      det = det + s * (a[0][c] * ideterminant(b, k - 1));
+      s = -1 * s;
     }
+  }
 
-    return (det);
+  return (det);
 }
 
 
@@ -138,55 +141,58 @@ void icofactor(float num[25][25], float f)
 }
 
 
-///function to find the transpose of a matrix
+//function to find the transpose and inverse of a matrix
 void itranspose(float num[25][25], float fac[25][25], float r)
 {
   int i, j;
   float b[25][25], inverse[25][25], d;
 
   for (i = 0;i < r; i++)
-    {
-     for (j = 0;j < r; j++)
-       {
-         b[i][j] = fac[j][i];
-        }
+  {
+    for (j = 0;j < r; j++)
+   {
+      b[i][j] = fac[j][i];
     }
+  }
 
-  d = ideterminant(num, r);
+ d = ideterminant(num, r);
   for (i = 0;i < r; i++)
+  {
+    for (j = 0;j < r; j++)
     {
-     for (j = 0;j < r; j++)
-       {
-        inverse[i][j] = b[i][j] / d;
-        }
+      inverse[i][j] = b[i][j] / d;
     }
+ }
 
-   fprintf(fptr, "\nOutput: \n\n");
-   printf("\nThe inverse of matrix: \n\n");
+  fprintf(fptr, "\nOutput: \n\n");
+  printf("\nThe inverse of matrix: \n\n");
 
-   for (i = 0;i < r; i++)
-    {
-     for (j = 0;j < r; j++)
-       {
-         fprintf(fptr, "\t%.2f  ", inverse[i][j]);
-         printf("\t%.2f  ", inverse[i][j]);
-        }
-      fprintf(fptr, "\n\n");   
-      printf("\n\n");
-     }
+  for (i = 0;i < r; i++)
+  {
+    for (j = 0;j < r; j++)
+      {
+        fprintf(fptr, "\t%.2f  ", inverse[i][j]);
+        printf("\t%.2f  ", inverse[i][j]);
+      }
+    fprintf(fptr, "\n\n");   
+    printf("\n\n");
+  }
     
 }
-void printIMatrix(float a[25][25], int r, int c){
-    int i, j;
 
-    for (i = 0; i < r; i++) {
-        for (j = 0; j < c; j++){
-          fprintf(fptr,"\t%.2f", a[i][j]);
-          printf("\t%.2f", a[i][j]);
-        }
-        fprintf(fptr, "\n\n");
-        printf("\n\n");
+void printIMatrix(float a[25][25], int r, int c){
+  int i, j;
+
+  for (i = 0; i < r; i++) 
+  {
+    for (j = 0; j < c; j++)
+    {
+      fprintf(fptr,"\t%.2f", a[i][j]);
+      printf("\t%.2f", a[i][j]);
     }
+    fprintf(fptr, "\n\n");
+    printf("\n\n");
+  }
 }
 
 

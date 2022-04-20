@@ -33,7 +33,7 @@ int scalarmultiplication()
  	printf("\nEnter the Number of Columns : ");
  	scanf("%d", &j);
 
-	 //verifying if j is valid
+	//verifying if j is valid
    while((j <= 0)||(j >= 100))
    {
         printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
@@ -48,6 +48,7 @@ int scalarmultiplication()
         exit(1);
     }
 
+	fprintf(fptr,"----------------------------------------------------------------------\n");
     fprintf(fptr,"\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"\n\tMatrix Operation : Scalar Multiplication\n");
 
