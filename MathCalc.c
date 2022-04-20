@@ -1,3 +1,14 @@
+/* 
+BSc Data Science Y2S1
+Software Engineering Project 
+Team: Group 1
+Authors:
+Ghingut M. Oomar ID: 2016304
+Kholeepa B. Sadiyah ID: 2014254
+Rajanah Mrishana ID: 2011318
+*/
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
