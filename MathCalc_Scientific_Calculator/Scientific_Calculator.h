@@ -56,6 +56,7 @@ int scalc()
         switch (operation){
 
         case 1:
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"Executed on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tAddition\n");
             printf("\n\n\t\tAddition\n\n");
@@ -76,6 +77,7 @@ int scalc()
 
         case 2:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSubtraction\n");
             printf("\n\n\t\tSubtraction\n\n");
@@ -96,6 +98,7 @@ int scalc()
 
         case 3:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tMultiplication\n");
             printf("\n\n\t\tMultiplication\n\n");
@@ -117,6 +120,7 @@ int scalc()
 
         case 4:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tDivision\n");
             printf("\n\n\t\tDivision\n\n");
@@ -138,6 +142,7 @@ int scalc()
 
         case 5:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSquare Root\n");
             printf("\n\n\t\tSquare Root\n\n");
@@ -155,6 +160,7 @@ int scalc()
 
         case 6:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tPower\n");
             printf("\n\n\t\tPower\n\n");
@@ -176,6 +182,7 @@ int scalc()
 
         case 7:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\t10^x\\n");
             printf("\n\n\t\t10^x\n\n");
@@ -193,6 +200,7 @@ int scalc()
 
         case 8:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tFactorial\n");
             printf("\n\n\t\tFactorial\n\n");
@@ -213,7 +221,8 @@ int scalc()
             break;
 
         case 9:
-
+            
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tLogarithm\n");
             printf("\n\n\t\tLogarithm\n\n");
@@ -231,6 +240,7 @@ int scalc()
 
         case 10:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tExponential\n");
             printf("\n\n\t\tExponential\n\n");
@@ -249,6 +259,7 @@ int scalc()
 
         case 11:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSin(x)\n");
             printf("\n\n\t\tSin(x)\n\n");
@@ -268,6 +279,7 @@ int scalc()
 
         case 12:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCos(x)\n");
             printf("\n\n\t\tCos(x)\n\n");
@@ -287,6 +299,7 @@ int scalc()
 
         case 13:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tTan(x)\n");
             printf("\n\n\t\tTan(x)\n\n");
@@ -306,6 +319,7 @@ int scalc()
 
         case 14:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCosec(x)\n");
             printf("\n\n\t\tCosec(x)\n\n");
@@ -325,6 +339,7 @@ int scalc()
 
         case 15:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSec(x)\n");
             printf("\n\n\t\tSec(x)\n\n");
@@ -344,6 +359,7 @@ int scalc()
 
         case 16:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCot(x)\n");
             printf("\n\n\t\tCot(x)\n\n");
@@ -362,18 +378,19 @@ int scalc()
 
         case 17:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSin Inverse\n");
             printf("\n\n\t\tSin Inverse\n\n");
             fprintf(fptr,"Input:\n");
             printf("Enter X: ");
             scanf("%f", &x);
-             //verifying if x is valid
+            //verifying if x is valid
             while((x < -1)||(x > 1))
-             {
+            {
                 printf("\nPlease input a value ranging between -1 and 1 : ");
                 scanf("%f",&x);
-             }
+            }
             fprintf(fptr,"\n%f",x);
             result = asin(x);
             printf("Inverse of sin(%f) = %f in radians\n", x, result);
@@ -384,6 +401,7 @@ int scalc()
 
         case 18:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCos Inverse\n");
             printf("\n\n\t\tCos Inverse\n\n");
@@ -392,10 +410,10 @@ int scalc()
             scanf("%f", &x);
             //verifying if x is valid
             while((x < -1)||(x > 1))
-             {
+            {
                 printf("\nPlease input a value ranging between -1 and 1 : ");
                 scanf("%f",&x);
-             }
+            }
             fprintf(fptr,"\n%f",x);
             result = acos(x);
             printf("Inverse of cos(%f) = %f in radians\n", x, result);
@@ -406,6 +424,7 @@ int scalc()
 
         case 19:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tTan Inverse\n");
             printf("\n\n\t\tTan Inverse\n\n");
@@ -423,6 +442,7 @@ int scalc()
 
         case 20:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tModulus\n");
             printf("\n\n\t\tModulus\n\n");
@@ -444,6 +464,7 @@ int scalc()
 
         case 21:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tDegree to Radian\n");
             printf("\n\n\t\tDegree to Radian\n\n");
@@ -462,6 +483,7 @@ int scalc()
 
         case 22:
 
+            fprintf(fptr,"----------------------------------------------------------------------\n");
             fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tRadian to Degree\n");
             printf("\n\n\t\tRadian to Degree\n\n");

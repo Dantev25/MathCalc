@@ -22,7 +22,7 @@ float circle()
     perimeter = 2 * M_PI * r;    //formula for perimeter of circle
 
     printf("\nArea of circle = %.2f\n",area);
-    printf("perimeter of circle = %.2f\n",perimeter);
+    printf("Perimeter of circle = %.2f\n",perimeter);
 
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
@@ -31,8 +31,12 @@ float circle()
         exit(1);
     }
 
+<<<<<<< HEAD
     /*Entry in log file*/
     fprintf(fptr,"------------------------------------------------\n");
+=======
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+>>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Circle\n");
     fprintf(fptr,"Input:\n\tradius = %.2f\n",r);

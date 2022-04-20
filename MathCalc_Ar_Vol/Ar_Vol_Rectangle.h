@@ -33,7 +33,7 @@ float rectangle()
     perimeter = (l + b) * 2;
 
     printf("\nArea of rectangle = %.2f\n",area);
-    printf("perimeter of rectangle = %.2f\n",perimeter);
+    printf("Perimeter of rectangle = %.2f\n",perimeter);
 
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
@@ -42,7 +42,8 @@ float rectangle()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Rectangle\n");
     fprintf(fptr,"INPUT:\n\tlength = %.2f, breadth = %.2f\n",l,b);
     fprintf(fptr,"OUTPUT\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);

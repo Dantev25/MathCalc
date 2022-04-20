@@ -41,9 +41,10 @@ float triangle()
                 perimeter = s * 3;
 
                 printf("\nArea of triangle = %.2f\n",area);
-                printf("perimeter of triangle = %.2f\n",perimeter);
+                printf("Perimeter of triangle = %.2f\n",perimeter);
 
-                fprintf(fptr,"executed on: %s",ctime(&t));
+                fprintf(fptr,"----------------------------------------------------------------------\n");
+                fprintf(fptr,"Executed on: %s",ctime(&t));
                 fprintf(fptr,"Shape : Equilateral triangle\n");
                 fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",s);
                 fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
@@ -84,9 +85,10 @@ float triangle()
                 perimeter = base + height + s;
 
                 printf("\nArea of triangle = %.2f\n",area);
-                printf("perimeter of triangle = %.2f\n",perimeter);
+                printf("Perimeter of triangle = %.2f\n",perimeter);
 
-                fprintf(fptr,"executed on: %s",ctime(&t));
+                fprintf(fptr,"----------------------------------------------------------------------\n");
+                fprintf(fptr,"Executed on: %s",ctime(&t));
                 fprintf(fptr,"Shape : Right-angled triangle\n");
                 fprintf(fptr,"INPUT:\n\tbase = %.2f, height = %.2f, side = %.2f\n",base, height,s);
                 fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
@@ -128,9 +130,10 @@ float triangle()
                 perimeter = s1 + s2 + s3;
 
                 printf("\nArea of triangle = %.2f\n",area);
-                printf("perimeter of triangle = %.2f\n",perimeter);
+                printf("Perimeter of triangle = %.2f\n",perimeter);
 
-                fprintf(fptr,"executed on: %s",ctime(&t));
+                fprintf(fptr,"----------------------------------------------------------------------\n");
+                fprintf(fptr,"Executed on: %s",ctime(&t));
                 fprintf(fptr,"Shape : Triangle\n");
                 fprintf(fptr,"INPUT:\n\tside 1 = %.2f, side 2 = %.2f, side 3 = %.2f\n",s1,s2,s3);
                 fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);

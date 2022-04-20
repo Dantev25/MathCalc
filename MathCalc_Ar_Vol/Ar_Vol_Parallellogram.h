@@ -9,7 +9,7 @@ float parallellogram()
 
     FILE *fptr;
 
-    printf("Enter the length of the side and base of the parrallellogram:\n");
+    printf("Enter the length of the side and base of the parallellogram:\n");
     printf("side = ");
     scanf("%f",&side);
     printf("base = ");
@@ -41,7 +41,7 @@ float parallellogram()
     perimeter = (side + base) * 2;
 
     printf("\nArea of parallellogram = %.2f\n",area);
-    printf("perimeter of parallellogram = %.2f\n",perimeter);
+    printf("Perimeter of parallellogram = %.2f\n",perimeter);
 
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
@@ -50,7 +50,8 @@ float parallellogram()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Parallellogram\n");
     fprintf(fptr,"INPUT:\n\tside = %.2f, base = %.2f, height = %.2f\n",side,base,height);
     fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);

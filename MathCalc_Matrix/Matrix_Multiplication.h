@@ -24,32 +24,32 @@ int multiplication()
 
   fptr = (fopen("MathCalc_Matrix/Matrix_Log.txt","a"));
 
-    if(fptr==NULL){
-      printf("Error!");
-      exit(1);
-    }
+  if(fptr==NULL){
+    printf("Error!");
+    exit(1);
+  }
+  fprintf(fptr,"----------------------------------------------------------------------\n");
+  fprintf(fptr,"\nExecuted on: %s",ctime(&t));
+  fprintf(fptr,"\n\tMatrix Operation : Multiplication\n");
 
-    fprintf(fptr,"\nExecuted on: %s",ctime(&t));
-    fprintf(fptr,"\n\tMatrix Operation : Multiplication\n");
-
-    printf("For the First Matrix\n");
-    printf("Enter the Number of Rows : ");
-    scanf("%d", &m);
+  printf("For the First Matrix\n");
+  printf("Enter the Number of Rows : ");
+  scanf("%d", &m);
 	//verifying if m is valid
-   while((m <= 0)||(m >= 100))
-   {
-      printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
-      scanf("%d",&m);
-    }
+  while((m <= 0)||(m >= 100))
+  {
+    printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
+    scanf("%d",&m);
+  }
 
- 	  printf("\nEnter the Number of Columns :");
- 	  scanf("%d", &n);
-	 //verifying if n is valid
-   while((n <= 0)||(n >= 100))
-   {
-      printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
-      scanf("%d",&n);
-    }
+ 	printf("\nEnter the Number of Columns :");
+ 	scanf("%d", &n);
+	//verifying if n is valid
+  while((n <= 0)||(n >= 100))
+  {
+   printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
+   scanf("%d",&n);
+  }
   printf("\nEnter Elements of first matrix\n");
  
   for (c = 0; c < m; c++)
@@ -68,20 +68,20 @@ int multiplication()
   printf("Enter the Number of Rows : ");
   scanf("%d", &p);
 	//verifying if p is valid
-   while((p <= 0)||(p >= 100))
-   {
-      printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
-      scanf("%d",&p);
-    }
+  while((p <= 0)||(p >= 100))
+  {
+    printf("\nYou cannot have 0 or negative number of rows.\nPlease input a positive integer not exceeding 99 : ");
+    scanf("%d",&p);
+  }
 
  	printf("\nEnter the Number of Columns :");
  	scanf("%d", &q);
-	 //verifying if q is valid
-   while((q <= 0)||(q >= 100))
-   {
-      printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
-      scanf("%d",&q);
-    }
+	//verifying if q is valid
+  while((q <= 0)||(q >= 100))
+  {
+    printf("\nYou cannot have 0 or negative number of columns.\nPlease input a positive integer not exceeding 99 : ");
+    scanf("%d",&q);
+  }
  
   if (n != p){
     printf("\nThe multiplication isn't possible.\n");

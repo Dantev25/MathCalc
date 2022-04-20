@@ -115,8 +115,13 @@ int AUC(){
         exit(1);
     }
 
+<<<<<<< HEAD
     fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
+=======
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+>>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
     fprintf(fptr,"Operation Done: Area Under Curve\n");
     fprintf(fptr,"Input: \n");
     fprintf(fptr,"\tExpression : ");
