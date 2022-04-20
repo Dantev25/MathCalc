@@ -113,3 +113,12 @@ Inputs:
 	First expression : 9.00X + 7.00
 	Second expression : 2.00X + 3.00
 Output: 0.00X^3 + 18.00X^2 + 41.00X + 21.00
+----------------------------------------------------------------------
+
+
+Executed on: Thu Apr 21 03:04:39 2022
+Operation Done: Polynomial Multiplication
+Inputs: 
+	First expression : 5.00X + 3.00
+	Second expression : 6.00X + 4.00
+Output: 0.00X^3 + 30.00X^2 + 38.00X + 12.00

@@ -333,7 +333,7 @@ int PolyDiv()
     FILE *fptr;
     // Create 1st Polynomial (Dividend):
     // 5x^2 + 4x^1 + 2
-    float a0,a1,a2,a3,a4,a5,b0,b1,b2,b3,b4,b5;
+    float a0=0,a1=0,a2=0,a3=0,a4=0,a5=0,b0=0,b1=0,b2=0,b3=0,b4=0,b5=0;
     int i,n1,n2;
     printf("\nPlease input the degree (highest power) of the first expression:");
     scanf("%d",&n1);
@@ -402,30 +402,27 @@ int PolyDiv()
         }
     }
 
-    if(a0>0.0001||a0<0.0001){
+    
         i=5;
         create_node(a0, i, &poly1);
-    }
-    if(a1>0.0001||a1<0.0001){
+    
+    
         i=4;
         create_node(a1, i, &poly1);
-    }
-    if(a2>0.0001||a2<0.0001){
+  
+    
         i=3;
         create_node(a2, i, &poly1);
-    }
-    if(a3>0.0001||a3<0.0001){
+   
         i=2;
         create_node(a3, i, &poly1);
-    }
-    if(a4>0.0001||a4<0.0001){
+    
+   
         i=1;
         create_node(a4, i, &poly1);
-    }
-    if(a5>0.0001||a5<0.0001){
+    
         i=0;
         create_node(a5, i, &poly1);
-    }
     
     if(b0>0.0001||b0<0.0001){
         i=5;
