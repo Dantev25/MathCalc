@@ -63,8 +63,8 @@ int PolyMult()
         }
     }
     
-    for (int i=0; i<n1; i++){
-        for (int j=0; j<n2; j++){
+    for (i=0; i<n1; i++){
+        for ( j=0; j<n2; j++){
             prod[i+j] += a[i]*b[j];
         }
     }
@@ -74,7 +74,7 @@ int PolyMult()
     PolyPrint(n2,b);
     
     printf("\nProduct of these two expressions is: ");
-    PolyPrint(n1+n2,prod);
+    PolyPrint((i+j-1),prod);
     printf("\n\n");
     fptr = (fopen("MathCalc_Polynomial/Polynomial_Log.txt","a"));
     

@@ -77,4 +77,49 @@ Output:
 	b^2 - 4ac = 0
 	Roots are imaginary as b^2 - 4ac <0.
 	Complex root 1 = 0.33 + 0.75i
-	Complex root 2 = 0.33 - 0.75i
+	Complex root 2 = 0.33 - 0.75i----------------------------------------------------------------------
+
+
+Executed on: Wed Apr 20 22:57:22 2022
+Operation Done: Polynomial Addition
+Inputs: 
+	First expression : 6.00X^2 + 3.00X + 1.00
+	Second expression : 2.00X^3 + 7.00X^2 + 3.00X + 6.00
+Output: 2.00X^3 + 13.00X^2 + 6.00X + 7.00
+
+----------------------------------------------------------------------
+
+
+Executed on: Wed Apr 20 23:03:05 2022
+Operation Done: Polynomial Subtraction
+Inputs: 
+	First expression : 3.00X^3 + 7.00X^2 + 6.00X + 4.00
+	Second expression : 8.00X^2 + 4.00X + 1.00
+Output: 3.00X^3 + -1.00X^2 + 2.00X + 3.00
+----------------------------------------------------------------------
+
+
+Executed on: Wed Apr 20 23:05:24 2022
+Operation Done: Polynomial Multiplication
+Inputs: 
+	First expression : 3.00X + 9.00
+	Second expression : 7.00X + 2.00
+Output: 7831760809776836900000000000000000.00X^3 + 21.00X^2 + 69.00X + 8005768756548888200000000000000000.00
+----------------------------------------------------------------------
+
+
+Executed on: Wed Apr 20 23:19:35 2022
+Operation Done: Polynomial Multiplication
+Inputs: 
+	First expression : 9.00X + 3.00
+	Second expression : 2.00X + 7.00
+Output: 0.00X^3 + 18.00X^2 + 69.00X + 21.00
+----------------------------------------------------------------------
+
+
+Executed on: Wed Apr 20 23:21:35 2022
+Operation Done: Polynomial Multiplication
+Inputs: 
+	First expression : 9.00X + 7.00
+	Second expression : 2.00X + 3.00
+Output: 0.00X^3 + 18.00X^2 + 41.00X + 21.00

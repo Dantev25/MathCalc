@@ -6,7 +6,7 @@ int PolySaveDouble(int deg, double a[], FILE *fptr)
 {
     int i;
     for(i=deg;i>=0;i--){
-        if(a[i]>0.000001){
+        if(a[i]>0.000001||a[i]<0.000001){
             if (i==0){
                 fprintf(fptr,"%g\n",a[i]);//
             }

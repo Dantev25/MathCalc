@@ -6,7 +6,7 @@ int PolyPrint(int deg, float a[])
 {
     int i;
     for(i=(deg-1);i>=0;i--){
-        if(a[i]>0.001){
+        if(a[i]>0.001||a[i]<0.001){
             if (i==0){
                 printf("%.2f\n",a[i]);
             }
@@ -24,7 +24,7 @@ int PolySave(int deg, float a[], FILE *fptr)
 {
     int i;
     for(i=(deg-1);i>=0;i--){
-        if(a[i]>0.001){
+        if(a[i]>0.001||a[i]<0.001){
             if (i==0){
                 fprintf(fptr,"%.2f\n",a[i]);
             }
