@@ -1,6 +1,7 @@
 #ifndef AR_VOL_SQUARE_H_INCLUDED
 #define AR_VOL_SQUARE_H_INCLUDED
 
+/*function to find area and perimeter of square*/
 float square()
 {
     float x, area, perimeter;
@@ -17,11 +18,11 @@ float square()
         scanf("%f",&x);
     }
 
-    area = x * x;
-    perimeter = x * 4;
+    area = x * x;         //formula for area
+    perimeter = x * 4;    //formula for perimeter
 
     printf("\nArea of square = %.2f\n",area);
-    printf("perimeter of square = %.2f\n",perimeter);
+    printf("Perimeter of square = %.2f\n",perimeter);
 
     fptr = (fopen("MathCalc_Ar_Vol/Ar_Vol_Log.txt","a"));
 
@@ -30,10 +31,16 @@ float square()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+<<<<<<< HEAD
+    /*Entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
+=======
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+>>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Square\n");
-    fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",x);
-    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
+    fprintf(fptr,"Input:\n\tlength of side = %.2f\n",x);
+    fprintf(fptr,"Output:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
 
     fclose(fptr);
 

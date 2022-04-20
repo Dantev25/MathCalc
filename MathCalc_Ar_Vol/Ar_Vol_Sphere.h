@@ -30,7 +30,8 @@ float sphere()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Sphere\n");
     fprintf(fptr,"INPUT:\n\tradius = %.2f\n",r);
     fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tvolume = %.2f\n\n\n",sa,vol);

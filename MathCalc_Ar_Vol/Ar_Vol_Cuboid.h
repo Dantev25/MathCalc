@@ -48,7 +48,8 @@ float cuboid()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cuboid\n");
     fprintf(fptr,"INPUT\n\tlength = %.2f, breadth = %.2f, height = %.2f\n",l,b,h);
     fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);

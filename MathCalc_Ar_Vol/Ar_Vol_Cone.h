@@ -1,6 +1,7 @@
 #ifndef AR_VOL_CONE_H_INCLUDED
 #define AR_VOL_CONE_H_INCLUDED
 
+/*function to find surface area and volume of cone*/
 float cone()
 {
     float r, h, sa, vol;
@@ -27,8 +28,8 @@ float cone()
         scanf("%f",&h);
     }
 
-    sa = M_PI * r * (r + sqrt((pow(h,2)) + (pow(r,2))));
-    vol = M_PI * r * r * (h/3);
+    sa = M_PI * r * (r + sqrt((pow(h,2)) + (pow(r,2))));  //formula for surface area
+    vol = M_PI * r * r * (h/3);                           //formula for volume
 
     printf("\nSurface area of cone = %.2f\n",sa);
     printf("Volume of cone = %.2f\n",vol);
@@ -40,10 +41,16 @@ float cone()
         exit(1);
     }
 
-    fprintf(fptr,"executed on: %s",ctime(&t));
+<<<<<<< HEAD
+    /*Entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
+=======
+    fprintf(fptr,"----------------------------------------------------------------------\n");
+>>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cone\n");
-    fprintf(fptr,"INPUT:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);
-    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
+    fprintf(fptr,"Input:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);
+    fprintf(fptr,"Output:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 
