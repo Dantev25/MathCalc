@@ -2,6 +2,7 @@
 #define AR_VOL_AREAUNDERCURVE_H_INCLUDED
 double z[6];
 int n1;
+
 int PolySaveDouble(int deg, double a[], FILE *fptr)
 {
     int i;
@@ -19,6 +20,7 @@ int PolySaveDouble(int deg, double a[], FILE *fptr)
         }
     }
 }
+
 double f(double x){
     if (n1==2){
         return ((z[2]*pow(x,2))+(z[1]*x)+(z[0]));
@@ -63,6 +65,7 @@ double simpsons(double f(double x), double a,double b,double n){
   integral=(h/3)*(f(a)+f(b)+sum);
   return integral;
 }
+
 int AUC(){
     int n,i=2;
     double a,b,h,x,integral,eps,integral_new;
@@ -112,9 +115,10 @@ int AUC(){
         exit(1);
     }
 
-    fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
+    fprintf(fptr,"------------------------------------------------\n");
+    fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Area Under Curve\n");
-    fprintf(fptr,"Inputs: \n");
+    fprintf(fptr,"Input: \n");
     fprintf(fptr,"\tExpression : ");
     PolySaveDouble(n1,z,fptr);
     fprintf(fptr,"\tLimits: between %g and %g",a,b);
@@ -125,7 +129,7 @@ int AUC(){
         i=i+2;
         integral_new=simpsons(f,a,b,i);
     }while(fabs(integral_new-integral)>=eps);
-    fprintf(fptr,"\nOutputs:");
+    fprintf(fptr,"\nOutput:");
     /*Print the answer */
     printf("\nThe integral using Simpson's Rule is: %g for %d sub-intervals.\n",integral_new,i);
     fprintf(fptr,"\n\tThe integral using Simpson's Rule is: %g for %d sub-intervals.\n",integral_new,i);
@@ -139,8 +143,8 @@ int AUC(){
     }while(fabs(integral_new-integral)>=eps);
  
     /*Print the answer */
-    printf("The integral using Trapezoidal Rule is: %g\n with %d intervals",integral_new,i);
-    fprintf(fptr,"\tThe integral using Trapezoidal Rule is: %g\n\twith %d intervals",integral_new,i);
+    printf("The integral using Trapezoidal Rule is: %g with %d intervals",integral_new,i);
+    fprintf(fptr,"\tThe integral using Trapezoidal Rule is: %g with %d intervals\n\n",integral_new,i);
 
     fclose(fptr);
     
