@@ -41,12 +41,8 @@ float cone()
         exit(1);
     }
 
-<<<<<<< HEAD
     /*Entry in log file*/
     fprintf(fptr,"------------------------------------------------\n");
-=======
-    fprintf(fptr,"----------------------------------------------------------------------\n");
->>>>>>> afa45e2ecdddb5aafaa31fae48eefa75b432ed6b
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cone\n");
     fprintf(fptr,"Input:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);

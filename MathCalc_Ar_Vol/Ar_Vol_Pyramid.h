@@ -1,6 +1,7 @@
 #ifndef AR_VOL_PYRAMID_H_INCLUDED
 #define AR_VOL_PYRAMID_H_INCLUDED
 
+/*function to calculate surface area and volume of pyramid*/
 float pyramid()
 {
     float l, b, h, sa, vol, x, y;
@@ -41,8 +42,8 @@ float pyramid()
     x = l/2;
     y = b/2;
 
-    sa = (l * b) + (l * sqrt((pow(y,2)) + (pow(h,2)))) + (b * sqrt((pow(x,2)) + (pow(h,2))));
-    vol = (l * b * h)/3;
+    sa = (l * b) + (l * sqrt((pow(y,2)) + (pow(h,2)))) + (b * sqrt((pow(x,2)) + (pow(h,2))));  //formula for surface area
+    vol = (l * b * h)/3;                                                                       //formula for volume
 
     printf("\nSurface area of pyramid = %.2f\n",sa);
     printf("Volume of pyramid = %.2f\n",vol);
@@ -54,11 +55,12 @@ float pyramid()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Pyramid\n");
-    fprintf(fptr,"INPUT:\n\tlength of base = %.2f, breadth of base = %.2f, height = %.2f\n",l,b,h);
-    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
+    fprintf(fptr,"Input:\n\tlength of base = %.2f, breadth of base = %.2f, height = %.2f\n",l,b,h);
+    fprintf(fptr,"Output:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 

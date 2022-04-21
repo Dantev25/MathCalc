@@ -1,6 +1,7 @@
 #ifndef AR_VOL_CYLINDER_H_INCLUDED
 #define AR_VOL_CYLINDER_H_INCLUDED
 
+/*function to calculate surface area and volume of cylinder*/
 float cylinder()
 {
     float r, h, sa, vol;
@@ -25,8 +26,8 @@ float cylinder()
         scanf("%f",&h);
     }
 
-    sa = (2 * M_PI * r * r) + (2 * M_PI * r * h);
-    vol = M_PI * r * r *h;
+    sa = (2 * M_PI * r * r) + (2 * M_PI * r * h);  //formula for surface area
+    vol = M_PI * r * r *h;                         //formula for volume
 
     printf("\nSurface area of cylinder = %.2f\n",sa);
     printf("Volume of cylinder = %.2f\n",vol);
@@ -38,11 +39,12 @@ float cylinder()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cylinder\n");
-    fprintf(fptr,"INPUT:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);
-    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
+    fprintf(fptr,"Input:\n\tradius of circular base = %.2f, height = %.2f\n",r,h);
+    fprintf(fptr,"Output:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 
