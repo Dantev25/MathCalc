@@ -31,12 +31,8 @@ float square()
         exit(1);
     }
 
-<<<<<<< HEAD
     /*Entry in log file*/
     fprintf(fptr,"------------------------------------------------\n");
-=======
-    fprintf(fptr,"----------------------------------------------------------------------\n");
->>>>>>> c4ef02f47eaca692fb3395dd76448ba3fee2d749
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Square\n");
     fprintf(fptr,"Input:\n\tlength of side = %.2f\n",x);
