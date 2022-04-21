@@ -1,6 +1,7 @@
 #ifndef COMPLEX_MULTIPLICATION_H_INCLUDED
 #define COMPLEX_MULTIPLICATION_H_INCLUDED
 
+/*function to carry multiplication of complex numbers*/
 float complexMul()
 {
     struct complex a, b, c;
@@ -9,6 +10,7 @@ float complexMul()
 
     FILE *fptr;
 
+    //Input of complex numbers
     printf("Enter a and b where a + ib is the first complex number:\n");
     printf("a = ");
     scanf("%f",&a.real);
@@ -38,28 +40,29 @@ float complexMul()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Operation : Complex numbers multiplication\n");
    
     if((a.img < 0)&&(b.img < 0)){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else if (a.img < 0){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else if(b.img < 0){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else{
-         fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
+         fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
     }
 
     if (c.img >= 0){
-        fprintf(fptr,"OUTPUT:\n\tProduct = %.2f + %.2fi\n\n\n", c.real, c.img);
+        fprintf(fptr,"Output:\n\tProduct = %.2f + %.2fi\n\n", c.real, c.img);
     }
     else{
-        fprintf(fptr,"OUTPUT:\n\tProduct = %.2f %.2fi\n\n\n", c.real, c.img);
+        fprintf(fptr,"Output:\n\tProduct = %.2f %.2fi\n\n", c.real, c.img);
     }
 
     fclose(fptr);

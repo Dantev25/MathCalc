@@ -1,6 +1,7 @@
 #ifndef COMPLEX_DIVISION_H_INCLUDED
 #define COMPLEX_DIVISION_H_INCLUDED
 
+/*function to carry division of complex numbers*/
 float complexDiv()
 {
     struct complex a, b, c;
@@ -10,6 +11,7 @@ float complexDiv()
 
     FILE *fptr;
 
+    //Input of complex numbers
     printf("Enter a and b where a + ib is the first complex number:\n");
     printf("a = ");
     scanf("%f",&a.real);
@@ -38,6 +40,7 @@ float complexDiv()
         scanf("%f", &b.img);
     }
       
+    //calculation of parameters x, y, z
     x = a.real*b.real + a.img*b.img;
     y = a.img*b.real - a.real*b.img;
     z = b.real*b.real + b.img*b.img;
@@ -85,56 +88,57 @@ float complexDiv()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Operation : Complex numbers division\n");
    
     if((a.img < 0)&&(b.img < 0)){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else if (a.img < 0){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else if(b.img < 0){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else{
-         fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
+         fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
     }
 
     if (fmod(x,z) == 0 && fmod(y,z) == 0){
         if (y/z >= 0){
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f + %.3fi\n\n\n", x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f + %.3fi\n\n", x/z, y/z);
         }
         else{
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f %.3fi\n\n\n", x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f %.3fi\n\n", x/z, y/z);
         }
     }
         
     else if (fmod(x,z) == 0 && fmod(y,z) != 0){
         if (y/z >= 0){
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f + %.3fi\n\n\n", x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f + %.3fi\n\n", x/z, y/z);
         }
         else{
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f %.3fi\n\n\n", x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f %.3fi\n\n", x/z, y/z);
         }
     }
         
     else if (fmod(x,z) != 0 && fmod(y,z) == 0){
         if (y/z >= 0){
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f + %.3fi\n\n\n", x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f + %.3fi\n\n", x/z, y/z);
         }
         else{
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f %.3f/%.3fi\n\n\n", x, y/(pow(z,2)));
+            fprintf(fptr,"Output:\n\tQuotient = %.3f %.3f/%.3fi\n\n", x, y/(pow(z,2)));
         }
     }
         
     else{
         if (y/z >= 0){
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f + %.3fi\n\n\n",x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f + %.3fi\n\n",x/z, y/z);
         }
         else{
-            fprintf(fptr,"OUTPUT:\n\tQuotient = %.3f %.3fi\n\n\n", x/z, y/z);
+            fprintf(fptr,"Output:\n\tQuotient = %.3f %.3fi\n\n", x/z, y/z);
         }
     }
 
