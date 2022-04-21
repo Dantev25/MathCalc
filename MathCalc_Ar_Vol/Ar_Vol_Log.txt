@@ -17,15 +17,59 @@ Output:
 	Surface area = 311.55
 	Volume = 342.85
 
-
 ------------------------------------------------
-Executed on: Thu Apr 21 00:15:08 2022
+Executed on: Thu Apr 21 00:45:01 2022
 Operation Done: Area Under Curve
 Input: 
-	Expression : 3X^4 + 5X^2 + 4
+	Expression : 3X^4 + -7X^3 + 5X^2 + -2X + 4
 	Limits: between -2 and 3
 	Accuracy: 0.01
 Output:
 	The integral using Simpson's Rule is: 124.595 for 18 sub-intervals.
 	The integral using Trapezoidal Rule is: 124.844 with 54 intervals
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:00:37 2022
+Shape : Equilateral triangle
+Input:
+	length of side = 3.50
+Output:
+	Area = 5.30
+	Perimeter = 10.50
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:00:57 2022
+Shape : Cylinder
+Input:
+	radius of circular base = 4.56, height = 8.00
+Output:
+	Surface area = 359.86
+	Volume = 522.60
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:01:32 2022
+Shape : Pyramid
+Input:
+	length of base = 6.00, breadth of base = 3.40, height = 9.00
+Output:
+	Surface area = 107.61
+	Volume = 61.20
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:01:53 2022
+Shape : Parallellogram
+Input:
+	side = 4.00, base = 6.00, height = 8.00
+Output:
+	Area = 48.00
+	Perimeter = 20.00
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:02:16 2022
+Shape : Cuboid
+Input
+	length = 7.90, breadth = 2.50, height = 5.60
+Output:
+	Surface area = 155.98
+	Volume = 110.60
 

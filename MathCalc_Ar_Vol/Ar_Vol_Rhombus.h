@@ -1,6 +1,7 @@
 #ifndef AR_VOL_RHOMBUS_H_INCLUDED
 #define AR_VOL_RHOMBUS_H_INCLUDED
 
+/*function to calculate area and perimeter of rhombus*/
 float rhombus()
 {
     float side, x, d1, d2, area, perimeter, a;
@@ -42,18 +43,20 @@ float rhombus()
             }
 
             a = pow(side,2);
+            //calculate diagonals
             d1 = sqrt(a + a - (2 * side * side * cos(x)));
             d2 = sqrt((4 * a) - (pow(d1,2)));
 
             printf("\nCalculated diagonal 1 = %.2f\n",d1);
             printf("Calculated diagonal 2 = %.2f\n",d2);
 
-            area = (d1 * d2)/2;
-            perimeter = side * 4;
+            area = (d1 * d2)/2;    //formula for area
+            perimeter = side * 4;  //formula for volume
 
             printf("\nArea of rhombus = %.2f\n",area);
             printf("Perimeter of rhombus = %.2f\n",perimeter);
 
+            /*entry in log file*/
             fprintf(fptr,"------------------------------------------------\n");
             fprintf(fptr,"Executed on: %s",ctime(&t));
             fprintf(fptr,"Shape : Rhombus\n");
@@ -81,7 +84,7 @@ float rhombus()
                 scanf("%f",&d1);
             }
 
-            d2 = sqrt((4 * pow(side,2)) - (pow(d1,2)));
+            d2 = sqrt((4 * pow(side,2)) - (pow(d1,2)));    //calculate diagonal 2
             printf("\nCalculated diagonal 2 = %.2f\n",d2);
 
             area = (d1 * d2)/2;
@@ -90,6 +93,7 @@ float rhombus()
             printf("\nArea of rhombus = %.2f\n",area);
             printf("Perimeter of rhombus = %.2f\n",perimeter);
 
+            /*entry in log file*/
             fprintf(fptr,"------------------------------------------------\n");
             fprintf(fptr,"Executed on: %s",ctime(&t));
             fprintf(fptr,"Shape : Rhombus\n");

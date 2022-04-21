@@ -78,7 +78,6 @@ int main()
             break;
         case 6:
 
-            printf("\n\n\t\tLog Files\n\n");
             FileView();
 
             break;

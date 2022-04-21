@@ -10,7 +10,7 @@ int FileView()
     printf("\n\t\tWelcome to Log Selection Menu\n");
     while(again == 'Y'){
         printf("\n\nPlease type in the number associated to the log file you wish to view.\n\n");
-        printf("\t1- Matrix Operations\n\t2- Polynomial Operations\n\t3- 2D AND 3D Shapes Operations\n\t4- Complex Numbers Operations");
+        printf("\t1- Matrix Operations\n\t2- Polynomial Operations\n\t3- 2D and 3D Shapes Operations\n\t4- Complex Numbers Operations");
         printf("\n\t5- Scientific Calculator");
         printf("\n\nInput your choice: ");
         scanf("%d",&choice);

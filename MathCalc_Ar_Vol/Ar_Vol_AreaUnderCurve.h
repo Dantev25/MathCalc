@@ -147,8 +147,7 @@ int AUC(){
     fprintf(fptr,"\tThe integral using Trapezoidal Rule is: %g with %d intervals\n\n",integral_new,i);
 
     fclose(fptr);
-    
 
+    return 0;
 }
-
 #endif

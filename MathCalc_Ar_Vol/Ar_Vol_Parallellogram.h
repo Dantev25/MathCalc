@@ -1,6 +1,7 @@
 #ifndef AR_VOL_PARALLELLOGRAM_H_INCLUDED
 #define AR_VOL_PARALLELLOGRAM_H_INCLUDED
 
+/*function to calculate area and perimeter of parallellogram*/
 float parallellogram()
 {
     float side, base, height, area, perimeter;
@@ -37,8 +38,8 @@ float parallellogram()
         scanf("%f",&height);
     }
 
-    area = base * height;
-    perimeter = (side + base) * 2;
+    area = base * height;             //formula for area
+    perimeter = (side + base) * 2;    //formula for perimeter
 
     printf("\nArea of parallellogram = %.2f\n",area);
     printf("Perimeter of parallellogram = %.2f\n",perimeter);
@@ -50,11 +51,12 @@ float parallellogram()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Parallellogram\n");
-    fprintf(fptr,"INPUT:\n\tside = %.2f, base = %.2f, height = %.2f\n",side,base,height);
-    fprintf(fptr,"OUTPUT:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
+    fprintf(fptr,"Input:\n\tside = %.2f, base = %.2f, height = %.2f\n",side,base,height);
+    fprintf(fptr,"Output:\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
 
     fclose(fptr);
 
