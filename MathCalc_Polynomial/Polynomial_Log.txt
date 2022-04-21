@@ -141,3 +141,15 @@ Inputs:
 	First expression : 5.00X + 3.00
 	Second expression : 3.00X + 36.00
 Output: 15.00X^2 + 189.00X + 108.00
+----------------------------------------------------------------------
+
+
+Executed on: Thu Apr 21 23:03:30 2022
+Operation Done: Quadratic Roots
+Expression input: 5.00X^2 + 30.00X + 6.00
+Output:
+	b^2 - 4ac = 0
+	Equation has two roots as b^2 - 4ac > 0
+Roots are at: 
+		Root 1: X = -0.21
+		Root 2: X = -5.79

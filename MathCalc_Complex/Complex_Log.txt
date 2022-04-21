@@ -34,3 +34,12 @@ Input:
 Output:
 	Product = -27.00 -1.50i
 
+------------------------------------------------
+Executed on: Thu Apr 21 23:01:02 2022
+Operation : Complex numbers multiplication
+Input:
+	complex number 1 = 4.50 + 0.00i
+	complex number 2 = -2.00 + 6.00i
+Output:
+	Product = -9.00 + 27.00i
+
