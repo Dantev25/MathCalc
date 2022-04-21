@@ -65,7 +65,7 @@ int PolyMult()
     
     for (i=0; i<n1; i++){
         for ( j=0; j<n2; j++){
-            prod[i+j] += a[i]*b[j];
+            prod[i+j] += a[i]*b[j];//formula to calculate product
         }
     }
     printf("\nFirst expression : ");
@@ -82,7 +82,7 @@ int PolyMult()
         printf("Error!");
         exit(1);
     }
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"\n----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Multiplication\n");
     fprintf(fptr,"Inputs: \n");
@@ -91,7 +91,7 @@ int PolyMult()
     fprintf(fptr,"\tSecond expression : ");
     PolySave(n2,b,fptr);
     fprintf(fptr,"Output: ");
-    PolySave(n1+n2,prod,fptr);
+    PolySave((i+j-1),prod,fptr);
     fclose(fptr);
 }
 

@@ -23,7 +23,7 @@ int PolynomialMenu()
         printf("\t2- Subtraction\n");
         printf("\t3- Multiplication of two polynomials\n");
         printf("\t4- Division of two polynomials\n");
-        printf("\t5- View Polynomial Log");
+        printf("\t5- Find quadratic roots\n");
         printf("\n\nEnter your choice: ");
         scanf("%d", &operation);
 
@@ -56,9 +56,17 @@ int PolynomialMenu()
             PolyDiv();
 
             break;
+        
+        case 5:
+
+            printf("\n\n\t\tQuadratic Roots\n\n");
+            QuadRoots();
+
+            break;
+
 
         default:
-            printf("\nIncorrect option! Please choose a number 1-4.\n");
+            printf("\nIncorrect option! Please choose a number 1-5.\n");
             break;
         }
 

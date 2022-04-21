@@ -1,8 +1,13 @@
 
+            MatrixMenu();
+
             break;
 
-        case 2:
+        case 4:
 
 
-            PolynomialMenu();
+            complexMenu();
+
             break;
+
+        case 5:

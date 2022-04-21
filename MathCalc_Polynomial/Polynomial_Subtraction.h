@@ -70,7 +70,7 @@ int PolySub()
         }
     }
     for(k=0;k<deg;k++){
-        Result[k] = a[k] - b[k]; 
+        Result[k] = a[k] - b[k]; //equation to subtract two polynomials
     }
 
     

@@ -2,7 +2,7 @@
 #define POLYNOMIAL_ADDITION_H_INCLUDED
 
 #define MAX 99
-int PolyPrint(int deg, float a[])
+int PolyPrint(int deg, float a[])//function to print polynomials
 {
     int i;
     for(i=(deg-1);i>=0;i--){
@@ -20,7 +20,7 @@ int PolyPrint(int deg, float a[])
     }
 }
 
-int PolySave(int deg, float a[], FILE *fptr)
+int PolySave(int deg, float a[], FILE *fptr)//function to save polynomials to log file
 {
     int i;
     for(i=(deg-1);i>=0;i--){
@@ -37,7 +37,7 @@ int PolySave(int deg, float a[], FILE *fptr)
         }
     }
 }
-int PolyAdd()
+int PolyAdd()//function to add two polynomials
 {
     float a[MAX], b[MAX],sum[MAX];
     int n1,n2,deg,i,k;
@@ -103,7 +103,7 @@ int PolyAdd()
         }
     }
     for(k=0;k<deg;k++){
-        sum[k] = a[k] + b[k]; 
+        sum[k] = a[k] + b[k];//formula for calculating sum
     }
 
     printf("\nFirst expression : ");
