@@ -149,5 +149,5 @@ int AUC(){
     fclose(fptr);
 
     return 0;
-
+}
 #endif
