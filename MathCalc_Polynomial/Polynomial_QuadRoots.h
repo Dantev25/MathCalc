@@ -67,7 +67,7 @@ int QuadRoots()
     fprintf(fptr,"Operation Done: Quadratic Roots\n");
     fprintf(fptr,"Expression input: ");
     PolySave(3,a,fptr);
-    fprintf("Output:\n");
+    fprintf(fptr,"Output:\n");
     fprintf(fptr,"\tb^2 - 4ac = %d",beqn);
     if (beqn == 0){
         fprintf(fptr,"\n\tEquation has only one root as b^2 - 4ac = 0\n\tRoot is at: X= %.2f",root1);

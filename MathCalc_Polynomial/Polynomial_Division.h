@@ -354,63 +354,123 @@ int PolyDiv()
     FILE *fptr;
     // Create 1st Polynomial (Dividend):
     // 5x^2 + 4x^1 + 2
-    float a,b,c,d,e,f;
-    int i=2;
-    for (i=2;i>=0;i--){
+    float a0,a1,a2,a3,a4,a5,b0,b1,b2,b3,b4,b5;
+    int i,n1,n2;
+    printf("\nPlease input the degree (highest power) of the first expression:");
+    scanf("%d",&n1);
+    while (n1<0){
+        printf("\nPlease input the degree (highest power) again, it cannot be negative:");
+        scanf("%d",&n1);
+    }
+    n1++;
+    for (i=5;i>=0;i--){
         if (i==0){
             printf("Constant = ");
-            scanf("%f",&c);
+            scanf("%f",&a5);
         }
-        else if (i==1){
+        else if (i==1&&i<n1){
             printf("X = ");
-            scanf("%f",&b);
+            scanf("%f",&a4);
         }
-        else{
+        else if(i==2&&i<n1){
             printf("X^%d = ",i);
-            scanf("%f",&a);      
+            scanf("%f",&a3);      
+        }
+        else if(i==3&&i<n1){
+            printf("X^%d = ",i);
+            scanf("%f",&a2);      
+        }
+        else if(i==4&&i<n1){
+            printf("X^%d = ",i);
+            scanf("%f",&a1);      
+        }
+        else if(i==5&&i<n1){
+            printf("X^%d = ",i);
+            scanf("%f",&a0);      
         }
     }
-    for (i=2;i>=0;i--){
+    printf("\nPlease input the degree (highest power) of the second expression:");
+    scanf("%d",&n2);
+    while (n2<0){
+        printf("\nPlease input the degree (highest power) again, it cannot be negative:");
+        scanf("%d",&n2);
+    }
+    n2++;
+    for (i=5;i>=0;i--){
         if (i==0){
             printf("Constant = ");
-            scanf("%f",&f);
+            scanf("%f",&b5);
         }
-        else if (i==1){
+        else if (i==1&&i<n2){
             printf("X = ");
-            scanf("%f",&e);
+            scanf("%f",&b4);
         }
-        else{
+        else if(i==2&&i<n2){
             printf("X^%d = ",i);
-            scanf("%f",&d);      
+            scanf("%f",&b3);      
+        }
+        else if(i==3&&i<n2){
+            printf("X^%d = ",i);
+            scanf("%f",&b2);      
+        }
+        else if(i==4&&i<n2){
+            printf("X^%d = ",i);
+            scanf("%f",&b1);      
+        }
+        else if(i==5&&i<n2){
+            printf("X^%d = ",i);
+            scanf("%f",&b0);      
         }
     }
 
-    if(a!=0){
+    if(a0>0.0001){
+        i=5;
+        create_node(a0, i, &poly1);
+    }
+    if(a1>0.0001){
+        i=4;
+        create_node(a1, i, &poly1);
+    }
+    if(a2>0.0001){
+        i=3;
+        create_node(a2, i, &poly1);
+    }
+    if(a3>0.0001){
         i=2;
-        create_node(a, i, &poly1);
+        create_node(a3, i, &poly1);
     }
-    if(b!=0){
+    if(a4>0.0001){
         i=1;
-        create_node(b, i, &poly1);
+        create_node(a4, i, &poly1);
     }
-    if(c!=0){
+    if(a5>0.0001){
         i=0;
-        create_node(c, i, &poly1);
+        create_node(a5, i, &poly1);
     }
     
-    // Create 2nd Polynomial (Divisor):
-    // 5x^1 + 5
-    if(d!=0){
+    if(b0>0.0001){
+        i=5;
+        create_node(b0, i, &poly2);
+    }
+    if(b1>0.0001){
+        i=4;
+        create_node(b1, i, &poly2);
+    }
+    if(b2>0.0001){
+        i=3;
+        create_node(b2, i, &poly2);
+    }
+    if(b3>0.0001){
         i=2;
-        create_node(d, i, &poly2);
+        create_node(b3, i, &poly2);
     }
-    if(e!=0){
+    if(b4>0.0001){
         i=1;
-        create_node(e, i, &poly2);
+        create_node(b4, i, &poly2);
     }
-    if(f!=0){
+    if(b5>0.0001){
         i=0;
-        create_node(f, i, &poly2);
+        create_node(b5, i, &poly2);
     }
     printf("First expression input: ");
     show(poly1);
@@ -424,6 +484,7 @@ int PolyDiv()
         printf("Error!");
         exit(1);
     }
+
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Addition\n");
     fprintf(fptr,"Inputs: \n");
@@ -432,13 +493,8 @@ int PolyDiv()
     fprintf(fptr,"\tSecond expression : ");
     PolySaveLinkList(poly2,fptr);
 
-
     divide_poly(poly1, poly2,fptr);
 
-
-    
-    
-    
     fclose(fptr);
 
     return 0;
