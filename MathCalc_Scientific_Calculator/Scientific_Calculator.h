@@ -56,8 +56,8 @@ int scalc()
         switch (operation){
 
         case 1:
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"Executed on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tAddition\n");
             printf("\n\n\t\tAddition\n\n");
             fprintf(fptr,"Input:\n");
@@ -77,8 +77,8 @@ int scalc()
 
         case 2:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSubtraction\n");
             printf("\n\n\t\tSubtraction\n\n");
             fprintf(fptr,"Input:\n");
@@ -98,8 +98,8 @@ int scalc()
 
         case 3:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tMultiplication\n");
             printf("\n\n\t\tMultiplication\n\n");
             fprintf(fptr,"Input:\n");
@@ -120,8 +120,8 @@ int scalc()
 
         case 4:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tDivision\n");
             printf("\n\n\t\tDivision\n\n");
             fprintf(fptr,"Input:\n");
@@ -142,8 +142,8 @@ int scalc()
 
         case 5:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSquare Root\n");
             printf("\n\n\t\tSquare Root\n\n");
             fprintf(fptr,"Input:\n");
@@ -160,8 +160,8 @@ int scalc()
 
         case 6:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tPower\n");
             printf("\n\n\t\tPower\n\n");
             fprintf(fptr,"Input:\n");
@@ -182,8 +182,8 @@ int scalc()
 
         case 7:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\t10^x\\n");
             printf("\n\n\t\t10^x\n\n");
             fprintf(fptr,"Input:\n");
@@ -200,8 +200,8 @@ int scalc()
 
         case 8:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tFactorial\n");
             printf("\n\n\t\tFactorial\n\n");
             printf("\t\t X !\n\n");
@@ -222,8 +222,8 @@ int scalc()
 
         case 9:
             
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tLogarithm\n");
             printf("\n\n\t\tLogarithm\n\n");
             printf("\t\t Log10(x)\n\n");
@@ -240,8 +240,8 @@ int scalc()
 
         case 10:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tExponential\n");
             printf("\n\n\t\tExponential\n\n");
             printf("\t\t e ^ x\n\n");
@@ -259,8 +259,8 @@ int scalc()
 
         case 11:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSin(x)\n");
             printf("\n\n\t\tSin(x)\n\n");
             fprintf(fptr,"Input:\n");
@@ -269,8 +269,8 @@ int scalc()
             fprintf(fptr,"\n%f",x);
             result = sin(x * PI / 180);
             result1 = sin(x);
-            printf("Sin(%f) = %f in degrees\n", x, result);
-            printf("Sin(%f) = %f in radians\n", x, result1);
+            printf("Sin(%f) = %f in degree mode\n", x, result);
+            printf("Sin(%f) = %f in radian mode\n", x, result1);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -279,8 +279,8 @@ int scalc()
 
         case 12:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCos(x)\n");
             printf("\n\n\t\tCos(x)\n\n");
             fprintf(fptr,"Input:\n");
@@ -289,8 +289,8 @@ int scalc()
             fprintf(fptr,"\n%f",x);
             result = cos(x * PI / 180);
             result1 = cos(x);
-            printf("Cos(%f) = %f in degrees\n", x, result);
-            printf("Cos(%f) = %f in radians\n", x, result1);
+            printf("Cos(%f) = %f in degree mode\n", x, result);
+            printf("Cos(%f) = %f in radian mode\n", x, result1);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -299,8 +299,8 @@ int scalc()
 
         case 13:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tTan(x)\n");
             printf("\n\n\t\tTan(x)\n\n");
             fprintf(fptr,"Input:\n");
@@ -309,8 +309,8 @@ int scalc()
             fprintf(fptr,"\n%f",x);
             result = tan(x * PI / 180);
             result1 = tan(x);
-            printf("Tan(%f) = %f in degrees\n", x, result);
-            printf("Tan(%f) = %f in radians\n", x, result1);
+            printf("Tan(%f) = %f in degree mode\n", x, result);
+            printf("Tan(%f) = %f in radian mode\n", x, result1);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -319,8 +319,8 @@ int scalc()
 
         case 14:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCosec(x)\n");
             printf("\n\n\t\tCosec(x)\n\n");
             fprintf(fptr,"Input:\n");
@@ -329,8 +329,8 @@ int scalc()
             fprintf(fptr,"\n%f",x);
             result = 1 / (sin(x * PI / 180));
             result1 = 1 / sin(x);
-            printf("Cosec(%f) = %f in degrees\n", x, result);
-            printf("Cosec(%f) = %f in radians\n", x, result1);
+            printf("Cosec(%f) = %f in degree mode\n", x, result);
+            printf("Cosec(%f) = %f in radian mode\n", x, result1);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -339,8 +339,8 @@ int scalc()
 
         case 15:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSec(x)\n");
             printf("\n\n\t\tSec(x)\n\n");
             fprintf(fptr,"Input:\n");
@@ -349,8 +349,8 @@ int scalc()
             fprintf(fptr,"\n%f",x);
             result = 1 / cos(x * PI / 180);
             result1 = 1 / cos(x);
-            printf("Sec(%f) = %f in degrees\n", x, result);
-            printf("Sec(%f) = %f in radians\n", x, result1);
+            printf("Sec(%f) = %f in degree mode\n", x, result);
+            printf("Sec(%f) = %f in radian mode\n", x, result1);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -359,8 +359,8 @@ int scalc()
 
         case 16:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCot(x)\n");
             printf("\n\n\t\tCot(x)\n\n");
             fprintf(fptr,"Input:\n");
@@ -369,8 +369,8 @@ int scalc()
             fprintf(fptr,"\n%f",x);
             result = 1 / tan(x * PI / 180);
             result1 = 1 / tan(x);
-            printf("Cot(%f) = %f in degrees\n", x, result);
-            printf("Cot(%f) = %f in radians\n", x, result1);
+            printf("Cot(%f) = %f in degree mode\n", x, result);
+            printf("Cot(%f) = %f in radian mode\n", x, result1);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -378,8 +378,8 @@ int scalc()
 
         case 17:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tSin Inverse\n");
             printf("\n\n\t\tSin Inverse\n\n");
             fprintf(fptr,"Input:\n");
@@ -393,7 +393,7 @@ int scalc()
             }
             fprintf(fptr,"\n%f",x);
             result = asin(x);
-            printf("Inverse of sin(%f) = %f in radians\n", x, result);
+            printf("Inverse of sin(%f) = %f radians\n", x, result);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -401,8 +401,8 @@ int scalc()
 
         case 18:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tCos Inverse\n");
             printf("\n\n\t\tCos Inverse\n\n");
             fprintf(fptr,"Input:\n");
@@ -416,7 +416,7 @@ int scalc()
             }
             fprintf(fptr,"\n%f",x);
             result = acos(x);
-            printf("Inverse of cos(%f) = %f in radians\n", x, result);
+            printf("Inverse of cos(%f) = %f radians\n", x, result);
             fprintf(fptr,"\n\nOutput:\n\n");
             fprintf(fptr,"%f",result);
 
@@ -424,8 +424,8 @@ int scalc()
 
         case 19:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tTan Inverse\n");
             printf("\n\n\t\tTan Inverse\n\n");
             fprintf(fptr,"Input:\n");
@@ -442,8 +442,8 @@ int scalc()
 
         case 20:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tModulus\n");
             printf("\n\n\t\tModulus\n\n");
             printf("\t\t X % Y\n\n");
@@ -464,38 +464,36 @@ int scalc()
 
         case 21:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tDegree to Radian\n");
             printf("\n\n\t\tDegree to Radian\n\n");
             fprintf(fptr,"Input:\n");
             printf("Enter the angle in degrees :");
             scanf("%f",&degrees);
-            fprintf(fptr,"\n%f",degrees);
+            fprintf(fptr,"\n%f degrees",degrees);
             radians = 0.0174532925*degrees;
             printf("%.2f degrees = %f radians",degrees,radians);
-            fprintf(fptr,"%.2f degrees = %f radians",degrees,radians);
             fprintf(fptr,"\n\nOutput:\n\n");
-            fprintf(fptr,"%f",result);
+            fprintf(fptr,"%f radians",radians);
 
 
             break;
 
         case 22:
 
-            fprintf(fptr,"----------------------------------------------------------------------\n");
-            fprintf(fptr,"\n\n\nExecuted on: %s",ctime(&t));
+            fprintf(fptr,"\n\n\n----------------------------------------------------------------------\n");
+            fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
             fprintf(fptr,"\n\t\t\tRadian to Degree\n");
             printf("\n\n\t\tRadian to Degree\n\n");
             fprintf(fptr,"Input:\n");
             printf("Enter the angle in radians :");
             scanf("%f",&radians);
-            fprintf(fptr,"\n%f",radians);
+            fprintf(fptr,"\n%f radians",radians);
             degrees = 57.2957795*radians;
             printf("%f radians = %.2f degrees",radians,degrees);
-            fprintf(fptr,"%f radians = %.2f degrees",radians,degrees);
             fprintf(fptr,"\n\nOutput:\n\n");
-            fprintf(fptr,"%f",result);
+            fprintf(fptr,"%f degrees",degrees);
 
             break;
 
