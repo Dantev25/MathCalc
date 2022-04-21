@@ -1,6 +1,7 @@
 #ifndef AR_VOL_RECTANGLE_H_INCLUDED
 #define AR_VOL_RECTANGLE_H_INCLUDED
 
+/*function to calculate area and perimeter of rectangle*/
 float rectangle()
 {
     float l, b, area, perimeter;
@@ -29,8 +30,8 @@ float rectangle()
         }
     }
 
-    area = l * b;
-    perimeter = (l + b) * 2;
+    area = l * b;                //formula for area
+    perimeter = (l + b) * 2;     //formula for volume
 
     printf("\nArea of rectangle = %.2f\n",area);
     printf("Perimeter of rectangle = %.2f\n",perimeter);
@@ -42,11 +43,12 @@ float rectangle()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Rectangle\n");
-    fprintf(fptr,"INPUT:\n\tlength = %.2f, breadth = %.2f\n",l,b);
-    fprintf(fptr,"OUTPUT\n\tArea = %.2f\n\tPerimeter = %.2f\n\n\n",area,perimeter);
+    fprintf(fptr,"Input:\n\tlength = %.2f, breadth = %.2f\n",l,b);
+    fprintf(fptr,"Output\n\tArea = %.2f\n\tPerimeter = %.2f\n\n",area,perimeter);
 
     fclose(fptr);
 

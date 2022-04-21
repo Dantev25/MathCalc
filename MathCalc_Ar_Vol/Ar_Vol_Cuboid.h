@@ -1,6 +1,7 @@
 #ifndef AR_VOL_CUBOID_H_INCLUDED
 #define AR_VOL_CUBOID_H_INCLUDED
 
+/*function to calculate surface area and volume of cuboid*/
 float cuboid()
 {
     float l, b, h, sa, vol;
@@ -35,8 +36,8 @@ float cuboid()
         }
     }
 
-    sa = ((b * l) + (l * h) + (h * b)) *2;
-    vol = l * b * h;
+    sa = ((b * l) + (l * h) + (h * b)) *2;    //formula for surface area
+    vol = l * b * h;                          //formula for volume
 
     printf("\nSurface area of cuboid = %.2f\n",sa);
     printf("Volume of cuboid = %.2f\n",vol);
@@ -48,11 +49,12 @@ float cuboid()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cuboid\n");
-    fprintf(fptr,"INPUT\n\tlength = %.2f, breadth = %.2f, height = %.2f\n",l,b,h);
-    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
+    fprintf(fptr,"Input\n\tlength = %.2f, breadth = %.2f, height = %.2f\n",l,b,h);
+    fprintf(fptr,"Output:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 

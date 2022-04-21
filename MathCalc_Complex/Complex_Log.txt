@@ -1,36 +1,36 @@
-executed on: Sat Apr 16 23:09:45 2022
-Operation : Complex numbers addition
-INPUT:
-	complex number 1 = 5.00 + 0.00i
-	complex number 2 = 9.00 -3.00i
-OUTPUT:
-	Sum = 14.00 -3.00i
-
-
-executed on: Sat Apr 16 23:10:31 2022
-Operation : Complex numbers Subtraction
-INPUT:
-	complex number 1 = 5.00 -8.00i
-	complex number 2 = 3.00 -2.00i
-OUTPUT:
-	Difference = 2.00 -6.00i
-
-
-executed on: Sat Apr 16 23:11:26 2022
-Operation : Complex numbers multiplication
-INPUT:
-	complex number 1 = 6.00 + 0.00i
-	complex number 2 = -7.00 -2.00i
-OUTPUT:
-	Product = -42.00 -12.00i
-
-
-executed on: Sat Apr 16 23:12:11 2022
+------------------------------------------------
+Executed on: Thu Apr 21 12:29:59 2022
 Operation : Complex numbers division
-INPUT:
-	complex number 1 = 7.00 -2.00i
-	complex number 2 = 0.00 + 5.00i
-OUTPUT:
-	Quotient = -0.400 -1.400i
+Input:
+	complex number 1 = 5.00 -3.00i
+	complex number 2 = 6.00 + 1.20i
+Output:
+	Quotient = 0.705 -0.641i
 
+------------------------------------------------
+Executed on: Thu Apr 21 12:55:07 2022
+Operation : Complex numbers addition
+Input:
+	complex number 1 = 6.00 + 0.00i
+	complex number 2 = -3.00 + 4.50i
+Output:
+	Sum = 3.00 + 4.50i
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:34:38 2022
+Operation : Complex numbers Subtraction
+Input:
+	complex number 1 = 5.00 -3.00i
+	complex number 2 = 7.50 -3.00i
+Output:
+	Difference = -2.50 + 0.00i
+
+------------------------------------------------
+Executed on: Thu Apr 21 16:35:14 2022
+Operation : Complex numbers multiplication
+Input:
+	complex number 1 = 6.00 + 4.50i
+	complex number 2 = -3.00 + 2.00i
+Output:
+	Product = -27.00 -1.50i
 

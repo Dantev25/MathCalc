@@ -1,6 +1,7 @@
 #ifndef AR_VOL_CUBE_H_INCLUDED
 #define AR_VOL_CUBE_H_INCLUDED
 
+/*function to calculate surface area and volume of a cube*/
 float cube()
 {
     float x, sa, vol;
@@ -17,8 +18,8 @@ float cube()
         scanf("%f",&x);
     }
 
-    sa = (x * x) * 6;
-    vol = x * x * x;
+    sa = (x * x) * 6;  //formula for surface area
+    vol = x * x * x;   //formula for volume
 
     printf("\nSurface area of cube = %.2f\n",sa);
     printf("Volume of cube = %.2f\n",vol);
@@ -30,11 +31,12 @@ float cube()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Shape : Cube\n");
-    fprintf(fptr,"INPUT:\n\tlength of side = %.2f\n",x);
-    fprintf(fptr,"OUTPUT:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n\n",sa,vol);
+    fprintf(fptr,"Input:\n\tlength of side = %.2f\n",x);
+    fprintf(fptr,"Output:\n\tSurface area = %.2f\n\tVolume = %.2f\n\n",sa,vol);
 
     fclose(fptr);
 

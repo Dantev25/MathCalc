@@ -6,6 +6,7 @@ struct complex
   float real, img;
 };
 
+/*function to carry addition of complex numbers*/
 float complexAdd()
 {
     struct complex a, b, c;
@@ -14,6 +15,7 @@ float complexAdd()
 
     FILE *fptr;
 
+    //Input of complex numbers
     printf("Enter a and b where a + ib is the first complex number:\n");
     printf("a = ");
     scanf("%f",&a.real);
@@ -43,28 +45,29 @@ float complexAdd()
         exit(1);
     }
 
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    /*entry in log file*/
+    fprintf(fptr,"------------------------------------------------\n");
     fprintf(fptr,"Executed on: %s",ctime(&t));
     fprintf(fptr,"Operation : Complex numbers addition\n");
    
     if((a.img < 0)&&(b.img < 0)){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else if (a.img < 0){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else if(b.img < 0){
-        fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
+        fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f %.2fi\n",a.real,a.img,b.real,b.img);
     }
     else{
-         fprintf(fptr,"INPUT:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
+         fprintf(fptr,"Input:\n\tcomplex number 1 = %.2f + %.2fi\n\tcomplex number 2 = %.2f + %.2fi\n",a.real,a.img,b.real,b.img);
     }
 
     if (c.img >= 0){
-        fprintf(fptr,"OUTPUT:\n\tSum = %.2f + %.2fi\n\n\n", c.real, c.img);
+        fprintf(fptr,"Output:\n\tSum = %.2f + %.2fi\n\n", c.real, c.img);
     }
     else{
-        fprintf(fptr,"OUTPUT:\n\tSum = %.2f %.2fi\n\n\n", c.real, c.img);
+        fprintf(fptr,"Output:\n\tSum = %.2f %.2fi\n\n", c.real, c.img);
     }
 
     fclose(fptr);
