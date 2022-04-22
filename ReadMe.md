@@ -90,8 +90,10 @@ Scientific Calculator (numeric):
 
 ## Strengths
 
-- User-friendly
-- Efficient
+- User-friendly - The user interface was designed such that it was intuitive for any user, including first time ones.
+- Efficient - The calculator returns answer very fast, even for large computations
+- Fully featured - 50 unique calculation possibilities
+- Covers a wide range of mathematical computations - from shape measurements to complex numbers to polynomial, MathCalc covers a wide array of mathematical topics.
 ## Limitations
 
 - Owing to undefined behavior, polynomial division only goes up to degree 2.
