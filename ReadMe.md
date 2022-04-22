@@ -1,5 +1,19 @@
 
-# Mathematical Calculations Tool
+## 
+
+UOM x CY Cergy Paris
+ 
+BSc Data Science Year 2 Semester 1 
+
+Software Engineering 1 SIS 2075 Mini Project
+## Authors
+
+- Ghingut M. Oomar ID: 2016304 
+- Kholeepa B. Sadiyah ID: 2014254 
+- Rajanah Mrishana ID: 2011318
+
+
+# Mathematical Calculator
 
 Welcome to MathCalc, your user-friendly smart calculator!
 MathCalc was developed to be a simple yet powerful calculator for various 
@@ -72,20 +86,6 @@ Scientific Calculator (numeric):
 - Radian to Degree
 
 
-## Authors
-
-- Ghingut M. Oomar ID: 2016304 
-- Kholeepa B. Sadiyah ID: 2014254 
-- Rajanah Mrishana ID: 2011318
-
-
-## 
-
-UOM x CY Cergy Paris
- 
-BSc Data Science Year 2 Semester 1 
-
-Software Engineering 1 SIS 2075 Mini Project
 
 
 
