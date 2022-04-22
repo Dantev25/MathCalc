@@ -153,3 +153,12 @@ Output:
 Roots are at: 
 		Root 1: X = -0.21
 		Root 2: X = -5.79
+----------------------------------------------------------------------
+
+
+Executed on: Fri Apr 22 03:59:30 2022
+Operation Done: Polynomial Addition
+Inputs: 
+	First expression : 5.00X^2 + 4.00X + 3.00
+	Second expression : 3.00X + 5.00
+Output: 7.00X + 8.00

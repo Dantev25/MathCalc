@@ -3,7 +3,7 @@
 #include <math.h>
 int QuadRoots()
 {
-    int i;
+    int i,checka=1;
     float a[4],det,root1, root2, real, img;
     time_t t;   // not a primitive datatype
     time(&t);
@@ -26,6 +26,31 @@ int QuadRoots()
                 printf("Please input again, expression must be quadratic and X^2 cannot be zero. \nX^%d = ",i);
                 scanf("%f",&a[i]); 
             }    
+        }
+    }
+    while (checka == 1){
+        for (i=0; i<4; i++){
+            if (a[i] != 0){
+                checka = 0;
+            }
+        }
+        if (checka == 1){
+            printf("\nPlease input the expression again, expression cannot be null:\n");
+            for (i=0;i<3;i++){
+                if (i==0){
+                    printf("Constant = ");
+                    scanf("%f",&a[i]);
+                }
+                else if (i==1){
+                    printf("X = ");
+                    scanf("%f",&a[i]);
+                }
+                else{
+                    printf("X^%d = ",i);
+                    scanf("%f",&a[i]);      
+                }
+        
+            }
         }
     }
     printf("\nThe expressions input is: ");
@@ -69,7 +94,7 @@ int QuadRoots()
         printf("Error!");
         exit(1);
     }
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"\n----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Quadratic Roots\n");
     fprintf(fptr,"Expression input: ");

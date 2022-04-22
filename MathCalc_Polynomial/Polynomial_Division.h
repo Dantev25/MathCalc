@@ -423,6 +423,7 @@ int PolyDiv()
         printf("Error!");
         exit(1);
     }
+    fprintf(fptr,"\n----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Division\n");
     fprintf(fptr,"Inputs: \n");

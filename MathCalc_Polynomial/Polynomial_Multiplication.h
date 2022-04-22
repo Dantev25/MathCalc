@@ -6,7 +6,7 @@
 int PolyMult()
 {
     float a[MAX], b[MAX],prod[1000];
-    int n1,n2,i,j;
+    int n1,n2,i,j,checka=1,checkb=1;
     time_t t;   // not a primitive datatype
     time(&t);
 
@@ -40,6 +40,31 @@ int PolyMult()
             scanf("%f",&a[i]);      
         }
     }
+    while (checka == 1){
+        for (i=0; i<MAX; i++){
+            if (a[i] != 0){
+                checka = 0;
+            }
+        }
+        if (checka == 1){
+            printf("\nPlease input the first expression again, expression cannot be null:\n");
+            for (i=0;i<n1;i++){
+                if (i==0){
+                    printf("Constant = ");
+                    scanf("%f",&a[i]);
+                }
+                else if (i==1){
+                    printf("X = ");
+                    scanf("%f",&a[i]);
+                }
+                else{
+                    printf("X^%d = ",i);
+                    scanf("%f",&a[i]);      
+                }
+        
+            }
+        }
+    }
     printf("Please input the degree (highest power) of the second expression:");
     scanf("%d",&n2);
     while (n2<=0){
@@ -60,6 +85,31 @@ int PolyMult()
         else{
             printf("X^%d = ",i);
             scanf("%f",&b[i]);      
+        }
+    }
+    while (checkb == 1){
+        for (i=0; i<MAX; i++){
+            if (b[i] != 0){
+                checkb = 0;
+            }
+        }
+        if (checkb == 1){
+            printf("\nPlease input the second expression again, expression cannot be null:\n");
+            for (i=0;i<n1;i++){
+                if (i==0){
+                    printf("Constant = ");
+                    scanf("%f",&b[i]);
+                }
+                else if (i==1){
+                    printf("X = ");
+                    scanf("%f",&b[i]);
+                }
+                else{
+                    printf("X^%d = ",i);
+                    scanf("%f",&b[i]);      
+                }
+        
+            }
         }
     }
     

@@ -40,7 +40,7 @@ int PolySave(int deg, float a[], FILE *fptr)//function to save polynomials to lo
 int PolyAdd()//function to add two polynomials
 {
     float a[MAX], b[MAX],sum[MAX];
-    int n1,n2,deg,i,k;
+    int n1,n2,deg,i,k,checka=1,checkb=1;
     time_t t;   // not a primitive datatype
     time(&t);
 
@@ -77,6 +77,31 @@ int PolyAdd()//function to add two polynomials
             scanf("%f",&a[i]);      
         }
     }
+    while (checka == 1){
+        for (i=0; i<MAX; i++){
+            if (a[i] != 0){
+                checka = 0;
+            }
+        }
+        if (checka == 1){
+            printf("\nPlease input the first expression again, expression cannot be null:\n");
+            for (i=0;i<n1;i++){
+                if (i==0){
+                    printf("Constant = ");
+                    scanf("%f",&a[i]);
+                }
+                else if (i==1){
+                    printf("X = ");
+                    scanf("%f",&a[i]);
+                }
+                else{
+                    printf("X^%d = ",i);
+                    scanf("%f",&a[i]);      
+                }
+        
+            }
+        }
+    }
     printf("\nPlease input the degree (highest power) of the second expression:");
     scanf("%d",&n2);
     while (n2<=0){
@@ -102,6 +127,31 @@ int PolyAdd()//function to add two polynomials
             scanf("%f",&b[i]);      
         }
     }
+    while (checkb == 1){
+        for (i=0; i<MAX; i++){
+            if (b[i] != 0){
+                checkb = 0;
+            }
+        }
+        if (checkb == 1){
+            printf("\nPlease input the second expression again, expression cannot be null:\n");
+            for (i=0;i<n1;i++){
+                if (i==0){
+                    printf("Constant = ");
+                    scanf("%f",&b[i]);
+                }
+                else if (i==1){
+                    printf("X = ");
+                    scanf("%f",&b[i]);
+                }
+                else{
+                    printf("X^%d = ",i);
+                    scanf("%f",&b[i]);      
+                }
+        
+            }
+        }
+    }
     for(k=0;k<deg;k++){
         sum[k] = a[k] + b[k];//formula for calculating sum
     }
@@ -119,7 +169,7 @@ int PolyAdd()//function to add two polynomials
         printf("Error!");
         exit(1);
     }
-    fprintf(fptr,"----------------------------------------------------------------------\n");
+    fprintf(fptr,"\n----------------------------------------------------------------------\n");
     fprintf(fptr,"\n\nExecuted on: %s",ctime(&t));
     fprintf(fptr,"Operation Done: Polynomial Addition\n");
     fprintf(fptr,"Inputs: \n");
