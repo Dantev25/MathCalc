@@ -79,7 +79,7 @@ int determinant()
     }
 	fprintf(fptr, "\nOutput: ");
 	printf("\n\nDeterminant of the Matrix is %d. \n", det);
-	fprintf(fptr, "\n\nDeterminant of the Matrix is %d. \n", det);
+	fprintf(fptr, "\n\nDeterminant of the Matrix is %d. \n\n", det);
 
 	fclose(fptr);
 

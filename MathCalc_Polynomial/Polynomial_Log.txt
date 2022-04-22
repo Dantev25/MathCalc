@@ -162,3 +162,35 @@ Inputs:
 	First expression : 5.00X^2 + 4.00X + 3.00
 	Second expression : 3.00X + 5.00
 Output: 7.00X + 8.00
+
+----------------------------------------------------------------------
+
+
+Executed on: Fri Apr 22 14:56:04 2022
+Operation Done: Polynomial Addition
+Inputs: 
+	First expression : 7.00X^3 + 6.00X^2 + 2.00X + 3.00
+	Second expression : 5.00X^4 + 1.00X^3 + 5.00X^2 + 2.00X + 7.00
+Output: 5.00X^4 + 8.00X^3 + 11.00X^2 + 4.00X + 10.00
+
+----------------------------------------------------------------------
+
+
+Executed on: Fri Apr 22 14:59:03 2022
+Operation Done: Polynomial Multiplication
+Inputs: 
+	First expression : 3.00X^3 + 1.00X^2 + 4.00X + 3.00
+	Second expression : 7.00X^2 + 5.00X + 2.00
+Output: 21.00X^5 + 22.00X^4 + 39.00X^3 + 43.00X^2 + 23.00X + 6.00
+
+----------------------------------------------------------------------
+
+
+Executed on: Fri Apr 22 14:59:24 2022
+Operation Done: Quadratic Roots
+Expression input: 7.00X^2 + 5.00X + 2.00
+Output:
+	b^2 - 4ac = 0
+	Roots are imaginary as b^2 - 4ac <0.
+	Complex root 1 = -0.36 + 0.40i
+	Complex root 2 = -0.36 - 0.40i
