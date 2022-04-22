@@ -14,7 +14,7 @@ Polynomial operations:
 		 -Addition 
 		 -Subtraction
 		 -Quadratic roots
-		 -Division
+		 -Quadratic Division
 		 -Multiplication
 
 Area, volume and perimeter of 2D or 3D shapes:
@@ -25,7 +25,7 @@ Area, volume and perimeter of 2D or 3D shapes:
 		 -Triangle
 		 -Rhombus
 		 -Parallelogram
-		 -Area under curve
+		 -Area under curve (up to polynomial of degree 5)
 	3D shapes:
 		 -Cube
 		 -Cuboid
