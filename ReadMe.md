@@ -16,6 +16,8 @@ Software Engineering 1 SIS 2075 Mini Project
 # Mathematical Calculator
 
 Welcome to MathCalc, your user-friendly smart calculator!
+
+
 MathCalc was developed to be a simple yet powerful calculator for various 
 mathematical operations.
 
