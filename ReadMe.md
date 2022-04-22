@@ -86,6 +86,16 @@ Scientific Calculator (numeric):
 - Radian to Degree
 
 
+## Strengths
+
+- User-friendly
+- Efficient
+## Limitations
+
+- Owing to undefined behavior, polynomial division only goes up to degree 2.
+- Area under curve goes up to degree 5, as input cannot be implemented in a loop. 
+
+
 
 
 
