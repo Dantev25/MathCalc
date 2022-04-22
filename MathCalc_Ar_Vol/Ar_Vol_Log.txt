@@ -82,3 +82,41 @@ Output
 	Area = 33.00
 	Perimeter = 23.00
 
+------------------------------------------------
+Executed on: Fri Apr 22 14:54:47 2022
+Shape : Square
+Input:
+	length of side = 3.00
+Output:
+	Area = 9.00
+	Perimeter = 12.00
+
+------------------------------------------------
+Executed on: Fri Apr 22 14:55:02 2022
+Shape : Cube
+Input:
+	length of side = 4.00
+Output:
+	Surface area = 96.00
+	Volume = 64.00
+
+------------------------------------------------
+Executed on: Fri Apr 22 14:55:07 2022
+Operation Done: Area Under Curve
+Input: 
+	Expression : 4X^2 + 3X + 5
+	Limits: between 2 and 5
+	Accuracy: 2
+Output:
+	The integral using Simpson's Rule is: 202.5 for 4 sub-intervals.
+	The integral using Trapezoidal Rule is: 203.625 with 4 intervals
+
+------------------------------------------------
+Executed on: Fri Apr 22 14:55:51 2022
+Shape : Sphere
+Input:
+	radius = 4.00
+Output:
+	Surface area = 201.06
+	volume = 268.08
+
